@@ -1,0 +1,42 @@
+---
+layout: default
+title: Adopta Agency Blog
+---
+
+<p><a href="http://design.apievangelist.com/blog.xml"><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-rss-icon.png" width="25" align="right" style="padding: 25px;" /></a></p>
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+	<tr><td colspan="2" align="center"><hr style="padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px;" /></td></tr>
+{% for post in paginator.posts %}
+	<tr>
+	    <td width="15%" align="center">
+		    {% if post.image != null %}
+		    	<a href="{{ post.source }}" rel="bookmark" title="{{ post.title }}">
+		    		<img src="{{ post.image }}" width="75" />
+		    	</a>
+		    {% endif %}
+	    </td>
+	    <td align="left">
+		    <a href="{{ post.source }}" rel="bookmark" title="{{ post.title }}" style="color:#000; font-size: 16px;"><strong>{{ post.title }}</strong></a><br />
+		    <i><span class="post-date">{{ post.date | date:"%m-%d-%Y" }}{% if post.domain != null %} on <a href="http://{{ post.domain }}"></a>{{ post.domain }}</a></span>{% endif %}</i><br />
+	    </td>
+	</tr>
+	<tr><td colspan="2" align="center"><hr style="padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px;" /></td></tr>
+{% endfor %}
+</table>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a href="/news/page{{paginator.next_page}}" class="older">Older</a>
+  {% else %}
+    <span class="next">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a href="/" class="newer">Newer</a>
+    {% else %}
+      <a href="/news/page{{paginator.previous_page}}" class="newer">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="previous">Newer</span>
+  {% endif %}
+</div>
