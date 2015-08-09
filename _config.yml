@@ -27,7 +27,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 # lets build some collections to store our data files and api references
 collections:
-  data:
+  - data
     - title: "Table 1.1 - Summary of Receipts, Outlays, and Surpluses or Deficits 1789 through 2020"
       csv_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-1-1.csv"
       json_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-1-1.json"
@@ -199,7 +199,7 @@ collections:
     - title: "Table 16.2 - Total Executive Branch Civilian Full Time Equivalent Employees as Percentage 1981–2016"
       csv_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-16-2.csv"
       json_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-16-2.json"
-  api:
+  - api
     - title: "The single API"
       description: "Josquin des Prez"
       url:
