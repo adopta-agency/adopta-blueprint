@@ -3,9 +3,9 @@ layout: page
 title: US Federal Budget - Data
 ---
 
-<p>Listing of all the data (name change).</p>
+<p>Listing of all the data (1).</p>
 <ul>
-  {% for datafile in site.datastores %}
-  <li>{{ datafile.title }}</li>
+  {% for data in site.data %}
+  <li>{{ data.title }}</li>
   {% endfor %}
 </ul>
