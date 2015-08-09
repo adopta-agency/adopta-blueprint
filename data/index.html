@@ -3,7 +3,8 @@ layout: page
 title: US Federal Budget - Data
 ---
 
-<p>Listing of all the data.</p>
+<h1>{{ site.dataTitle }}</h1>
+<p>{{ site.dataDescription }}</p>
 <table width="100%">
   {% for data in site.data %}
   <tr>
@@ -19,3 +20,4 @@ title: US Federal Budget - Data
   </tr>
   {% endfor %}
 </table>
+<p>{{ site.dataFooter }}</p>
