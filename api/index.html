@@ -1,0 +1,25 @@
+---
+layout: page
+title: US Federal Budget - {{ site.apiTitle }}
+---
+
+<h1>{{ site.apiTitle }}</h1>
+<p>{{ site.apiDescription }}</p>
+<hr />
+<table width="100%">
+  {% for api in site.api %}
+  <tr>
+    <td>
+      {{ api.title }}
+    </td>
+    <td width="50" align="center">
+      <a href="{{ api.swagger_url }}">Swagger</a>
+    </td>
+    <td width="50" align="center">
+      <a href="/docs/?swagger_url={{ data.swagger_url }}">Documentation</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<hr />
+<p>{{ site.apiFooter }}</p>

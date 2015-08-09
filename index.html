@@ -6,8 +6,10 @@ title: {{ site.projectTitle }}
 <h1>{{ site.projectTitle }}</h1>
 <p>{{ site.projectDescription }}</p>
 <hr />
-<h2>Data</h2>
-<div style="width: 100%; height: 400px; overflow: auto;">
+<h2>{{ site.dataTitle }}</h2>
+<p>{{ site.dataDescription }}</p>
+<hr />
+<div style="width: 100%; height: 200px; overflow: auto;">
   <table width="100%">
     {% for data in site.data %}
     <tr>
@@ -24,6 +26,8 @@ title: {{ site.projectTitle }}
     {% endfor %}
   </table>
 </div>
+<hr />
+<p>{{ site.dataFooter }}</p>
 <hr />
 api
 <hr />

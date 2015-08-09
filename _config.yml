@@ -1,33 +1,11 @@
-# base site details
-title:        Adopta Agency Blueprint
-url:          http://blueprint.adopta.agency
-
-#versioning is good with each iteration
-version:      1.1.1
-
-#who is in charge of this show
-author:
-  name:       'Kin Lane'
-  email:      'info@apievangelist.com'
-  twitter:    'kinlane'
-  github:     'kinlane'
-
-#some configurations for the site
-markdown:     rdiscount
-permalink:    pretty
-pygments:     true
-
-# some blog settings
-permalink: /:categories/:year/:month/:day/:title
-paginate: 25
-paginate_path: "/blog/page:num"
-
-#what files should be excluded
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-
 # Project details
-projectTitle: US Federal Budget
+project_title: US Federal Budget
+project_url:
 projectDescription: This is my work around making the US federal budget more machine readable, in hopes of building more meaningful tools on top of it.
+
+# ---------
+# Data
+# ---------
 
 dataShow: yes
 dataTitle: US Federal Budget Data Files
@@ -206,3 +184,75 @@ data:
   - title: "Table 16.2 - Total Executive Branch Civilian Full Time Equivalent Employees as Percentage 1981–2016"
     csv_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-16-2.csv"
     json_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-16-2.json"
+
+# ---------
+# APIs
+# ---------
+
+apiShow: yes
+apiaTitle: US Federal Budget Data APIs
+apiDescription: Using APISpark, and Google Spreadsheets I deployed a set of APIs to support this project, and make the data more accessible.
+apiFooter: This represents moving forward the data from the original source on step, making it more machine readable, and searchable, when building tooling on top of.
+
+api:
+  - title: Table 1
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-1.json
+  - title: Table 2
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-2.json
+  - title: Table 3
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-3.json
+  - title: Table 4
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-4.json
+  - title: Table 5
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-5.json
+  - title: Table 6
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-6.json
+  - title: Table 7
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-7.json
+  - title: Table 8
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-8.json
+  - title: Table 9
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-9.json
+  - title: Table 10
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-10.json
+  - title: Table 11
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-11.json
+  - title: Table 12
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-12.json
+  - title: Table 13
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-13.json
+  - title: Table 14
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-14.json
+  - title: Table 15
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-15.json
+  - title: Table 16
+    swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-16.json
+
+
+
+# ---------
+# Settings
+# ---------
+
+#versioning your peojct is good
+version:      1.1.1
+
+#who is in charge of this project
+author:
+  name:       'Kin Lane'
+  email:      'info@apievangelist.com'
+  twitter:    'kinlane'
+  github:     'kinlane'
+
+#some configurations for the site
+markdown:     rdiscount
+permalink:    pretty
+pygments:     true
+
+# some blog settings
+permalink: /:categories/:year/:month/:day/:title
+paginate: 25
+paginate_path: "/blog/page:num"
+
+#what files should be excluded
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
