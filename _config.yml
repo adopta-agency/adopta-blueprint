@@ -26,9 +26,9 @@ paginate_path: "/blog/page:num"
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 dataShow: yes
-dataTitle: Data
-dataDescription: This is the description for the data page.
-dataFooter: This is the footer for the data page.
+dataTitle: US Federal Budget Data Files
+dataDescription: These are the data files I have generated as part of this US federal budget project, available in CSV or JSON.
+dataFooter: This represents moving forward the data from the original source on step, making it more machine readable.
 
 data:
   - title: "Table 1.1 - Summary of Receipts, Outlays, and Surpluses or Deficits 1789 through 2020"
