@@ -30,6 +30,7 @@ collections:
 
 collections:
   datastore:
+    output: true
     - title: one
     - title: two
     - title: three
