@@ -27,8 +27,6 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 # these are the core of this project
 collections:
-
-# this is the data available
 - data
   title: "The title of the data collection"
   description: "The description of the data"
@@ -204,8 +202,6 @@ collections:
     - title: "Table 16.2 - Total Executive Branch Civilian Full Time Equivalent Employees as Percentage 1981–2016"
       csv_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-16-2.csv"
       json_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-16-2.json"
-
-# these are the APIs available
 - api
   title: "The title of the API"
   description: "The description of the API"
