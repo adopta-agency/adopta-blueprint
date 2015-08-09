@@ -27,3 +27,8 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 collections:
 - data
+
+collections:
+  data:
+    - title: one
+    - title: two
