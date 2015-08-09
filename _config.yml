@@ -1,16 +1,16 @@
 # Project details
 project_title: US Federal Budget
-project_url:
-projectDescription: This is my work around making the US federal budget more machine readable, in hopes of building more meaningful tools on top of it.
+project_description: This is my work around making the US federal budget more machine readable, in hopes of building more meaningful tools on top of it.
+project_url: http://us.federal.budget.apievangelist.com/
 
 # ---------
 # Data
 # ---------
 
-dataShow: yes
-dataTitle: US Federal Budget Data Files
-dataDescription: These are the data files I have generated as part of this US federal budget project, available in CSV or JSON.
-dataFooter: This represents moving forward the data from the original source on step, making it more machine readable.
+data_show: yes
+data_title: US Federal Budget Data Files
+data_description: These are the data files I have generated as part of this US federal budget project, available in CSV or JSON.
+data_footer: This represents moving forward the data from the original source on step, making it more machine readable.
 
 data:
   - title: "Table 1.1 - Summary of Receipts, Outlays, and Surpluses or Deficits 1789 through 2020"
@@ -189,10 +189,10 @@ data:
 # APIs
 # ---------
 
-apiShow: yes
-apiaTitle: US Federal Budget Data APIs
-apiDescription: Using APISpark, and Google Spreadsheets I deployed a set of APIs to support this project, and make the data more accessible.
-apiFooter: This represents moving forward the data from the original source on step, making it more machine readable, and searchable, when building tooling on top of.
+api_show: yes
+api_title: US Federal Budget Data APIs
+api_description: Using APISpark, and Google Spreadsheets I deployed a set of APIs to support this project, and make the data more accessible.
+api_footer: This represents moving forward the data from the original source on step, making it more machine readable, and searchable, when building tooling on top of.
 
 api:
   - title: Table 1
@@ -228,8 +228,6 @@ api:
   - title: Table 16
     swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-16.json
 
-
-
 # ---------
 # Settings
 # ---------
@@ -238,7 +236,7 @@ api:
 version:      1.1.1
 
 #who is in charge of this project
-author:
+owner:
   name:       'Kin Lane'
   email:      'info@apievangelist.com'
   twitter:    'kinlane'

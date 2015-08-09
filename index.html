@@ -3,11 +3,11 @@ layout: page
 title: {{ site.projectTitle }}
 ---
 
-<h1>{{ site.projectTitle }}</h1>
-<p>{{ site.projectDescription }}</p>
+<h1>{{ site.project_title }}</h1>
+<p>{{ site.project_description }}</p>
 <hr />
-<h2>{{ site.dataTitle }}</h2>
-<p>{{ site.dataDescription }}</p>
+<h2>{{ site.data_title }}</h2>
+<p>{{ site.data_description }}</p>
 <hr />
 <div style="width: 100%; height: 200px; overflow: auto;">
   <table width="100%">
@@ -27,9 +27,28 @@ title: {{ site.projectTitle }}
   </table>
 </div>
 <hr />
-<p>{{ site.dataFooter }}</p>
+<p>{{ site.data_footer }}</p>
 <hr />
-api
+<h2>{{ site.api_title }}</h2>
+<p>{{ site.api_description }}</p>
+<div style="width: 100%; height: 200px; overflow: auto;">
+  <table width="100%">
+    {% for api in site.api %}
+    <tr>
+      <td>
+        {{ api.title }}
+      </td>
+      <td width="50" align="center">
+        <a href="{{ api.swagger_url }}">Swagger</a>
+      </td>
+      <td width="50" align="center">
+        <a href="/docs/?swagger_url={{ data.swagger_url }}">Documentation</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+<p>{{ site.api_footer }}</p>
 <hr />
 Showcase
 <hr />

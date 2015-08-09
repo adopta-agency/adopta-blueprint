@@ -19,9 +19,14 @@
             <li>
               <a href="/blog/">Blog</a>
             </li>
-            {% if site.dataTitle=='yes' %}
+            {% if site.data_title == 'yes' %}
               <li>
                 <a href="/data/">Data</a>
+              </li>
+            {% endif %}
+            {% if site.api_title == 'yes' %}
+              <li>
+                <a href="/api/">API</a>
               </li>
             {% endif %}
             <li>
