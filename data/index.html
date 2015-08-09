@@ -5,7 +5,7 @@ title: US Federal Budget - Data
 
 <p>Listing of all the data.</p>
 <ul>
-  {% for data in site.data %}
-  <li>{{ data.title }}</li>
+  {% for datafile in site.datastores %}
+  <li>{{ datafile.title }}</li>
   {% endfor %}
 </ul>
