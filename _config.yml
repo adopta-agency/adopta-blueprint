@@ -26,8 +26,5 @@ paginate_path: "/blog/page:num"
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 collections:
-  - datastores:
+  - data:
     output: true
-    - title: "Table 1.1 - Summary of Receipts, Outlays, and Surpluses or Deficits 1789 through 2020"
-    - title: "Table 1.2 - Summary of Receipts, Outlays, and Surpluses or Deficits as Percentages of GDP 1930–2020"
-    - title: "Table 1.3  - Summary of Receipts, Outlays, and Surpluses or Deficits in Current Dollars, Constant Dollars, and as Percentages of GDP 1940–2020"    
