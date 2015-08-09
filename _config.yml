@@ -26,10 +26,10 @@ paginate_path: "/blog/page:num"
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 collections:
-- data
+- datastore
 
 collections:
-  data:
+  datastore:
     - title: one
     - title: two
     - title: three
