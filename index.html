@@ -1,7 +1,32 @@
 ---
 layout: page
-title: US Federal Budget
+title: {{ site.projectTitle }}
 ---
 
-<p><br /></p>
-<p align="center">Work in Progress!</p>
+<h1>{{ site.projectTitle }}</h1>
+<p>{{ site.projectDescription }}</p>
+<hr />
+<h2>Data</h2>
+<div style="width: 100%; height: 400px; overflow: auto;">
+  <table width="100%">
+    {% for data in site.data %}
+    <tr>
+      <td>
+        {{ data.title }}
+      </td>
+      <td width="50" align="center">
+        <a href="{{ data.csv_url }}">CSV</a>
+      </td>
+      <td width="50" align="center">
+        <a href="{{ data.json_url }}">JSON</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+<hr />
+api
+<hr />
+Showcase
+<hr />
+Support

@@ -1,4 +1,4 @@
-# base getails
+# base site details
 title:        Adopta Agency Blueprint
 url:          http://blueprint.adopta.agency
 
@@ -24,6 +24,10 @@ paginate_path: "/blog/page:num"
 
 #what files should be excluded
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+
+# Project details
+projectTitle: US Federal Budget
+projectDescription: This is my work around making the US federal budget more machine readable, in hopes of building more meaningful tools on top of it.
 
 dataShow: yes
 dataTitle: US Federal Budget Data Files
