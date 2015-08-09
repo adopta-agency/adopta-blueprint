@@ -25,12 +25,7 @@ paginate_path: "/blog/page:num"
 #what files should be excluded
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
-collections:
-- datastore
-
-collections:
-  datastore:
-    output: true
-    - title: one
-    - title: two
-    - title: three
+datastore:
+  - title: one
+  - title: two
+  - title: three
