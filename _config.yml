@@ -25,7 +25,7 @@ paginate_path: "/blog/page:num"
 #what files should be excluded
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
-datastore:
+data:
   - title: "Table 1.1 - Summary of Receipts, Outlays, and Surpluses or Deficits 1789 through 2020"
     csv_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-1-1.csv"
     json_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-1-1.json"
