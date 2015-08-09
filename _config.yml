@@ -27,10 +27,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 collections:
   data:
-    title: "The title of the data collection"
-    description: "The description of the data"
-    files:
-      - title: "Table 1.1 - Summary of Receipts, Outlays, and Surpluses or Deficits 1789 through 2020"
-        csv_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-1-1.csv"
-        json_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-1-1.json"
-        
+    - title: "The title of the data collection"
+      description: "The description of the data"
+      files:
+        - title: "Table 1.1 - Summary of Receipts, Outlays, and Surpluses or Deficits 1789 through 2020"
+          csv_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-1-1.csv"
+          json_url: "https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/data/federal-budget-table-1-1.json"
