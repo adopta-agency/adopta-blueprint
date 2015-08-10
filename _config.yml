@@ -277,14 +277,14 @@ faq_description: These are some of the common questions that need answering or g
 faq_footer: Questions that get submitted via the projects Github issue managment are sometimes added here.
 
 faq:
-  - question: Question One
-    answer: This is the answer to question one.
-  - question: Question Two
-    answer: This is the answer to question two.
-  - question: Question Three
-    answer: This is the answer to question three.
-  - question: Question Four
-    answer: This is the answer to question four.
+  - question: Why are you doing this?
+    answer: I want to make the data around the US federal budget more accessible and usable, encouraging people to build it into more websites, applications, visualizations, and anywhere it can be used.
+  - question: Where did this data come from?
+    answer: It is from the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>.
+  - question: What are you planning on doing with this data?
+    answer: You can visit the <a href="https://kinlane.github.io/us-federal-budget/roadmap/">roadmap for more information.
+  - question: How do I talk to someone behind this project?
+    answer: This site runs on Github Pages, and relies on Github issue management for support. <a href="https://github.com/kinlane/us-federal-budget/issues/new">Go ahead and submit an issue</a> via the project repository.
 
 # ---------
 # Team
