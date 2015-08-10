@@ -2,103 +2,127 @@
 layout: page
 ---
 
-<h1>{{ site.project_title }}</h1>
-<p>{{ site.project_description }}</p>
-<h2>{{ site.data_title }}</h2>
-<p>{{ site.data_description }}</p>
-<table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
-  {% for data in site.data %}
-  <tr>
-    <td>
-      {{ data.title }}
-    </td>
-    <td width="50" align="center">
-      <a href="{{ data.csv_url }}">CSV</a>
-    </td>
-    <td width="50" align="center">
-      <a href="{{ data.json_url }}">JSON</a>
-    </td>
-  </tr>
-  {% endfor %}
-</table>
-<p>{{ site.data_footer }}</p>
-<h2>{{ site.api_title }}</h2>
-<p>{{ site.api_description }}</p>
-<table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
-  {% for api in site.api %}
-  <tr>
-    <td>
-      {{ api.title }}
-    </td>
-    <td width="50" align="center">
-      <a href="{{ api.swagger_url }}">Swagger</a>
-    </td>
-    <td width="50" align="center">
-      <a href="/docs/?swagger_url={{ data.swagger_url }}">Documentation</a>
-    </td>
-  </tr>
-  {% endfor %}
-</table>
-<p>{{ site.api_footer }}</p>
+{% if site.data_show == true %}
 
-<h2>{{ site.showcase_title }}</h2>
-<p>{{ site.showcase_description }}</p>
-<table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
-  {% for showcase in site.showcase %}
-  <tr>
-    <td align="center">
-      <img src="{{ showcase.image }}" width="100" align="center" />
-    </td>
-    <td>
-      {{ showcase.name }} - {{ showcase.description }}
-    </td>
-  </tr>
-  {% endfor %}
-</table>
-<p>{{ site.showcase_footer }}</p>
+  <h1>{{ site.project_title }}</h1>
+  <p>{{ site.project_description }}</p>
+  <h2>{{ site.data_title }}</h2>
+  <p>{{ site.data_description }}</p>
+  <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
+    {% for data in site.data %}
+    <tr>
+      <td>
+        {{ data.title }}
+      </td>
+      <td width="50" align="center">
+        <a href="{{ data.csv_url }}">CSV</a>
+      </td>
+      <td width="50" align="center">
+        <a href="{{ data.json_url }}">JSON</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p>{{ site.data_footer }}</p>
 
-<h2>{{ site.team_title }}</h2>
-<p>{{ site.team_description }}</p>
-<table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
-  {% for team in site.team %}
-  <tr>
-    <td align="center">
-      <img src="{{ team.image }}" width="100" align="center" />
-    </td>
-    <td>
-      {{ team.name }} - {{ team.description }}
-    </td>
-  </tr>
-  {% endfor %}
-</table>
-<hr />
-<p>{{ site.team_footer }}</p>
+{% endif %}
 
-<h2>{{ site.tools_title }}</h2>
-<p>{{ site.tools_description }}</p>
-<table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
-  {% for tool in site.tools %}
-  <tr>
-    <td>
-      {{ tool.title }} - {{ tool.description }}
-    </td>
-  </tr>
-  {% endfor %}
-</table>
-<p>{{ site.tools_footer }}</p>
+{% if site.api_show == true %}
 
-<h2>{{ site.faq_title }}</h2>
-<p>{{ site.faq_description }}</p>
-<table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
-  {% for faq in site.faq %}
-  <tr>
-    <td>
-      {{ faq.question }} - {{ faq.answer }}
-    </td>
-  </tr>
-  {% endfor %}
-</table>
-<p>{{ site.faq_footer }}</p>
+  <h2>{{ site.api_title }}</h2>
+  <p>{{ site.api_description }}</p>
+  <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
+    {% for api in site.api %}
+    <tr>
+      <td>
+        {{ api.title }}
+      </td>
+      <td width="50" align="center">
+        <a href="{{ api.swagger_url }}">Swagger</a>
+      </td>
+      <td width="50" align="center">
+        <a href="/docs/?swagger_url={{ data.swagger_url }}">Documentation</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p>{{ site.api_footer }}</p>
+
+{% endif %}
+
+{% if site.showcase_show == true %}
+
+  <h2>{{ site.showcase_title }}</h2>
+  <p>{{ site.showcase_description }}</p>
+  <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
+    {% for showcase in site.showcase %}
+    <tr>
+      <td align="center">
+        <img src="{{ showcase.image }}" width="100" align="center" />
+      </td>
+      <td>
+        {{ showcase.name }} - {{ showcase.description }}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p>{{ site.showcase_footer }}</p>
+
+{% endif %}
+
+{% if site.team_show == true %}
+
+  <h2>{{ site.team_title }}</h2>
+  <p>{{ site.team_description }}</p>
+  <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
+    {% for team in site.team %}
+    <tr>
+      <td align="center">
+        <img src="{{ team.image }}" width="100" align="center" />
+      </td>
+      <td>
+        {{ team.name }} - {{ team.description }}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p>{{ site.team_footer }}</p>
+
+{% endif %}
+
+{% if site.tools_show == true %}
+
+  <h2>{{ site.tools_title }}</h2>
+  <p>{{ site.tools_description }}</p>
+  <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
+    {% for tool in site.tools %}
+    <tr>
+      <td>
+        {{ tool.title }} - {{ tool.description }}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p>{{ site.tools_footer }}</p>
+
+{% endif %}
+
+{% if site.faq_show == true %}
+
+  <h2>{{ site.faq_title }}</h2>
+  <p>{{ site.faq_description }}</p>
+  <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
+    {% for faq in site.faq %}
+    <tr>
+      <td>
+        {{ faq.question }} - {{ faq.answer }}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p>{{ site.faq_footer }}</p>
+
+{% endif %}
 
 <h2>{{ site.support_title }}</h2>
 <p>{{ site.support_description }}</p>

@@ -12,7 +12,6 @@
     		<img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/3scale/Winning-in-the-API-Economy-eBook-3scale.png" width="50%" style="border: 1px solid #FFF; margin-bottom: 25px;" />
     	</a>
         <div class="colophon">
-          {{ site.data_show }} - {{ site.api_show }}
           <ul class="colophon-links">
             <li>
               <a href="/">Home</a>
@@ -20,12 +19,12 @@
             <li>
               <a href="/blog/">Blog</a>
             </li>
-            {% if site.data_show == 'yes' %}
+            {% if site.data_show == true %}
               <li>
                 <a href="/data/">Data</a>
               </li>
             {% endif %}
-            {% if site.api_show == 'yes' %}
+            {% if site.api_show == true %}
               <li>
                 <a href="/api/">API</a>
               </li>
