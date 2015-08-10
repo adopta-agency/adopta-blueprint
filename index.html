@@ -6,50 +6,45 @@ layout: page
 <p>{{ site.project_description }}</p>
 <h2>{{ site.data_title }}</h2>
 <p>{{ site.data_description }}</p>
-<div style="width: 100%; height: 200px; overflow: auto;">
-  <table width="100%">
-    {% for data in site.data %}
-    <tr>
-      <td>
-        {{ data.title }}
-      </td>
-      <td width="50" align="center">
-        <a href="{{ data.csv_url }}">CSV</a>
-      </td>
-      <td width="50" align="center">
-        <a href="{{ data.json_url }}">JSON</a>
-      </td>
-    </tr>
-    {% endfor %}
-  </table>
-</div>
+<table width="90%" style="padding-left: 25px;">
+  {% for data in site.data %}
+  <tr>
+    <td>
+      {{ data.title }}
+    </td>
+    <td width="50" align="center">
+      <a href="{{ data.csv_url }}">CSV</a>
+    </td>
+    <td width="50" align="center">
+      <a href="{{ data.json_url }}">JSON</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
 <p>{{ site.data_footer }}</p>
 <h2>{{ site.api_title }}</h2>
 <p>{{ site.api_description }}</p>
-<div style="width: 100%; height: 200px; overflow: auto;">
-  <table width="100%">
-    {% for api in site.api %}
-    <tr>
-      <td>
-        {{ api.title }}
-      </td>
-      <td width="50" align="center">
-        <a href="{{ api.swagger_url }}">Swagger</a>
-      </td>
-      <td width="50" align="center">
-        <a href="/docs/?swagger_url={{ data.swagger_url }}">Documentation</a>
-      </td>
-    </tr>
-    {% endfor %}
-  </table>
-</div>
+<table width="90%" style="padding-left: 25px;">
+  {% for api in site.api %}
+  <tr>
+    <td>
+      {{ api.title }}
+    </td>
+    <td width="50" align="center">
+      <a href="{{ api.swagger_url }}">Swagger</a>
+    </td>
+    <td width="50" align="center">
+      <a href="/docs/?swagger_url={{ data.swagger_url }}">Documentation</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
 <p>{{ site.api_footer }}</p>
 
-<h1>{{ site.showcase_title }}</h1>
+<h2>{{ site.showcase_title }}</h2>
 <p>{{ site.showcase_description }}</p>
-<hr />
-<table width="100%">
-  {% for tool in site.showcase %}
+<table width="90%" style="padding-left: 25px;">
+  {% for showcase in site.showcase %}
   <tr>
     <td align="center">
       <img src="{{ showcase.image }}" width="150" align="center" />
@@ -60,14 +55,12 @@ layout: page
   </tr>
   {% endfor %}
 </table>
-<hr />
 <p>{{ site.showcase_footer }}</p>
 
-<h1>{{ site.team_title }}</h1>
+<h2>{{ site.team_title }}</h2>
 <p>{{ site.team_description }}</p>
-<hr />
-<table width="100%">
-  {% for tool in site.team %}
+<table width="90%" style="padding-left: 25px;">
+  {% for team in site.team %}
   <tr>
     <td align="center">
       <img src="{{ team.name }}" width="150" align="center" />
@@ -81,10 +74,9 @@ layout: page
 <hr />
 <p>{{ site.team_footer }}</p>
 
-<h1>{{ site.tools_title }}</h1>
+<h2>{{ site.tools_title }}</h2>
 <p>{{ site.tools_description }}</p>
-<hr />
-<table width="100%">
+<table width="90%" style="padding-left: 25px;">
   {% for tool in site.tools %}
   <tr>
     <td>
@@ -93,13 +85,11 @@ layout: page
   </tr>
   {% endfor %}
 </table>
-<hr />
 <p>{{ site.tools_footer }}</p>
 
-<h1>{{ site.faq_title }}</h1>
+<h2>{{ site.faq_title }}</h2>
 <p>{{ site.faq_description }}</p>
-<hr />
-<table width="100%">
+<table width="90%" style="padding-left: 25px;">
   {% for faq in site.faq %}
   <tr>
     <td>
@@ -108,7 +98,6 @@ layout: page
   </tr>
   {% endfor %}
 </table>
-<hr />
 <p>{{ site.faq_footer }}</p>
 
 Support
