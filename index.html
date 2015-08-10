@@ -67,7 +67,7 @@ layout: page
     {% for showcase in site.showcase %}
     <tr>
       <td align="left">
-        <img src="{{ showcase.image }}" width="100" align="left" style="padding: 5px;" />
+        <a href="{{ showcase.url }}"><img src="{{ showcase.image }}" width="100" align="left" style="padding: 5px;" /></a>
         <a href="{{ showcase.url }}"><strong>{{ showcase.title }}</strong></a> - {{ showcase.description }}...<a href="{{ showcase.url }}">view</a>.
       </td>
     </tr>
@@ -102,7 +102,8 @@ layout: page
   <table width="100%" style="margin-left: 25px; margin-right: 25px; margin-bottom: 20px;">
     {% for tool in site.tools %}
     <tr>
-      <td>
+      <td align="left">
+        <a href="{{ tool.url }}"><img src="{{ tool.image }}" width="100" align="left" style="padding: 5px;" /></a>
         <a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.description }}...<a href="{{ showcase.url }}">view</a>.
       </td>
     </tr>
