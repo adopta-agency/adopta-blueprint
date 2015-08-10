@@ -37,27 +37,6 @@
         ],
         "parameters": [
           {
-            "name": "Receipts_Off_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Receipts_Off_Budget",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Outlays_Total",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Outlays_Total",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Receipts_Total",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Receipts_Total",
-            "required": false,
-            "type": "string"
-          },
-          {
             "name": "Year",
             "in": "query",
             "description": "Allows to filter the collections of result by the value of field Year",
@@ -65,30 +44,9 @@
             "type": "string"
           },
           {
-            "name": "Surplus_or_Deficit_Off_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Surplus_or_Deficit_Off_Budget",
-            "required": false,
-            "type": "string"
-          },
-          {
             "name": "$size",
             "in": "query",
             "description": "Size of the page to retrieve. Integer value",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Outlays_Off_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Outlays_Off_Budget",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Surplus_or_Deficit_On_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Surplus_or_Deficit_On_Budget",
             "required": false,
             "type": "string"
           },
@@ -105,27 +63,6 @@
             "description": "Number of the page to retrieve. Integer value.",
             "required": false,
             "type": "string"
-          },
-          {
-            "name": "Outlays_On_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Outlays_On_Budget",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Surplus_or_Deficit_Total",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Surplus_or_Deficit_Total",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Receipts_On_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Receipts_On_Budget",
-            "required": false,
-            "type": "string"
           }
         ],
         "responses": {
@@ -140,44 +77,6 @@
           },
           "400": {
             "description": "Error 400"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Federal Budget 1"
-        ],
-        "summary": "Adds a table_1_1",
-        "description": "Adds a table_1_1",
-        "operationId": "posttable_1_1List",
-        "consumes": [
-          "application/json",
-          "application/x-yaml",
-          "application/xml",
-          "text/xml"
-        ],
-        "produces": [
-          "application/json",
-          "application/x-yaml",
-          "application/xml",
-          "text/xml"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "required": false,
-            "schema": {
-              "$ref": "#/definitions/table_1_1"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/table_1_1"
-            }
           }
         }
       }
@@ -199,27 +98,6 @@
         ],
         "parameters": [
           {
-            "name": "Outlays_Off_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Outlays_Off_Budget",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Outlays_Total",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Outlays_Total",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Surplus_or_Deficit_On_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Surplus_or_Deficit_On_Budget",
-            "required": false,
-            "type": "string"
-          },
-          {
             "name": "Year",
             "in": "query",
             "description": "Allows to filter the collections of result by the value of field Year",
@@ -227,23 +105,9 @@
             "type": "string"
           },
           {
-            "name": "Receipts_Off_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Receipts_Off_Budget",
-            "required": false,
-            "type": "string"
-          },
-          {
             "name": "$size",
             "in": "query",
             "description": "Size of the page to retrieve. Integer value",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Surplus_or_Deficit_Off_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Surplus_or_Deficit_Off_Budget",
             "required": false,
             "type": "string"
           },
@@ -260,41 +124,6 @@
             "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
             "required": false,
             "type": "string"
-          },
-          {
-            "name": "GDP",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field GDP",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Surplus_or_Deficit_Total",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Surplus_or_Deficit_Total",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Receipts_Total",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Receipts_Total",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Receipts_On_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Receipts_On_Budget",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Outlays_On_Budget",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Outlays_On_Budget",
-            "required": false,
-            "type": "string"
           }
         ],
         "responses": {
@@ -309,44 +138,6 @@
           },
           "400": {
             "description": "Error 400"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Federal Budget 1"
-        ],
-        "summary": "Adds a table_1_2",
-        "description": "Adds a table_1_2",
-        "operationId": "posttable_1_2List",
-        "consumes": [
-          "application/json",
-          "application/x-yaml",
-          "application/xml",
-          "text/xml"
-        ],
-        "produces": [
-          "application/json",
-          "application/x-yaml",
-          "application/xml",
-          "text/xml"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "required": false,
-            "schema": {
-              "$ref": "#/definitions/table_1_2"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/table_1_2"
-            }
           }
         }
       }
@@ -368,23 +159,9 @@
         ],
         "parameters": [
           {
-            "name": "Outlays_In_Current_Dollars",
+            "name": "Fiscal_Year",
             "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Outlays_In_Current_Dollars",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Receipts_As_Percentages_of_GDP",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Receipts_As_Percentages_of_GDP",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Outlays_In_Constant_Dollars",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Outlays_In_Constant_Dollars",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
             "required": false,
             "type": "string"
           },
@@ -396,27 +173,6 @@
             "type": "string"
           },
           {
-            "name": "Surplus_or_Deficit_In_Current_Dollars",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Surplus_or_Deficit_In_Current_Dollars",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Surplus_or_Deficit_In_Constant_Dollars",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Surplus_or_Deficit_In_Constant_Dollars",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Outlays_As_Percentages_of_GDP",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Outlays_As_Percentages_of_GDP",
-            "required": false,
-            "type": "string"
-          },
-          {
             "name": "$sort",
             "in": "query",
             "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
@@ -424,37 +180,9 @@
             "type": "string"
           },
           {
-            "name": "Surplus_or_Deficit_As_Percentages_of_GDP",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Surplus_or_Deficit_As_Percentages_of_GDP",
-            "required": false,
-            "type": "string"
-          },
-          {
             "name": "$size",
             "in": "query",
             "description": "Size of the page to retrieve. Integer value",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Fiscal_Year",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Receipts_In_Constant_Dollars",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Receipts_In_Constant_Dollars",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Receipts_In_Current_Dollars",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Receipts_In_Current_Dollars",
             "required": false,
             "type": "string"
           }
@@ -471,44 +199,6 @@
           },
           "400": {
             "description": "Error 400"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Federal Budget 1"
-        ],
-        "summary": "Adds a table_1_3",
-        "description": "Adds a table_1_3",
-        "operationId": "posttable_1_3List",
-        "consumes": [
-          "application/json",
-          "application/x-yaml",
-          "application/xml",
-          "text/xml"
-        ],
-        "produces": [
-          "application/json",
-          "application/x-yaml",
-          "application/xml",
-          "text/xml"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "required": false,
-            "schema": {
-              "$ref": "#/definitions/table_1_3"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/table_1_3"
-            }
           }
         }
       }
@@ -537,51 +227,9 @@
             "type": "string"
           },
           {
-            "name": "Trust_Funds_Outlays",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Trust_Funds_Outlays",
-            "required": false,
-            "type": "string"
-          },
-          {
             "name": "$sort",
             "in": "query",
             "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Total_Surplus_or_Deficit",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Total_Surplus_or_Deficit",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Interfund_Transactions_Receipts",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Interfund_Transactions_Receipts",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Federal_Funds_Surplus_or_Deficit",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Federal_Funds_Surplus_or_Deficit",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Total_Receipts",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Total_Receipts",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Interfund_Transactions_Outlays",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Interfund_Transactions_Outlays",
             "required": false,
             "type": "string"
           },
@@ -593,44 +241,9 @@
             "type": "string"
           },
           {
-            "name": "Federal_Funds_Receipts",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Federal_Funds_Receipts",
-            "required": false,
-            "type": "string"
-          },
-          {
             "name": "$size",
             "in": "query",
             "description": "Size of the page to retrieve. Integer value",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Federal_Funds_Outlays",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Federal_Funds_Outlays",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Trust_Funds_Surplus_or_Deficit",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Trust_Funds_Surplus_or_Deficit",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Trust_Funds_Receipts",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Trust_Funds_Receipts",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "Total_Outlays",
-            "in": "query",
-            "description": "Allows to filter the collections of result by the value of field Total_Outlays",
             "required": false,
             "type": "string"
           }
@@ -647,44 +260,6 @@
           },
           "400": {
             "description": "Error 400"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Federal Budget 1"
-        ],
-        "summary": "Adds a table_1_4",
-        "description": "Adds a table_1_4",
-        "operationId": "posttable_1_4List",
-        "consumes": [
-          "application/json",
-          "application/x-yaml",
-          "application/xml",
-          "text/xml"
-        ],
-        "produces": [
-          "application/json",
-          "application/x-yaml",
-          "application/xml",
-          "text/xml"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "required": false,
-            "schema": {
-              "$ref": "#/definitions/table_1_4"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/table_1_4"
-            }
           }
         }
       }
