@@ -9,7 +9,7 @@ layout: page
 
   <h2><a href="data/">{{ site.data_title }}</a></h2>
   <p>{{ site.data_description }}</p>
-  <table width="100%" style="margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
+  <table width="100%" style="margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
     {% for data in site.data %}
     <tr>
       <td>
@@ -36,7 +36,7 @@ layout: page
 
   <h2><a href="api/">{{ site.api_title }}</a></h2>
   <p>{{ site.api_description }}</p>
-  <table width="100%" style="margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
+  <table width="100%" style="margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
     {% for api in site.api %}
     <tr>
       <td>
@@ -63,13 +63,11 @@ layout: page
 
   <h2><a href="showcase/">{{ site.showcase_title }}</a></h2>
   <p>{{ site.showcase_description }}</p>
-  <table width="100%" style="margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
+  <table width="100%" style="margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
     {% for showcase in site.showcase %}
     <tr>
       <td align="center">
-        <img src="{{ showcase.image }}" width="100" align="center" />
-      </td>
-      <td>
+        <img src="{{ showcase.image }}" width="100" align="center" align="left" />
         <a href="{{ showcase.url }}"><strong>{{ showcase.title }}</strong></a> - {{ showcase.description }}...<a href="{{ showcase.url }}">view</a>.
       </td>
     </tr>
@@ -83,13 +81,11 @@ layout: page
 
   <h2><a href="team/">{{ site.team_title }}</a></h2>
   <p>{{ site.team_description }}</p>
-  <table width="100%" border="1" style="margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
+  <table width="100%" style="margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
     {% for team in site.team %}
     <tr>
-      <td align="center" width="110">
-        <img src="{{ team.image }}" width="100" align="center" style="clear:both;" />
-      </td>
-      <td valign="top" align="left">
+      <td align="center">
+        <img src="{{ team.image }}" width="100" align="center" style="clear:both;" align="left" />
         <strong>{{ team.name }}</strong><br />{{ team.description }}
       </td>
     </tr>
@@ -103,7 +99,7 @@ layout: page
 
   <h2><a href="tools/">{{ site.tools_title }}</a></h2>
   <p>{{ site.tools_description }}</p>
-  <table width="100%" style="margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
+  <table width="100%" style="margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
     {% for tool in site.tools %}
     <tr>
       <td>
@@ -120,7 +116,7 @@ layout: page
 
   <h2><a href="faq/">{{ site.faq_title }}</a></h2>
   <p>{{ site.faq_description }}</p>
-  <table width="100%" style="margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
+  <table width="100%" style="margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
     {% for faq in site.faq %}
     <tr>
       <td>
@@ -135,7 +131,7 @@ layout: page
 
 <h2>{{ site.support_title }}</h2>
 <p>{{ site.support_description }}</p>
-<ul>
+<ul style="padding-left: 25px;">
   <li><a href="blog/">Blog</a></li>
   <li><a href="roadmap/">Roadmap</a></li>
   <li><a href="change-log/">Change Log</a></li>
