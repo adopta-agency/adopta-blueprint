@@ -47,7 +47,7 @@ layout: page
   {% for showcase in site.showcase %}
   <tr>
     <td align="center">
-      <img src="{{ showcase.image }}" width="150" align="center" />
+      <img src="{{ showcase.image }}" width="100" align="center" />
     </td>
     <td>
       {{ showcase.name }} - {{ showcase.description }}
@@ -63,7 +63,7 @@ layout: page
   {% for team in site.team %}
   <tr>
     <td align="center">
-      <img src="{{ team.name }}" width="150" align="center" />
+      <img src="{{ team.image }}" width="100" align="center" />
     </td>
     <td>
       {{ team.name }} - {{ team.description }}
@@ -80,7 +80,7 @@ layout: page
   {% for tool in site.tools %}
   <tr>
     <td>
-      {{ tool.title }}
+      {{ tool.title }} - {{ tool.description }}
     </td>
   </tr>
   {% endfor %}
