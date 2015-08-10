@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Adopta Agency Blog
+title: BLog
 ---
 
 <p><a href="http://design.apievangelist.com/blog.xml"><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-rss-icon.png" width="25" align="right" style="padding: 25px;" /></a></p>
+
 <table cellpadding="0" cellspacing="0" width="100%" border="0">
 	<tr><td colspan="2" align="center"><hr style="padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px;" /></td></tr>
 {% for post in paginator.posts %}
@@ -23,20 +24,3 @@ title: Adopta Agency Blog
 	<tr><td colspan="2" align="center"><hr style="padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px;" /></td></tr>
 {% endfor %}
 </table>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a href="/news/page{{paginator.next_page}}" class="older">Older</a>
-  {% else %}
-    <span class="next">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a href="/" class="newer">Newer</a>
-    {% else %}
-      <a href="/news/page{{paginator.previous_page}}" class="newer">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="previous">Newer</span>
-  {% endif %}
-</div>
