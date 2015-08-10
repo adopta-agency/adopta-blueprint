@@ -235,6 +235,11 @@ api:
 # Showcase
 # ---------
 
+showcase_show: yes
+showcase_title: Showcase
+showcase_description: These are some of the things being build on top of this open data and APIs.
+showcase_footer: This project is designed to be used, and extended, please share what you have built so it can be included.
+
 showcase:
   - title: Showcase Item One
     description: This is the description for the first thing that was build on top of the data or APIs included as part of this project.
