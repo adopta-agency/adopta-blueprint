@@ -45,6 +45,55 @@ layout: page
 </div>
 <p>{{ site.api_footer }}</p>
 
-Showcase
+<h1>{{ site.showcase_title }}</h1>
+<p>{{ site.showcase_description }}</p>
 <hr />
+<table width="100%">
+  {% for tool in site.showcase %}
+  <tr>
+    <td align="center">
+      <img src="{{ showcase.image }}" width="150" align="center" />
+    </td>
+    <td>
+      {{ showcase.name }} - {{ showcase.description }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<hr />
+<p>{{ site.showcase_footer }}</p>
+
+<h1>{{ site.team_title }}</h1>
+<p>{{ site.team_description }}</p>
+<hr />
+<table width="100%">
+  {% for tool in site.team %}
+  <tr>
+    <td align="center">
+      <img src="{{ team.name }}" width="150" align="center" />
+    </td>
+    <td>
+      {{ team.name }} - {{ team.description }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<hr />
+<p>{{ site.team_footer }}</p>
+
+<h1>{{ site.tools_title }}</h1>
+<p>{{ site.tools_description }}</p>
+<hr />
+<table width="100%">
+  {% for tool in site.tools %}
+  <tr>
+    <td>
+      {{ tool.title }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<hr />
+<p>{{ site.tools_footer }}</p>
+
 Support

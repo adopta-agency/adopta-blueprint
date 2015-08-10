@@ -1,0 +1,19 @@
+---
+layout: page
+title: {{ site.tools_title }}
+---
+
+<h1>{{ site.tools_title }}</h1>
+<p>{{ site.tools_description }}</p>
+<hr />
+<table width="100%">
+  {% for tool in site.tools %}
+  <tr>
+    <td>
+      {{ tool.title }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<hr />
+<p>{{ site.tools_footer }}</p>

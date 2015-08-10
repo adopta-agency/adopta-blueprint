@@ -250,22 +250,74 @@ showcase:
     url: http://apievangelist.com
 
 # ---------
+# Showcase
+# ---------
+
+showcase_show: yes
+showcase_title: Showcase
+showcase_description: These are the other projects that use my US federal budget data and APIs.
+showcase_footer: The whole point of this work is to encourage people to build on top of this work.
+
+showcase:
+  - name: Showcase One
+    description: This is a placeholder for one of the potential things I want to showcase being built on this data and APIs.
+    image: https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-lane-square.jpg
+    url: http://apievangelist.com
+  - name: Showcase Two
+    description: This is a placeholder for one of the potential things I want to showcase being built on this data and APIs.
+    image: https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-lane-square.jpg
+    url: http://apievangelist.com
+  - name: Showcase Three
+    description: This is a placeholder for one of the potential things I want to showcase being built on this data and APIs.
+    image: https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-lane-square.jpg
+    url: http://apievangelist.com
+
+# ---------
 # Team
 # ---------
+
+tools_show: yes
+tools_title: Team
+tools_description: This is a solo project conducted by Kin Lane as part of the Adopta.Agency project.
+tools_footer: If you would like to get involved with this work, please submit an issue via the Github repo.
 
 team:
   - name: Kin Lane
     description: The API Evangelist, working to make data, content, and other digital resources more accessible.
     url: http://kinlane.com
+    image: https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-lane-square.jpg
     twitter: kinlane
     github: kinlane
+
+# ---------
+# Tools
+# ---------
+
+tools_show: yes
+tools_title: Tools
+tools_description: This is a list of tools that are used as part of this project.
+tools_footer: We share the tools we used to help others understand how to recreate the work.
+
+tools:
+  - title: Tool One
+    description: This is a description of the tool that I used.
+    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+  - title: Tool Two
+    description: This is a description of the tool that I used.
+    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+  - title: Tool Three
+    description: This is a description of the tool that I used.
+    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+  - title: Tool Four
+    description: This is a description of the tool that I used.
+    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
 
 # ---------
 # Support
 # ---------
 
-support_submit_url:
-support_twitter: kinlane
+# URL to the issues page for this
+
 
 # ---------
 # Settings
