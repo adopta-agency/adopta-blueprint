@@ -326,10 +326,9 @@ paginate_path: "/blog/page:num"
 # ---------
 
 # URL to the issues page for this
-support_title: support_title
-support_description: If you need any help, have questions, or would like to get involved, please use the following links:
+support_title: Support
+support_description: If you need any help, have questions, or would like to get involved, please use the following links.
 support_twitter: kinlane
-
 
 # ---------
 # General Settings
