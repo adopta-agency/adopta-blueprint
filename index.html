@@ -2,11 +2,12 @@
 layout: page
 ---
 
+<h1>{{ site.project_title }}</h1>
+<p>{{ site.project_description }}</p>
+
 {% if site.data_show == true %}
 
-  <h1>{{ site.project_title }}</h1>
-  <p>{{ site.project_description }}</p>
-  <h2>{{ site.data_title }}</h2>
+  <h2><a href="data/">{{ site.data_title }}</a></h2>
   <p>{{ site.data_description }}</p>
   <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
     {% for data in site.data %}
@@ -29,7 +30,7 @@ layout: page
 
 {% if site.api_show == true %}
 
-  <h2>{{ site.api_title }}</h2>
+  <h2><a href="api/">{{ site.api_title }}</a></h2>
   <p>{{ site.api_description }}</p>
   <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
     {% for api in site.api %}
@@ -52,7 +53,7 @@ layout: page
 
 {% if site.showcase_show == true %}
 
-  <h2>{{ site.showcase_title }}</h2>
+  <h2><a href="showcase/">{{ site.showcase_title }}</a></h2>
   <p>{{ site.showcase_description }}</p>
   <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
     {% for showcase in site.showcase %}
@@ -72,7 +73,7 @@ layout: page
 
 {% if site.team_show == true %}
 
-  <h2>{{ site.team_title }}</h2>
+  <h2><a href="team/">{{ site.team_title }}</a></h2>
   <p>{{ site.team_description }}</p>
   <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
     {% for team in site.team %}
@@ -92,7 +93,7 @@ layout: page
 
 {% if site.tools_show == true %}
 
-  <h2>{{ site.tools_title }}</h2>
+  <h2><a href="tools/">{{ site.tools_title }}</a></h2>
   <p>{{ site.tools_description }}</p>
   <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
     {% for tool in site.tools %}
@@ -109,7 +110,7 @@ layout: page
 
 {% if site.faq_show == true %}
 
-  <h2>{{ site.faq_title }}</h2>
+  <h2><a href="faq/">{{ site.faq_title }}</a></h2>
   <p>{{ site.faq_description }}</p>
   <table width="90%" style="padding-left: 25px; margin-bottom: 20px;">
     {% for faq in site.faq %}
