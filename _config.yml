@@ -22,7 +22,7 @@ github_repo: us-federal-budget
 data_show: yes
 data_nav: yes
 data_title: Data Files
-data_description: These are the data files I have generated as part of this US federal budget project, available in CSV or JSON.
+data_description: This is a list of JSON and CSV conversions of the Excel files made avalable as part of the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>, providing data on budget receipts, outlays, surpluses or deficits, Federal debt, and Federal employment over an extended time period, generally from 1940 or earlier to 2016 or 2020. 
 data_footer: This represents moving forward the data from the original source on step, making it more machine readable.
 
 data:
