@@ -10,7 +10,7 @@ title: {{ site.tools_title }}
   {% for tool in site.tools %}
   <tr>
     <td>
-      {{ tool.title }}
+      <a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.description }}...<a href="{{ showcase.url }}">view</a>.
     </td>
   </tr>
   {% endfor %}

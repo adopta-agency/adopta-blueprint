@@ -10,10 +10,10 @@ title: {{ site.team_title }}
   {% for team in site.team %}
   <tr>
     <td align="center">
-      <img src="{{ team.name }}" width="150" align="center" />
+      <img src="{{ team.image }}" width="100" align="center" />
     </td>
-    <td>
-      {{ team.name }} - {{ team.description }}
+    <td valign="top">
+      <strong>{{ team.name }}</strong><br />{{ team.description }}
     </td>
   </tr>
   {% endfor %}
