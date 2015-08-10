@@ -11,7 +11,7 @@ github_repo: us-federal-budget
 # ---------
 
 data_show: yes
-data_title: US Federal Budget Data Files
+data_title: Data Files
 data_description: These are the data files I have generated as part of this US federal budget project, available in CSV or JSON.
 data_footer: This represents moving forward the data from the original source on step, making it more machine readable.
 
@@ -193,7 +193,7 @@ data:
 # ---------
 
 api_show: yes
-api_title: US Federal Budget Data APIs
+api_title: APIs
 api_description: Using APISpark, and Google Spreadsheets I deployed a set of APIs to support this project, and make the data more accessible.
 api_footer: This represents moving forward the data from the original source on step, making it more machine readable, and searchable, when building tooling on top of.
 
@@ -318,6 +318,9 @@ tools:
 # ---------
 
 # URL to the issues page for this
+support_title: support_title
+support_description: If you need any help, have questions, or would like to get involved, please use the following links:
+support_twitter: kinlane
 
 
 # ---------
