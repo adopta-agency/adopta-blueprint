@@ -250,36 +250,32 @@ showcase:
     url: http://apievangelist.com
 
 # ---------
-# Showcase
+# FAQ
 # ---------
 
-showcase_show: yes
-showcase_title: Showcase
-showcase_description: These are the other projects that use my US federal budget data and APIs.
-showcase_footer: The whole point of this work is to encourage people to build on top of this work.
+faq_show: yes
+faq_title: FAQ
+faq_description: These are some of the common questions that need answering or get asked as part of this work.
+faq_footer: Questions that get submitted via the projects Github issue managment are sometimes added here.
 
-showcase:
-  - name: Showcase One
-    description: This is a placeholder for one of the potential things I want to showcase being built on this data and APIs.
-    image: https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-lane-square.jpg
-    url: http://apievangelist.com
-  - name: Showcase Two
-    description: This is a placeholder for one of the potential things I want to showcase being built on this data and APIs.
-    image: https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-lane-square.jpg
-    url: http://apievangelist.com
-  - name: Showcase Three
-    description: This is a placeholder for one of the potential things I want to showcase being built on this data and APIs.
-    image: https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-lane-square.jpg
-    url: http://apievangelist.com
+faq:
+  - question: Question One
+    answer: This is the answer to question one.
+  - question: Question Two
+    answer: This is the answer to question two.
+  - question: Question Three
+    answer: This is the answer to question three.
+  - question: Question Four
+    answer: This is the answer to question four.
 
 # ---------
 # Team
 # ---------
 
-tools_show: yes
-tools_title: Team
-tools_description: This is a solo project conducted by Kin Lane as part of the Adopta.Agency project.
-tools_footer: If you would like to get involved with this work, please submit an issue via the Github repo.
+team_show: yes
+team_title: Team
+team_description: This is a solo project conducted by Kin Lane as part of the Adopta.Agency project.
+team_footer: If you would like to get involved with this work, please submit an issue via the Github repo.
 
 team:
   - name: Kin Lane

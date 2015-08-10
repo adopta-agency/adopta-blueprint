@@ -1,0 +1,19 @@
+---
+layout: page
+title: {{ site.faq_title }}
+---
+
+<h1>{{ site.faq_title }}</h1>
+<p>{{ site.faq_description }}</p>
+<hr />
+<table width="100%">
+  {% for faq in site.faq %}
+  <tr>
+    <td>
+      {{ faq.question }} - {{ faq.answer }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<hr />
+<p>{{ site.faq_footer }}</p>
