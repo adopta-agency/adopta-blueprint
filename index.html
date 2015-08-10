@@ -67,7 +67,7 @@ layout: page
     {% for showcase in site.showcase %}
     <tr>
       <td align="left">
-        <img src="{{ showcase.image }}" width="100" align="center" align="left" />
+        <img src="{{ showcase.image }}" width="100" align="left" style="padding: 5px;" />
         <a href="{{ showcase.url }}"><strong>{{ showcase.title }}</strong></a> - {{ showcase.description }}...<a href="{{ showcase.url }}">view</a>.
       </td>
     </tr>
@@ -85,7 +85,7 @@ layout: page
     {% for team in site.team %}
     <tr>
       <td align="left">
-        <img src="{{ team.image }}" width="100" align="center" style="clear:both;" align="left" />
+        <img src="{{ team.image }}" width="100" align="left" style="padding: 5px;" />
         <strong>{{ team.name }}</strong><br />{{ team.description }}
       </td>
     </tr>
