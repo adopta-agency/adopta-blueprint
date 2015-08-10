@@ -3,6 +3,9 @@ project_title: US Federal Budget
 project_description: This is my work around making the US federal budget more machine readable, in hopes of building more meaningful tools on top of it.
 project_url: http://us.federal.budget.apievangelist.com/
 
+github_user: kinlane
+github_repo: us-federal-budget
+
 # ---------
 # Data
 # ---------
@@ -227,6 +230,42 @@ api:
     swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-15.json
   - title: Table 16
     swagger_url: https://raw.githubusercontent.com/kinlane/us-federal-budget/gh-pages/api/federal-budget-table-16.json
+
+# ---------
+# Showcase
+# ---------
+
+showcase:
+  - title: Showcase Item One
+    description: This is the description for the first thing that was build on top of the data or APIs included as part of this project.
+    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+    url: http://apievangelist.com
+  - title: Showcase Item Two
+    description: This is the description for the first thing that was build on top of the data or APIs included as part of this project.
+    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+    url: http://apievangelist.com
+  - title: Showcase Item Four
+    description: This is the description for the first thing that was build on top of the data or APIs included as part of this project.
+    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+    url: http://apievangelist.com
+
+# ---------
+# Team
+# ---------
+
+team:
+  - name: Kin Lane
+    description: The API Evangelist, working to make data, content, and other digital resources more accessible.
+    url: http://kinlane.com
+    twitter: kinlane
+    github: kinlane
+
+# ---------
+# Support
+# ---------
+
+support_submit_url:
+support_twitter: kinlane
 
 # ---------
 # Settings
