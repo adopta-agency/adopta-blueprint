@@ -83,13 +83,13 @@ layout: page
 
   <h2><a href="team/">{{ site.team_title }}</a></h2>
   <p>{{ site.team_description }}</p>
-  <table width="100%" style="margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
+  <table width="100%" border="1" style="margin-left: 5px; margin-right: 5px; margin-bottom: 20px;">
     {% for team in site.team %}
     <tr>
-      <td align="center">
-        <img src="{{ team.image }}" width="100" align="center" />
+      <td align="center" width="110">
+        <img src="{{ team.image }}" width="100" align="center" style="clear:both;" />
       </td>
-      <td valign="top">
+      <td valign="top" align="left">
         <strong>{{ team.name }}</strong><br />{{ team.description }}
       </td>
     </tr>
