@@ -9,7 +9,7 @@
       "email": "kinlane@gmail.com"
     }
   },
-  "host": "usfederalbudget1.apispark.net",
+  "host": "federalbudget1.apispark.net",
   "basePath": "/v1",
   "tags": [
     {
