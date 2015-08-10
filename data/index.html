@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Datastores
+title: {{ site.data_title }}
 ---
 
 <h1>{{ site.data_title }}</h1>
 <p>{{ site.data_description }}</p>
-<hr />
 <table width="100%">
   {% for data in site.data %}
   <tr>
@@ -25,5 +24,4 @@ title: Datastores
   </tr>
   {% endfor %}
 </table>
-<hr />
 <p>{{ site.data_footer }}</p>
