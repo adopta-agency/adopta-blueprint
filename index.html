@@ -67,7 +67,7 @@ layout: page
     {% for showcase in site.showcase %}
     <tr>
       <td align="left">
-        <a href="{{ showcase.url }}"><img src="{{ showcase.image }}" width="100" align="left" style="padding: 5px;" /></a>
+        <a href="{{ showcase.url }}"><img src="{{ showcase.image }}" width="75" align="left" style="padding: 5px;" /></a>
         <a href="{{ showcase.url }}"><strong>{{ showcase.title }}</strong></a> - {{ showcase.description }}...<a href="{{ showcase.url }}">view</a>.
       </td>
     </tr>
@@ -85,7 +85,7 @@ layout: page
     {% for team in site.team %}
     <tr>
       <td align="left">
-        <img src="{{ team.image }}" width="100" align="left" style="padding: 5px;" />
+        <img src="{{ team.image }}" width="75" align="left" style="padding: 5px;" />
         <strong>{{ team.name }}</strong><br />{{ team.description }}
       </td>
     </tr>
@@ -103,7 +103,7 @@ layout: page
     {% for tool in site.tools %}
     <tr>
       <td align="left">
-        <a href="{{ tool.url }}"><img src="{{ tool.image }}" width="100" align="left" style="padding: 5px;" /></a>
+        <a href="{{ tool.url }}"><img src="{{ tool.image }}" width="45" align="left" style="padding: 5px;" /></a>
         <a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.description }}...<a href="{{ showcase.url }}">view</a>.
       </td>
     </tr>
