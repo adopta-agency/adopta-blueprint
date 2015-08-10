@@ -20,6 +20,7 @@ github_repo: us-federal-budget
 # Data
 # ---------
 data_show: yes
+data_nav: yes
 data_title: Data Files
 data_description: These are the data files I have generated as part of this US federal budget project, available in CSV or JSON.
 data_footer: This represents moving forward the data from the original source on step, making it more machine readable.
@@ -202,6 +203,7 @@ data:
 # ---------
 
 api_show: yes
+api_nav: yes
 api_title: APIs
 api_description: Using APISpark, and Google Spreadsheets I deployed a set of APIs to support this project, and make the data more accessible.
 api_footer: This represents moving forward the data from the original source on step, making it more machine readable, and searchable, when building tooling on top of.
@@ -245,6 +247,7 @@ api:
 # ---------
 
 showcase_show: yes
+showcase_nav: yes
 showcase_title: Showcase
 showcase_description: These are some of the things being build on top of this open data and APIs.
 showcase_footer: This project is designed to be used, and extended, please share what you have built so it can be included.
@@ -268,6 +271,7 @@ showcase:
 # ---------
 
 faq_show: yes
+faq_nav: yes
 faq_title: FAQ
 faq_description: These are some of the common questions that need answering or get asked as part of this work.
 faq_footer: Questions that get submitted via the projects Github issue managment are sometimes added here.
@@ -287,6 +291,7 @@ faq:
 # ---------
 
 team_show: yes
+team_nav: yes
 team_title: Team
 team_description: This is a solo project conducted by Kin Lane as part of the Adopta.Agency project.
 team_footer: If you would like to get involved with this work, please submit an issue via the Github repo.
@@ -304,6 +309,7 @@ team:
 # ---------
 
 tools_show: yes
+tools_nav: yes
 tools_title: Tools
 tools_description: This is a list of tools that are used as part of this project.
 tools_footer: We share the tools we used to help others understand how to recreate the work.
@@ -329,6 +335,7 @@ tools:
 permalink: /:categories/:year/:month/:day/:title
 paginate: 25
 paginate_path: "/blog/page:num"
+blog_nav: yes
 
 # ---------
 # Support
@@ -338,6 +345,18 @@ paginate_path: "/blog/page:num"
 support_title: Support
 support_description: If you need any help, have questions, or would like to get involved, please use the following links.
 support_twitter: kinlane
+
+# ---------
+# Roadmap
+# ---------
+
+roadmap_nav: yes
+
+# ---------
+# Change Log
+# ---------
+
+changelog_nav: yes
 
 # ---------
 # General Settings
