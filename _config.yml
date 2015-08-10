@@ -314,6 +314,14 @@ tools:
     image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
 
 # ---------
+# Blog
+# ---------
+
+permalink: /:categories/:year/:month/:day/:title
+paginate: 25
+paginate_path: "/blog/page:num"
+
+# ---------
 # Support
 # ---------
 
@@ -324,28 +332,17 @@ support_twitter: kinlane
 
 
 # ---------
-# Settings
+# General Settings
 # ---------
 
 #versioning your peojct is good
 version:      1.1.1
-
-#who is in charge of this project
-owner:
-  name:       'Kin Lane'
-  email:      'info@apievangelist.com'
-  twitter:    'kinlane'
-  github:     'kinlane'
 
 #some configurations for the site
 markdown:     rdiscount
 permalink:    pretty
 pygments:     true
 
-# some blog settings
-permalink: /:categories/:year/:month/:day/:title
-paginate: 25
-paginate_path: "/blog/page:num"
 
 #what files should be excluded
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
