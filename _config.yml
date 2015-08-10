@@ -316,20 +316,25 @@ tools_footer: We share the tools we used to help others understand how to recrea
 
 tools:
   - title: Github
-    description: This is a description of the tool that I used.
-    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+    description: A social network built around software development platform Git.
+    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.png
+    url: http://github.com
   - title: Github Pages
-    description: This is a description of the tool that I used.
-    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+    description: Websites for projects that are hosted directly from a GitHub repository.
+    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.png
+    url: https://pages.github.com/
   - title: Google Spreadsheets
-    description: This is a description of the tool that I used.
-    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+    description: Cloud-based spreadsheets as part of the overall Google Dirve platform.
+    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-google-drive-icon.png
+    url: https://www.google.com/drive/
   - title: API Spark
-    description: This is a description of the tool that I used.
-    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+    description: A platform for the creation, hosting, management, and consumption of web APIs.
+    image: https://s3.amazonaws.com/kinlane-productions/api-evangelist/restlet/apispark-icon.png
+    url: http://restlet.com/products/apispark/
   - title: CSV Converter
-    description: This is a description of the tool that I used.
-    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.pn
+    description: A CSV conversion tool that runs on Github, created from Mr. Data Converter.
+    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.png
+    url: http://kinlane.github.io/csv-converter/
 
 # ---------
 # Blog
