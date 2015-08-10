@@ -1,1 +1,1170 @@
-{"swagger":"2.0","info":{"description":"","version":"1.1.0","title":"Federal Budget 14","contact":{"name":"Kin Lane","email":"kinlane@gmail.com"}},"host":"federalbudget14.apispark.net","basePath":"/v1","tags":[{"name":"Default","description":"Default section"},{"name":"Federal Budget 14","description":"Imported from Federal Budget 14"}],"schemes":["https"],"paths":{"/14_1/":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a list of table_14_1","description":"Loads a list of table_14_1","operationId":"gettable_14_1List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars","in":"query","description":"Allows to filter the collections of result by the value of field State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars","required":false,"type":"string"},{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"},{"name":"Total_Federal_Government_Receipts","in":"query","description":"Allows to filter the collections of result by the value of field Total_Federal_Government_Receipts","required":false,"type":"string"},{"name":"Addendum_Fiscal_Year_GDP","in":"query","description":"Allows to filter the collections of result by the value of field Addendum_Fiscal_Year_GDP","required":false,"type":"string"},{"name":"Total_Government_Receipts_In_Current_Dollars","in":"query","description":"Allows to filter the collections of result by the value of field Total_Government_Receipts_In_Current_Dollars","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Off_Budget_Federal_Government_Receipts","in":"query","description":"Allows to filter the collections of result by the value of field Off_Budget_Federal_Government_Receipts","required":false,"type":"string"},{"name":"Federal_Government_Receipts_As_Percentages_of_GDP","in":"query","description":"Allows to filter the collections of result by the value of field Federal_Government_Receipts_As_Percentages_of_GDP","required":false,"type":"string"},{"name":"State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP","in":"query","description":"Allows to filter the collections of result by the value of field State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP","required":false,"type":"string"},{"name":"Total_Government_Receipts_As_Percentages_of_GDP","in":"query","description":"Allows to filter the collections of result by the value of field Total_Government_Receipts_As_Percentages_of_GDP","required":false,"type":"string"},{"name":"On_Budget_Federal_Government_Receipts","in":"query","description":"Allows to filter the collections of result by the value of field On_Budget_Federal_Government_Receipts","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_14_1"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 14"],"summary":"Adds a table_14_1","description":"Adds a table_14_1","operationId":"posttable_14_1List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_1"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_1"}}}}},"/14_1/{table_14_1id}":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a table_14_1","description":"Loads a table_14_1","operationId":"gettable_14_1","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_1id","in":"path","description":"Identifier of the table_14_1","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_1"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 14"],"summary":"Stores a table_14_1","description":"Stores a table_14_1","operationId":"puttable_14_1","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_1id","in":"path","description":"Identifier of the table_14_1","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_1"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_1"}}}},"delete":{"tags":["Federal Budget 14"],"summary":"Deletes a table_14_1","description":"Deletes a table_14_1","operationId":"deletetable_14_1","consumes":[],"produces":[],"parameters":[{"name":"table_14_1id","in":"path","description":"Identifier of the table_14_1","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/14_2/":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a list of table_14_2","description":"Loads a list of table_14_2","operationId":"gettable_14_2List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"Total_Federal_Government_Outlays","in":"query","description":"Allows to filter the collections of result by the value of field Total_Federal_Government_Outlays","required":false,"type":"string"},{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"},{"name":"State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1","in":"query","description":"Allows to filter the collections of result by the value of field State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1","required":false,"type":"string"},{"name":"On_Budget_Federal_Government_Outlays","in":"query","description":"Allows to filter the collections of result by the value of field On_Budget_Federal_Government_Outlays","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Addendum_Federal_Grants_NIPA_Basis","in":"query","description":"Allows to filter the collections of result by the value of field Addendum_Federal_Grants_NIPA_Basis","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"Off_Budget_Federal_Government_Outlays","in":"query","description":"Allows to filter the collections of result by the value of field Off_Budget_Federal_Government_Outlays","required":false,"type":"string"},{"name":"Total_Government_Expenditures","in":"query","description":"Allows to filter the collections of result by the value of field Total_Government_Expenditures","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_14_2"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 14"],"summary":"Adds a table_14_2","description":"Adds a table_14_2","operationId":"posttable_14_2List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_2"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_2"}}}}},"/14_2/{table_14_2id}":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a table_14_2","description":"Loads a table_14_2","operationId":"gettable_14_2","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_2id","in":"path","description":"Identifier of the table_14_2","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_2"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 14"],"summary":"Stores a table_14_2","description":"Stores a table_14_2","operationId":"puttable_14_2","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_2id","in":"path","description":"Identifier of the table_14_2","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_2"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_2"}}}},"delete":{"tags":["Federal Budget 14"],"summary":"Deletes a table_14_2","description":"Deletes a table_14_2","operationId":"deletetable_14_2","consumes":[],"produces":[],"parameters":[{"name":"table_14_2id","in":"path","description":"Identifier of the table_14_2","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/14_3/":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a list of table_14_3","description":"Loads a list of table_14_3","operationId":"gettable_14_3List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"Total_Government_Expenditures","in":"query","description":"Allows to filter the collections of result by the value of field Total_Government_Expenditures","required":false,"type":"string"},{"name":"Addendum_Federal_Grants_NIPA_Basis","in":"query","description":"Allows to filter the collections of result by the value of field Addendum_Federal_Grants_NIPA_Basis","required":false,"type":"string"},{"name":"Total_Federal_Government_Outlays","in":"query","description":"Allows to filter the collections of result by the value of field Total_Federal_Government_Outlays","required":false,"type":"string"},{"name":"State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1","in":"query","description":"Allows to filter the collections of result by the value of field State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Off_Budget_Federal_Government_Outlays","in":"query","description":"Allows to filter the collections of result by the value of field Off_Budget_Federal_Government_Outlays","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"On_Budget_Federal_Government_Outlays","in":"query","description":"Allows to filter the collections of result by the value of field On_Budget_Federal_Government_Outlays","required":false,"type":"string"},{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_14_3"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 14"],"summary":"Adds a table_14_3","description":"Adds a table_14_3","operationId":"posttable_14_3List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_3"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_3"}}}}},"/14_3/{table_14_3id}":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a table_14_3","description":"Loads a table_14_3","operationId":"gettable_14_3","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_3id","in":"path","description":"Identifier of the table_14_3","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_3"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 14"],"summary":"Stores a table_14_3","description":"Stores a table_14_3","operationId":"puttable_14_3","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_3id","in":"path","description":"Identifier of the table_14_3","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_3"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_3"}}}},"delete":{"tags":["Federal Budget 14"],"summary":"Deletes a table_14_3","description":"Deletes a table_14_3","operationId":"deletetable_14_3","consumes":[],"produces":[],"parameters":[{"name":"table_14_3id","in":"path","description":"Identifier of the table_14_3","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/14_4/":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a list of table_14_4","description":"Loads a list of table_14_4","operationId":"gettable_14_4List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"},{"name":"Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field Net_Interest","required":false,"type":"string"},{"name":"State_and_Local_From_Own_Sources_Except_Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field State_and_Local_From_Own_Sources_Except_Net_Interest","required":false,"type":"string"},{"name":"Other_Federal","in":"query","description":"Allows to filter the collections of result by the value of field Other_Federal","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Social_Security_and_Medicare_Federal_Payments_For_Individuals","in":"query","description":"Allows to filter the collections of result by the value of field Social_Security_and_Medicare_Federal_Payments_For_Individuals","required":false,"type":"string"},{"name":"Other_Federal_Payments_For_Individuals","in":"query","description":"Allows to filter the collections of result by the value of field Other_Federal_Payments_For_Individuals","required":false,"type":"string"},{"name":"Defense_and_International","in":"query","description":"Allows to filter the collections of result by the value of field Defense_and_International","required":false,"type":"string"},{"name":"Total_Government","in":"query","description":"Allows to filter the collections of result by the value of field Total_Government","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_14_4"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 14"],"summary":"Adds a table_14_4","description":"Adds a table_14_4","operationId":"posttable_14_4List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_4"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_4"}}}}},"/14_4/{table_14_4id}":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a table_14_4","description":"Loads a table_14_4","operationId":"gettable_14_4","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_4id","in":"path","description":"Identifier of the table_14_4","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_4"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 14"],"summary":"Stores a table_14_4","description":"Stores a table_14_4","operationId":"puttable_14_4","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_4id","in":"path","description":"Identifier of the table_14_4","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_4"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_4"}}}},"delete":{"tags":["Federal Budget 14"],"summary":"Deletes a table_14_4","description":"Deletes a table_14_4","operationId":"deletetable_14_4","consumes":[],"produces":[],"parameters":[{"name":"table_14_4id","in":"path","description":"Identifier of the table_14_4","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/14_5/":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a list of table_14_5","description":"Loads a list of table_14_5","operationId":"gettable_14_5List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Total_Government","in":"query","description":"Allows to filter the collections of result by the value of field Total_Government","required":false,"type":"string"},{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"},{"name":"Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field Net_Interest","required":false,"type":"string"},{"name":"Defense_and_International","in":"query","description":"Allows to filter the collections of result by the value of field Defense_and_International","required":false,"type":"string"},{"name":"State_and_Local_From_Own_Sources_Except_Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field State_and_Local_From_Own_Sources_Except_Net_Interest","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"Social_Security_and_Medicare_Federal_Payments_For_Individuals","in":"query","description":"Allows to filter the collections of result by the value of field Social_Security_and_Medicare_Federal_Payments_For_Individuals","required":false,"type":"string"},{"name":"Other_Federal_Payments_For_Individuals","in":"query","description":"Allows to filter the collections of result by the value of field Other_Federal_Payments_For_Individuals","required":false,"type":"string"},{"name":"Other_Federal","in":"query","description":"Allows to filter the collections of result by the value of field Other_Federal","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_14_5"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 14"],"summary":"Adds a table_14_5","description":"Adds a table_14_5","operationId":"posttable_14_5List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_5"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_5"}}}}},"/14_5/{table_14_5id}":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a table_14_5","description":"Loads a table_14_5","operationId":"gettable_14_5","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_5id","in":"path","description":"Identifier of the table_14_5","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_5"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 14"],"summary":"Stores a table_14_5","description":"Stores a table_14_5","operationId":"puttable_14_5","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_5id","in":"path","description":"Identifier of the table_14_5","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_5"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_5"}}}},"delete":{"tags":["Federal Budget 14"],"summary":"Deletes a table_14_5","description":"Deletes a table_14_5","operationId":"deletetable_14_5","consumes":[],"produces":[],"parameters":[{"name":"table_14_5id","in":"path","description":"Identifier of the table_14_5","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/14_6/":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a list of table_14_6","description":"Loads a list of table_14_6","operationId":"gettable_14_6List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"Total_Government__As_Percentages_of_GDP","in":"query","description":"Allows to filter the collections of result by the value of field Total_Government__As_Percentages_of_GDP","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"Total_Government_In_Billions_of_Current_Dollars","in":"query","description":"Allows to filter the collections of result by the value of field Total_Government_In_Billions_of_Current_Dollars","required":false,"type":"string"},{"name":"On_Budget_Federal_Government","in":"query","description":"Allows to filter the collections of result by the value of field On_Budget_Federal_Government","required":false,"type":"string"},{"name":"State_and_Local__As_Percentages_of_GDP","in":"query","description":"Allows to filter the collections of result by the value of field State_and_Local__As_Percentages_of_GDP","required":false,"type":"string"},{"name":"Total_Federal_Government","in":"query","description":"Allows to filter the collections of result by the value of field Total_Federal_Government","required":false,"type":"string"},{"name":"State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars","in":"query","description":"Allows to filter the collections of result by the value of field State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars","required":false,"type":"string"},{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"},{"name":"Total_Federal__As_Percentages_of_GDP","in":"query","description":"Allows to filter the collections of result by the value of field Total_Federal__As_Percentages_of_GDP","required":false,"type":"string"},{"name":"Off_Budget_Federal_Government","in":"query","description":"Allows to filter the collections of result by the value of field Off_Budget_Federal_Government","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_14_6"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 14"],"summary":"Adds a table_14_6","description":"Adds a table_14_6","operationId":"posttable_14_6List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_6"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_6"}}}}},"/14_6/{table_14_6id}":{"get":{"tags":["Federal Budget 14"],"summary":"Loads a table_14_6","description":"Loads a table_14_6","operationId":"gettable_14_6","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_6id","in":"path","description":"Identifier of the table_14_6","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_6"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 14"],"summary":"Stores a table_14_6","description":"Stores a table_14_6","operationId":"puttable_14_6","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_14_6id","in":"path","description":"Identifier of the table_14_6","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_14_6"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_14_6"}}}},"delete":{"tags":["Federal Budget 14"],"summary":"Deletes a table_14_6","description":"Deletes a table_14_6","operationId":"deletetable_14_6","consumes":[],"produces":[],"parameters":[{"name":"table_14_6id","in":"path","description":"Identifier of the table_14_6","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}}},"securityDefinitions":{"HTTP_BASIC":{"type":"basic"}},"definitions":{"table_14_1":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Government_Receipts_In_Current_Dollars":{"type":"string","example":"sample Total_Government_Receipts_In_Current_Dollars"},"Total_Federal_Government_Receipts":{"type":"string","example":"sample Total_Federal_Government_Receipts"},"On_Budget_Federal_Government_Receipts":{"type":"string","example":"sample On_Budget_Federal_Government_Receipts"},"Off_Budget_Federal_Government_Receipts":{"type":"string","example":"sample Off_Budget_Federal_Government_Receipts"},"State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars":{"type":"string","example":"sample State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars"},"Addendum_Fiscal_Year_GDP":{"type":"string","example":"sample Addendum_Fiscal_Year_GDP"},"Total_Government_Receipts_As_Percentages_of_GDP":{"type":"string","example":"sample Total_Government_Receipts_As_Percentages_of_GDP"},"Federal_Government_Receipts_As_Percentages_of_GDP":{"type":"string","example":"sample Federal_Government_Receipts_As_Percentages_of_GDP"},"State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP":{"type":"string","example":"sample State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government_Receipts_In_Current_Dollars\":\"sample Total_Government_Receipts_In_Current_Dollars\",\"Total_Federal_Government_Receipts\":\"sample Total_Federal_Government_Receipts\",\"On_Budget_Federal_Government_Receipts\":\"sample On_Budget_Federal_Government_Receipts\",\"Off_Budget_Federal_Government_Receipts\":\"sample Off_Budget_Federal_Government_Receipts\",\"State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars\":\"sample State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars\",\"Addendum_Fiscal_Year_GDP\":\"sample Addendum_Fiscal_Year_GDP\",\"Total_Government_Receipts_As_Percentages_of_GDP\":\"sample Total_Government_Receipts_As_Percentages_of_GDP\",\"Federal_Government_Receipts_As_Percentages_of_GDP\":\"sample Federal_Government_Receipts_As_Percentages_of_GDP\",\"State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP\":\"sample State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP\"}"},"table_14_2":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Government_Expenditures":{"type":"string","example":"sample Total_Government_Expenditures"},"Total_Federal_Government_Outlays":{"type":"string","example":"sample Total_Federal_Government_Outlays"},"On_Budget_Federal_Government_Outlays":{"type":"string","example":"sample On_Budget_Federal_Government_Outlays"},"Off_Budget_Federal_Government_Outlays":{"type":"string","example":"sample Off_Budget_Federal_Government_Outlays"},"Addendum_Federal_Grants_NIPA_Basis":{"type":"string","example":"sample Addendum_Federal_Grants_NIPA_Basis"},"State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1":{"type":"string","example":"sample State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government_Expenditures\":\"sample Total_Government_Expenditures\",\"Total_Federal_Government_Outlays\":\"sample Total_Federal_Government_Outlays\",\"On_Budget_Federal_Government_Outlays\":\"sample On_Budget_Federal_Government_Outlays\",\"Off_Budget_Federal_Government_Outlays\":\"sample Off_Budget_Federal_Government_Outlays\",\"Addendum_Federal_Grants_NIPA_Basis\":\"sample Addendum_Federal_Grants_NIPA_Basis\",\"State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1\":\"sample State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1\"}"},"table_14_3":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Government_Expenditures":{"type":"string","example":"sample Total_Government_Expenditures"},"Total_Federal_Government_Outlays":{"type":"string","example":"sample Total_Federal_Government_Outlays"},"On_Budget_Federal_Government_Outlays":{"type":"string","example":"sample On_Budget_Federal_Government_Outlays"},"Off_Budget_Federal_Government_Outlays":{"type":"string","example":"sample Off_Budget_Federal_Government_Outlays"},"Addendum_Federal_Grants_NIPA_Basis":{"type":"string","example":"sample Addendum_Federal_Grants_NIPA_Basis"},"State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1":{"type":"string","example":"sample State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government_Expenditures\":\"sample Total_Government_Expenditures\",\"Total_Federal_Government_Outlays\":\"sample Total_Federal_Government_Outlays\",\"On_Budget_Federal_Government_Outlays\":\"sample On_Budget_Federal_Government_Outlays\",\"Off_Budget_Federal_Government_Outlays\":\"sample Off_Budget_Federal_Government_Outlays\",\"Addendum_Federal_Grants_NIPA_Basis\":\"sample Addendum_Federal_Grants_NIPA_Basis\",\"State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1\":\"sample State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1\"}"},"table_14_4":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Government":{"type":"string","example":"sample Total_Government"},"Defense_and_International":{"type":"string","example":"sample Defense_and_International"},"Net_Interest":{"type":"string","example":"sample Net_Interest"},"Social_Security_and_Medicare_Federal_Payments_For_Individuals":{"type":"string","example":"sample Social_Security_and_Medicare_Federal_Payments_For_Individuals"},"Other_Federal_Payments_For_Individuals":{"type":"string","example":"sample Other_Federal_Payments_For_Individuals"},"Other_Federal":{"type":"string","example":"sample Other_Federal"},"State_and_Local_From_Own_Sources_Except_Net_Interest":{"type":"string","example":"sample State_and_Local_From_Own_Sources_Except_Net_Interest"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government\":\"sample Total_Government\",\"Defense_and_International\":\"sample Defense_and_International\",\"Net_Interest\":\"sample Net_Interest\",\"Social_Security_and_Medicare_Federal_Payments_For_Individuals\":\"sample Social_Security_and_Medicare_Federal_Payments_For_Individuals\",\"Other_Federal_Payments_For_Individuals\":\"sample Other_Federal_Payments_For_Individuals\",\"Other_Federal\":\"sample Other_Federal\",\"State_and_Local_From_Own_Sources_Except_Net_Interest\":\"sample State_and_Local_From_Own_Sources_Except_Net_Interest\"}"},"table_14_5":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Government":{"type":"string","example":"sample Total_Government"},"Defense_and_International":{"type":"string","example":"sample Defense_and_International"},"Net_Interest":{"type":"string","example":"sample Net_Interest"},"Social_Security_and_Medicare_Federal_Payments_For_Individuals":{"type":"string","example":"sample Social_Security_and_Medicare_Federal_Payments_For_Individuals"},"Other_Federal_Payments_For_Individuals":{"type":"string","example":"sample Other_Federal_Payments_For_Individuals"},"Other_Federal":{"type":"string","example":"sample Other_Federal"},"State_and_Local_From_Own_Sources_Except_Net_Interest":{"type":"string","example":"sample State_and_Local_From_Own_Sources_Except_Net_Interest"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government\":\"sample Total_Government\",\"Defense_and_International\":\"sample Defense_and_International\",\"Net_Interest\":\"sample Net_Interest\",\"Social_Security_and_Medicare_Federal_Payments_For_Individuals\":\"sample Social_Security_and_Medicare_Federal_Payments_For_Individuals\",\"Other_Federal_Payments_For_Individuals\":\"sample Other_Federal_Payments_For_Individuals\",\"Other_Federal\":\"sample Other_Federal\",\"State_and_Local_From_Own_Sources_Except_Net_Interest\":\"sample State_and_Local_From_Own_Sources_Except_Net_Interest\"}"},"table_14_6":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Government_In_Billions_of_Current_Dollars":{"type":"string","example":"sample Total_Government_In_Billions_of_Current_Dollars"},"Total_Federal_Government":{"type":"string","example":"sample Total_Federal_Government"},"On_Budget_Federal_Government":{"type":"string","example":"sample On_Budget_Federal_Government"},"Off_Budget_Federal_Government":{"type":"string","example":"sample Off_Budget_Federal_Government"},"State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars":{"type":"string","example":"sample State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars"},"Total_Government__As_Percentages_of_GDP":{"type":"string","example":"sample Total_Government__As_Percentages_of_GDP"},"Total_Federal__As_Percentages_of_GDP":{"type":"string","example":"sample Total_Federal__As_Percentages_of_GDP"},"State_and_Local__As_Percentages_of_GDP":{"type":"string","example":"sample State_and_Local__As_Percentages_of_GDP"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government_In_Billions_of_Current_Dollars\":\"sample Total_Government_In_Billions_of_Current_Dollars\",\"Total_Federal_Government\":\"sample Total_Federal_Government\",\"On_Budget_Federal_Government\":\"sample On_Budget_Federal_Government\",\"Off_Budget_Federal_Government\":\"sample Off_Budget_Federal_Government\",\"State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars\":\"sample State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars\",\"Total_Government__As_Percentages_of_GDP\":\"sample Total_Government__As_Percentages_of_GDP\",\"Total_Federal__As_Percentages_of_GDP\":\"sample Total_Federal__As_Percentages_of_GDP\",\"State_and_Local__As_Percentages_of_GDP\":\"sample State_and_Local__As_Percentages_of_GDP\"}"}}}
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.1.0",
+    "title": "Federal Budget - Section 14",
+    "contact": {
+      "name": "Kin Lane",
+      "email": "kinlane@gmail.com"
+    }
+  },
+  "host": "federalbudget14.apispark.net",
+  "basePath": "/v1",
+  "tags": [
+    {
+      "name": "Federal Budget"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/14_1/": {
+      "get": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Loads a list of table_14_1",
+        "description": "Loads a list of table_14_1",
+        "operationId": "gettable_14_1List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Federal_Government_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Federal_Government_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Addendum_Fiscal_Year_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Addendum_Fiscal_Year_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Government_Receipts_In_Current_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Government_Receipts_In_Current_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Off_Budget_Federal_Government_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Off_Budget_Federal_Government_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Federal_Government_Receipts_As_Percentages_of_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Federal_Government_Receipts_As_Percentages_of_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Government_Receipts_As_Percentages_of_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Government_Receipts_As_Percentages_of_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "On_Budget_Federal_Government_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field On_Budget_Federal_Government_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_14_1"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Adds a table_14_1",
+        "description": "Adds a table_14_1",
+        "operationId": "posttable_14_1List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_14_1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_14_1"
+            }
+          }
+        }
+      }
+    },
+    "/14_2/": {
+      "get": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Loads a list of table_14_2",
+        "description": "Loads a list of table_14_2",
+        "operationId": "gettable_14_2List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Total_Federal_Government_Outlays",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Federal_Government_Outlays",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "On_Budget_Federal_Government_Outlays",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field On_Budget_Federal_Government_Outlays",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Addendum_Federal_Grants_NIPA_Basis",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Addendum_Federal_Grants_NIPA_Basis",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Off_Budget_Federal_Government_Outlays",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Off_Budget_Federal_Government_Outlays",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Government_Expenditures",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Government_Expenditures",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_14_2"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Adds a table_14_2",
+        "description": "Adds a table_14_2",
+        "operationId": "posttable_14_2List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_14_2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_14_2"
+            }
+          }
+        }
+      }
+    },
+    "/14_3/": {
+      "get": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Loads a list of table_14_3",
+        "description": "Loads a list of table_14_3",
+        "operationId": "gettable_14_3List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Total_Government_Expenditures",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Government_Expenditures",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Addendum_Federal_Grants_NIPA_Basis",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Addendum_Federal_Grants_NIPA_Basis",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Federal_Government_Outlays",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Federal_Government_Outlays",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Off_Budget_Federal_Government_Outlays",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Off_Budget_Federal_Government_Outlays",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "On_Budget_Federal_Government_Outlays",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field On_Budget_Federal_Government_Outlays",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_14_3"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Adds a table_14_3",
+        "description": "Adds a table_14_3",
+        "operationId": "posttable_14_3List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_14_3"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_14_3"
+            }
+          }
+        }
+      }
+    },
+    "/14_4/": {
+      "get": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Loads a list of table_14_4",
+        "description": "Loads a list of table_14_4",
+        "operationId": "gettable_14_4List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "State_and_Local_From_Own_Sources_Except_Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field State_and_Local_From_Own_Sources_Except_Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other_Federal",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other_Federal",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Social_Security_and_Medicare_Federal_Payments_For_Individuals",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Social_Security_and_Medicare_Federal_Payments_For_Individuals",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other_Federal_Payments_For_Individuals",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other_Federal_Payments_For_Individuals",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Defense_and_International",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Defense_and_International",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Government",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Government",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_14_4"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Adds a table_14_4",
+        "description": "Adds a table_14_4",
+        "operationId": "posttable_14_4List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_14_4"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_14_4"
+            }
+          }
+        }
+      }
+    },
+    "/14_5/": {
+      "get": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Loads a list of table_14_5",
+        "description": "Loads a list of table_14_5",
+        "operationId": "gettable_14_5List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Government",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Government",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Defense_and_International",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Defense_and_International",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "State_and_Local_From_Own_Sources_Except_Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field State_and_Local_From_Own_Sources_Except_Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Social_Security_and_Medicare_Federal_Payments_For_Individuals",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Social_Security_and_Medicare_Federal_Payments_For_Individuals",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other_Federal_Payments_For_Individuals",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other_Federal_Payments_For_Individuals",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other_Federal",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other_Federal",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_14_5"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Adds a table_14_5",
+        "description": "Adds a table_14_5",
+        "operationId": "posttable_14_5List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_14_5"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_14_5"
+            }
+          }
+        }
+      }
+    },
+    "/14_6/": {
+      "get": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Loads a list of table_14_6",
+        "description": "Loads a list of table_14_6",
+        "operationId": "gettable_14_6List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Total_Government__As_Percentages_of_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Government__As_Percentages_of_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Government_In_Billions_of_Current_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Government_In_Billions_of_Current_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "On_Budget_Federal_Government",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field On_Budget_Federal_Government",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "State_and_Local__As_Percentages_of_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field State_and_Local__As_Percentages_of_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Federal_Government",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Federal_Government",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Federal__As_Percentages_of_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Federal__As_Percentages_of_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Off_Budget_Federal_Government",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Off_Budget_Federal_Government",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_14_6"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 14"
+        ],
+        "summary": "Adds a table_14_6",
+        "description": "Adds a table_14_6",
+        "operationId": "posttable_14_6List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_14_6"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_14_6"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "HTTP_BASIC": {
+      "type": "basic"
+    }
+  },
+  "definitions": {
+    "table_14_1": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Government_Receipts_In_Current_Dollars": {
+          "type": "string",
+          "example": "sample Total_Government_Receipts_In_Current_Dollars"
+        },
+        "Total_Federal_Government_Receipts": {
+          "type": "string",
+          "example": "sample Total_Federal_Government_Receipts"
+        },
+        "On_Budget_Federal_Government_Receipts": {
+          "type": "string",
+          "example": "sample On_Budget_Federal_Government_Receipts"
+        },
+        "Off_Budget_Federal_Government_Receipts": {
+          "type": "string",
+          "example": "sample Off_Budget_Federal_Government_Receipts"
+        },
+        "State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars": {
+          "type": "string",
+          "example": "sample State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars"
+        },
+        "Addendum_Fiscal_Year_GDP": {
+          "type": "string",
+          "example": "sample Addendum_Fiscal_Year_GDP"
+        },
+        "Total_Government_Receipts_As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Total_Government_Receipts_As_Percentages_of_GDP"
+        },
+        "Federal_Government_Receipts_As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Federal_Government_Receipts_As_Percentages_of_GDP"
+        },
+        "State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government_Receipts_In_Current_Dollars\":\"sample Total_Government_Receipts_In_Current_Dollars\",\"Total_Federal_Government_Receipts\":\"sample Total_Federal_Government_Receipts\",\"On_Budget_Federal_Government_Receipts\":\"sample On_Budget_Federal_Government_Receipts\",\"Off_Budget_Federal_Government_Receipts\":\"sample Off_Budget_Federal_Government_Receipts\",\"State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars\":\"sample State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_In_Current_Dollars\",\"Addendum_Fiscal_Year_GDP\":\"sample Addendum_Fiscal_Year_GDP\",\"Total_Government_Receipts_As_Percentages_of_GDP\":\"sample Total_Government_Receipts_As_Percentages_of_GDP\",\"Federal_Government_Receipts_As_Percentages_of_GDP\":\"sample Federal_Government_Receipts_As_Percentages_of_GDP\",\"State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP\":\"sample State_and_Local_Government_Non_Interest_Receipts_NIPA_Basis_1_As_Percentages_of_GDP\"}"
+    },
+    "table_14_2": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Government_Expenditures": {
+          "type": "string",
+          "example": "sample Total_Government_Expenditures"
+        },
+        "Total_Federal_Government_Outlays": {
+          "type": "string",
+          "example": "sample Total_Federal_Government_Outlays"
+        },
+        "On_Budget_Federal_Government_Outlays": {
+          "type": "string",
+          "example": "sample On_Budget_Federal_Government_Outlays"
+        },
+        "Off_Budget_Federal_Government_Outlays": {
+          "type": "string",
+          "example": "sample Off_Budget_Federal_Government_Outlays"
+        },
+        "Addendum_Federal_Grants_NIPA_Basis": {
+          "type": "string",
+          "example": "sample Addendum_Federal_Grants_NIPA_Basis"
+        },
+        "State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1": {
+          "type": "string",
+          "example": "sample State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government_Expenditures\":\"sample Total_Government_Expenditures\",\"Total_Federal_Government_Outlays\":\"sample Total_Federal_Government_Outlays\",\"On_Budget_Federal_Government_Outlays\":\"sample On_Budget_Federal_Government_Outlays\",\"Off_Budget_Federal_Government_Outlays\":\"sample Off_Budget_Federal_Government_Outlays\",\"Addendum_Federal_Grants_NIPA_Basis\":\"sample Addendum_Federal_Grants_NIPA_Basis\",\"State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1\":\"sample State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1\"}"
+    },
+    "table_14_3": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Government_Expenditures": {
+          "type": "string",
+          "example": "sample Total_Government_Expenditures"
+        },
+        "Total_Federal_Government_Outlays": {
+          "type": "string",
+          "example": "sample Total_Federal_Government_Outlays"
+        },
+        "On_Budget_Federal_Government_Outlays": {
+          "type": "string",
+          "example": "sample On_Budget_Federal_Government_Outlays"
+        },
+        "Off_Budget_Federal_Government_Outlays": {
+          "type": "string",
+          "example": "sample Off_Budget_Federal_Government_Outlays"
+        },
+        "Addendum_Federal_Grants_NIPA_Basis": {
+          "type": "string",
+          "example": "sample Addendum_Federal_Grants_NIPA_Basis"
+        },
+        "State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1": {
+          "type": "string",
+          "example": "sample State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government_Expenditures\":\"sample Total_Government_Expenditures\",\"Total_Federal_Government_Outlays\":\"sample Total_Federal_Government_Outlays\",\"On_Budget_Federal_Government_Outlays\":\"sample On_Budget_Federal_Government_Outlays\",\"Off_Budget_Federal_Government_Outlays\":\"sample Off_Budget_Federal_Government_Outlays\",\"Addendum_Federal_Grants_NIPA_Basis\":\"sample Addendum_Federal_Grants_NIPA_Basis\",\"State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1\":\"sample State_and_Local_Government_Expenditures_From_Own_Sources_NIPA_Basis_1\"}"
+    },
+    "table_14_4": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Government": {
+          "type": "string",
+          "example": "sample Total_Government"
+        },
+        "Defense_and_International": {
+          "type": "string",
+          "example": "sample Defense_and_International"
+        },
+        "Net_Interest": {
+          "type": "string",
+          "example": "sample Net_Interest"
+        },
+        "Social_Security_and_Medicare_Federal_Payments_For_Individuals": {
+          "type": "string",
+          "example": "sample Social_Security_and_Medicare_Federal_Payments_For_Individuals"
+        },
+        "Other_Federal_Payments_For_Individuals": {
+          "type": "string",
+          "example": "sample Other_Federal_Payments_For_Individuals"
+        },
+        "Other_Federal": {
+          "type": "string",
+          "example": "sample Other_Federal"
+        },
+        "State_and_Local_From_Own_Sources_Except_Net_Interest": {
+          "type": "string",
+          "example": "sample State_and_Local_From_Own_Sources_Except_Net_Interest"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government\":\"sample Total_Government\",\"Defense_and_International\":\"sample Defense_and_International\",\"Net_Interest\":\"sample Net_Interest\",\"Social_Security_and_Medicare_Federal_Payments_For_Individuals\":\"sample Social_Security_and_Medicare_Federal_Payments_For_Individuals\",\"Other_Federal_Payments_For_Individuals\":\"sample Other_Federal_Payments_For_Individuals\",\"Other_Federal\":\"sample Other_Federal\",\"State_and_Local_From_Own_Sources_Except_Net_Interest\":\"sample State_and_Local_From_Own_Sources_Except_Net_Interest\"}"
+    },
+    "table_14_5": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Government": {
+          "type": "string",
+          "example": "sample Total_Government"
+        },
+        "Defense_and_International": {
+          "type": "string",
+          "example": "sample Defense_and_International"
+        },
+        "Net_Interest": {
+          "type": "string",
+          "example": "sample Net_Interest"
+        },
+        "Social_Security_and_Medicare_Federal_Payments_For_Individuals": {
+          "type": "string",
+          "example": "sample Social_Security_and_Medicare_Federal_Payments_For_Individuals"
+        },
+        "Other_Federal_Payments_For_Individuals": {
+          "type": "string",
+          "example": "sample Other_Federal_Payments_For_Individuals"
+        },
+        "Other_Federal": {
+          "type": "string",
+          "example": "sample Other_Federal"
+        },
+        "State_and_Local_From_Own_Sources_Except_Net_Interest": {
+          "type": "string",
+          "example": "sample State_and_Local_From_Own_Sources_Except_Net_Interest"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government\":\"sample Total_Government\",\"Defense_and_International\":\"sample Defense_and_International\",\"Net_Interest\":\"sample Net_Interest\",\"Social_Security_and_Medicare_Federal_Payments_For_Individuals\":\"sample Social_Security_and_Medicare_Federal_Payments_For_Individuals\",\"Other_Federal_Payments_For_Individuals\":\"sample Other_Federal_Payments_For_Individuals\",\"Other_Federal\":\"sample Other_Federal\",\"State_and_Local_From_Own_Sources_Except_Net_Interest\":\"sample State_and_Local_From_Own_Sources_Except_Net_Interest\"}"
+    },
+    "table_14_6": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Government_In_Billions_of_Current_Dollars": {
+          "type": "string",
+          "example": "sample Total_Government_In_Billions_of_Current_Dollars"
+        },
+        "Total_Federal_Government": {
+          "type": "string",
+          "example": "sample Total_Federal_Government"
+        },
+        "On_Budget_Federal_Government": {
+          "type": "string",
+          "example": "sample On_Budget_Federal_Government"
+        },
+        "Off_Budget_Federal_Government": {
+          "type": "string",
+          "example": "sample Off_Budget_Federal_Government"
+        },
+        "State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars": {
+          "type": "string",
+          "example": "sample State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars"
+        },
+        "Total_Government__As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Total_Government__As_Percentages_of_GDP"
+        },
+        "Total_Federal__As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Total_Federal__As_Percentages_of_GDP"
+        },
+        "State_and_Local__As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample State_and_Local__As_Percentages_of_GDP"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Government_In_Billions_of_Current_Dollars\":\"sample Total_Government_In_Billions_of_Current_Dollars\",\"Total_Federal_Government\":\"sample Total_Federal_Government\",\"On_Budget_Federal_Government\":\"sample On_Budget_Federal_Government\",\"Off_Budget_Federal_Government\":\"sample Off_Budget_Federal_Government\",\"State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars\":\"sample State_and_Local_NIPA_Basis_In_Billions_of_Current_Dollars\",\"Total_Government__As_Percentages_of_GDP\":\"sample Total_Government__As_Percentages_of_GDP\",\"Total_Federal__As_Percentages_of_GDP\":\"sample Total_Federal__As_Percentages_of_GDP\",\"State_and_Local__As_Percentages_of_GDP\":\"sample State_and_Local__As_Percentages_of_GDP\"}"
+    }
+  }
+}

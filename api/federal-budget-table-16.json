@@ -1,1 +1,517 @@
-{"swagger":"2.0","info":{"description":"","version":"1.1.0","title":"Federal Budget 16","contact":{"name":"Kin Lane","email":"kinlane@gmail.com"}},"host":"federalbudget16.apispark.net","basePath":"/v1","tags":[{"name":"Default","description":"Default section"},{"name":"Federal Budget 16","description":"Imported from Federal Budget 16"}],"schemes":["https"],"paths":{"/16_1/":{"get":{"tags":["Federal Budget 16"],"summary":"Loads a list of table_16_1","description":"Loads a list of table_16_1","operationId":"gettable_16_1List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"Veterans","in":"query","description":"Allows to filter the collections of result by the value of field Veterans","required":false,"type":"string"},{"name":"Total","in":"query","description":"Allows to filter the collections of result by the value of field Total","required":false,"type":"string"},{"name":"Department_of_Defense","in":"query","description":"Allows to filter the collections of result by the value of field Department_of_Defense","required":false,"type":"string"},{"name":"Other","in":"query","description":"Allows to filter the collections of result by the value of field Other","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"},{"name":"HHS_Education_Social_Security_Admin","in":"query","description":"Allows to filter the collections of result by the value of field HHS_Education_Social_Security_Admin","required":false,"type":"string"},{"name":"Homeland_Security","in":"query","description":"Allows to filter the collections of result by the value of field Homeland_Security","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Total_Executive_Branch","in":"query","description":"Allows to filter the collections of result by the value of field Total_Executive_Branch","required":false,"type":"string"},{"name":"Transpor_tation","in":"query","description":"Allows to filter the collections of result by the value of field Transpor_tation","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"Agriculture","in":"query","description":"Allows to filter the collections of result by the value of field Agriculture","required":false,"type":"string"},{"name":"Interior","in":"query","description":"Allows to filter the collections of result by the value of field Interior","required":false,"type":"string"},{"name":"Justice","in":"query","description":"Allows to filter the collections of result by the value of field Justice","required":false,"type":"string"},{"name":"Treasury","in":"query","description":"Allows to filter the collections of result by the value of field Treasury","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_16_1"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 16"],"summary":"Adds a table_16_1","description":"Adds a table_16_1","operationId":"posttable_16_1List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_16_1"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_16_1"}}}}},"/16_1/{table_16_1id}":{"get":{"tags":["Federal Budget 16"],"summary":"Loads a table_16_1","description":"Loads a table_16_1","operationId":"gettable_16_1","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_16_1id","in":"path","description":"Identifier of the table_16_1","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_16_1"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 16"],"summary":"Stores a table_16_1","description":"Stores a table_16_1","operationId":"puttable_16_1","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_16_1id","in":"path","description":"Identifier of the table_16_1","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_16_1"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_16_1"}}}},"delete":{"tags":["Federal Budget 16"],"summary":"Deletes a table_16_1","description":"Deletes a table_16_1","operationId":"deletetable_16_1","consumes":[],"produces":[],"parameters":[{"name":"table_16_1id","in":"path","description":"Identifier of the table_16_1","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/16_2/":{"get":{"tags":["Federal Budget 16"],"summary":"Loads a list of table_16_2","description":"Loads a list of table_16_2","operationId":"gettable_16_2List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"},{"name":"Department_of_Defense","in":"query","description":"Allows to filter the collections of result by the value of field Department_of_Defense","required":false,"type":"string"},{"name":"Treasury","in":"query","description":"Allows to filter the collections of result by the value of field Treasury","required":false,"type":"string"},{"name":"Homeland_Security","in":"query","description":"Allows to filter the collections of result by the value of field Homeland_Security","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"Agriculture","in":"query","description":"Allows to filter the collections of result by the value of field Agriculture","required":false,"type":"string"},{"name":"HHS_Education_Social_Security_Admin","in":"query","description":"Allows to filter the collections of result by the value of field HHS_Education_Social_Security_Admin","required":false,"type":"string"},{"name":"Transpor__tation","in":"query","description":"Allows to filter the collections of result by the value of field Transpor__tation","required":false,"type":"string"},{"name":"Veterans","in":"query","description":"Allows to filter the collections of result by the value of field Veterans","required":false,"type":"string"},{"name":"Total_Executive_Branch","in":"query","description":"Allows to filter the collections of result by the value of field Total_Executive_Branch","required":false,"type":"string"},{"name":"Total","in":"query","description":"Allows to filter the collections of result by the value of field Total","required":false,"type":"string"},{"name":"Justice","in":"query","description":"Allows to filter the collections of result by the value of field Justice","required":false,"type":"string"},{"name":"Other","in":"query","description":"Allows to filter the collections of result by the value of field Other","required":false,"type":"string"},{"name":"Interior","in":"query","description":"Allows to filter the collections of result by the value of field Interior","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_16_2"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 16"],"summary":"Adds a table_16_2","description":"Adds a table_16_2","operationId":"posttable_16_2List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_16_2"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_16_2"}}}}},"/16_2/{table_16_2id}":{"get":{"tags":["Federal Budget 16"],"summary":"Loads a table_16_2","description":"Loads a table_16_2","operationId":"gettable_16_2","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_16_2id","in":"path","description":"Identifier of the table_16_2","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_16_2"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 16"],"summary":"Stores a table_16_2","description":"Stores a table_16_2","operationId":"puttable_16_2","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_16_2id","in":"path","description":"Identifier of the table_16_2","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_16_2"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_16_2"}}}},"delete":{"tags":["Federal Budget 16"],"summary":"Deletes a table_16_2","description":"Deletes a table_16_2","operationId":"deletetable_16_2","consumes":[],"produces":[],"parameters":[{"name":"table_16_2id","in":"path","description":"Identifier of the table_16_2","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}}},"securityDefinitions":{"HTTP_BASIC":{"type":"basic"}},"definitions":{"table_16_2":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Executive_Branch":{"type":"string","example":"sample Total_Executive_Branch"},"Department_of_Defense":{"type":"string","example":"sample Department_of_Defense"},"Total":{"type":"string","example":"sample Total"},"Agriculture":{"type":"string","example":"sample Agriculture"},"HHS_Education_Social_Security_Admin":{"type":"string","example":"sample HHS_Education_Social_Security_Admin"},"Homeland_Security":{"type":"string","example":"sample Homeland_Security"},"Interior":{"type":"string","example":"sample Interior"},"Justice":{"type":"string","example":"sample Justice"},"Transpor__tation":{"type":"string","example":"sample Transpor__tation"},"Treasury":{"type":"string","example":"sample Treasury"},"Veterans":{"type":"string","example":"sample Veterans"},"Other":{"type":"string","example":"sample Other"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Executive_Branch\":\"sample Total_Executive_Branch\",\"Department_of_Defense\":\"sample Department_of_Defense\",\"Total\":\"sample Total\",\"Agriculture\":\"sample Agriculture\",\"HHS_Education_Social_Security_Admin\":\"sample HHS_Education_Social_Security_Admin\",\"Homeland_Security\":\"sample Homeland_Security\",\"Interior\":\"sample Interior\",\"Justice\":\"sample Justice\",\"Transpor__tation\":\"sample Transpor__tation\",\"Treasury\":\"sample Treasury\",\"Veterans\":\"sample Veterans\",\"Other\":\"sample Other\"}"},"table_16_1":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Executive_Branch":{"type":"string","example":"sample Total_Executive_Branch"},"Department_of_Defense":{"type":"string","example":"sample Department_of_Defense"},"Total":{"type":"string","example":"sample Total"},"Agriculture":{"type":"string","example":"sample Agriculture"},"HHS_Education_Social_Security_Admin":{"type":"string","example":"sample HHS_Education_Social_Security_Admin"},"Homeland_Security":{"type":"string","example":"sample Homeland_Security"},"Interior":{"type":"string","example":"sample Interior"},"Justice":{"type":"string","example":"sample Justice"},"Transpor_tation":{"type":"string","example":"sample Transpor_tation"},"Treasury":{"type":"string","example":"sample Treasury"},"Veterans":{"type":"string","example":"sample Veterans"},"Other":{"type":"string","example":"sample Other"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Executive_Branch\":\"sample Total_Executive_Branch\",\"Department_of_Defense\":\"sample Department_of_Defense\",\"Total\":\"sample Total\",\"Agriculture\":\"sample Agriculture\",\"HHS_Education_Social_Security_Admin\":\"sample HHS_Education_Social_Security_Admin\",\"Homeland_Security\":\"sample Homeland_Security\",\"Interior\":\"sample Interior\",\"Justice\":\"sample Justice\",\"Transpor_tation\":\"sample Transpor_tation\",\"Treasury\":\"sample Treasury\",\"Veterans\":\"sample Veterans\",\"Other\":\"sample Other\"}"}}}
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.1.0",
+    "title": "Federal Budget - Section 16",
+    "contact": {
+      "name": "Kin Lane",
+      "email": "kinlane@gmail.com"
+    }
+  },
+  "host": "federalbudget16.apispark.net",
+  "basePath": "/v1",
+  "tags": [
+    {
+      "name": "Federal Budget"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/16_1/": {
+      "get": {
+        "tags": [
+          "Federal Budget 16"
+        ],
+        "summary": "Loads a list of table_16_1",
+        "description": "Loads a list of table_16_1",
+        "operationId": "gettable_16_1List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Veterans",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Veterans",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Department_of_Defense",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Department_of_Defense",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "HHS_Education_Social_Security_Admin",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field HHS_Education_Social_Security_Admin",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Homeland_Security",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Homeland_Security",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Executive_Branch",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Executive_Branch",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Transpor_tation",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Transpor_tation",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Agriculture",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Agriculture",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Interior",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Interior",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Justice",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Justice",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Treasury",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Treasury",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_16_1"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 16"
+        ],
+        "summary": "Adds a table_16_1",
+        "description": "Adds a table_16_1",
+        "operationId": "posttable_16_1List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_16_1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_16_1"
+            }
+          }
+        }
+      }
+    },
+    "/16_2/": {
+      "get": {
+        "tags": [
+          "Federal Budget 16"
+        ],
+        "summary": "Loads a list of table_16_2",
+        "description": "Loads a list of table_16_2",
+        "operationId": "gettable_16_2List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Department_of_Defense",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Department_of_Defense",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Treasury",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Treasury",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Homeland_Security",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Homeland_Security",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Agriculture",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Agriculture",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "HHS_Education_Social_Security_Admin",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field HHS_Education_Social_Security_Admin",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Transpor__tation",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Transpor__tation",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Veterans",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Veterans",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Executive_Branch",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Executive_Branch",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Justice",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Justice",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Interior",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Interior",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_16_2"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 16"
+        ],
+        "summary": "Adds a table_16_2",
+        "description": "Adds a table_16_2",
+        "operationId": "posttable_16_2List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_16_2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_16_2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "HTTP_BASIC": {
+      "type": "basic"
+    }
+  },
+  "definitions": {
+    "table_16_2": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Executive_Branch": {
+          "type": "string",
+          "example": "sample Total_Executive_Branch"
+        },
+        "Department_of_Defense": {
+          "type": "string",
+          "example": "sample Department_of_Defense"
+        },
+        "Total": {
+          "type": "string",
+          "example": "sample Total"
+        },
+        "Agriculture": {
+          "type": "string",
+          "example": "sample Agriculture"
+        },
+        "HHS_Education_Social_Security_Admin": {
+          "type": "string",
+          "example": "sample HHS_Education_Social_Security_Admin"
+        },
+        "Homeland_Security": {
+          "type": "string",
+          "example": "sample Homeland_Security"
+        },
+        "Interior": {
+          "type": "string",
+          "example": "sample Interior"
+        },
+        "Justice": {
+          "type": "string",
+          "example": "sample Justice"
+        },
+        "Transpor__tation": {
+          "type": "string",
+          "example": "sample Transpor__tation"
+        },
+        "Treasury": {
+          "type": "string",
+          "example": "sample Treasury"
+        },
+        "Veterans": {
+          "type": "string",
+          "example": "sample Veterans"
+        },
+        "Other": {
+          "type": "string",
+          "example": "sample Other"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Executive_Branch\":\"sample Total_Executive_Branch\",\"Department_of_Defense\":\"sample Department_of_Defense\",\"Total\":\"sample Total\",\"Agriculture\":\"sample Agriculture\",\"HHS_Education_Social_Security_Admin\":\"sample HHS_Education_Social_Security_Admin\",\"Homeland_Security\":\"sample Homeland_Security\",\"Interior\":\"sample Interior\",\"Justice\":\"sample Justice\",\"Transpor__tation\":\"sample Transpor__tation\",\"Treasury\":\"sample Treasury\",\"Veterans\":\"sample Veterans\",\"Other\":\"sample Other\"}"
+    },
+    "table_16_1": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Executive_Branch": {
+          "type": "string",
+          "example": "sample Total_Executive_Branch"
+        },
+        "Department_of_Defense": {
+          "type": "string",
+          "example": "sample Department_of_Defense"
+        },
+        "Total": {
+          "type": "string",
+          "example": "sample Total"
+        },
+        "Agriculture": {
+          "type": "string",
+          "example": "sample Agriculture"
+        },
+        "HHS_Education_Social_Security_Admin": {
+          "type": "string",
+          "example": "sample HHS_Education_Social_Security_Admin"
+        },
+        "Homeland_Security": {
+          "type": "string",
+          "example": "sample Homeland_Security"
+        },
+        "Interior": {
+          "type": "string",
+          "example": "sample Interior"
+        },
+        "Justice": {
+          "type": "string",
+          "example": "sample Justice"
+        },
+        "Transpor_tation": {
+          "type": "string",
+          "example": "sample Transpor_tation"
+        },
+        "Treasury": {
+          "type": "string",
+          "example": "sample Treasury"
+        },
+        "Veterans": {
+          "type": "string",
+          "example": "sample Veterans"
+        },
+        "Other": {
+          "type": "string",
+          "example": "sample Other"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Executive_Branch\":\"sample Total_Executive_Branch\",\"Department_of_Defense\":\"sample Department_of_Defense\",\"Total\":\"sample Total\",\"Agriculture\":\"sample Agriculture\",\"HHS_Education_Social_Security_Admin\":\"sample HHS_Education_Social_Security_Admin\",\"Homeland_Security\":\"sample Homeland_Security\",\"Interior\":\"sample Interior\",\"Justice\":\"sample Justice\",\"Transpor_tation\":\"sample Transpor_tation\",\"Treasury\":\"sample Treasury\",\"Veterans\":\"sample Veterans\",\"Other\":\"sample Other\"}"
+    }
+  }
+}

@@ -1,1 +1,1535 @@
-{"swagger":"2.0","info":{"description":"","version":"1.1.0","title":"Federal Budget 8","contact":{"name":"Kin Lane","email":"kinlane@gmail.com"}},"host":"federalbudget8.apispark.net","basePath":"/v1","tags":[{"name":"Federal Budget 8","description":"Imported from Federal Budget 8"},{"name":"Default","description":"Default section"}],"schemes":["https"],"paths":{"/8_1/":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a list of table_8_1","description":"Loads a list of table_8_1","operationId":"gettable_8_1List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"Social_Security_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Social_Security_Programmatic","required":false,"type":"string"},{"name":"Total__Mandatory","in":"query","description":"Allows to filter the collections of result by the value of field Total__Mandatory","required":false,"type":"string"},{"name":"Total__Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field Total__Discretionary","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"Total_Outlays_1","in":"query","description":"Allows to filter the collections of result by the value of field Total_Outlays_1","required":false,"type":"string"},{"name":"Other_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Other_Programmatic","required":false,"type":"string"},{"name":"Net_Interest__Mandatory_and_Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field Net_Interest__Mandatory_and_Net_Interest","required":false,"type":"string"},{"name":"Undistributed_Offsetting_Receipts_4__Mandatory","in":"query","description":"Allows to filter the collections of result by the value of field Undistributed_Offsetting_Receipts_4__Mandatory","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Total__Mandatory_and_Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field Total__Mandatory_and_Net_Interest","required":false,"type":"string"},{"name":"Deposit_Insurance_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Deposit_Insurance_Programmatic","required":false,"type":"string"},{"name":"Total_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Total_Programmatic","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"},{"name":"National_Defense_2__Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field National_Defense_2__Discretionary","required":false,"type":"string"},{"name":"Means_Tested_Entitlements_3_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Means_Tested_Entitlements_3_Programmatic","required":false,"type":"string"},{"name":"Nondefense_2__Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field Nondefense_2__Discretionary","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_8_1"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 8"],"summary":"Adds a table_8_1","description":"Adds a table_8_1","operationId":"posttable_8_1List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_1"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_1"}}}}},"/8_1/{table_8_1id}":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a table_8_1","description":"Loads a table_8_1","operationId":"gettable_8_1","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_1id","in":"path","description":"Identifier of the table_8_1","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_1"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 8"],"summary":"Stores a table_8_1","description":"Stores a table_8_1","operationId":"puttable_8_1","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_1id","in":"path","description":"Identifier of the table_8_1","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_1"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_1"}}}},"delete":{"tags":["Federal Budget 8"],"summary":"Deletes a table_8_1","description":"Deletes a table_8_1","operationId":"deletetable_8_1","consumes":[],"produces":[],"parameters":[{"name":"table_8_1id","in":"path","description":"Identifier of the table_8_1","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/8_2/":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a list of table_8_2","description":"Loads a list of table_8_2","operationId":"gettable_8_2List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"Total__Mandatory_and_Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field Total__Mandatory_and_Net_Interest","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"Other_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Other_Programmatic","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"National_Defense_2__Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field National_Defense_2__Discretionary","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Total_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Total_Programmatic","required":false,"type":"string"},{"name":"Net_Interest__Mandatory_and_Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field Net_Interest__Mandatory_and_Net_Interest","required":false,"type":"string"},{"name":"Total__Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field Total__Discretionary","required":false,"type":"string"},{"name":"Means_Tested_Entitlements_3_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Means_Tested_Entitlements_3_Programmatic","required":false,"type":"string"},{"name":"Deposit_Insurance_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Deposit_Insurance_Programmatic","required":false,"type":"string"},{"name":"Undistributed_Offsetting_Receipts_4__Mandatory","in":"query","description":"Allows to filter the collections of result by the value of field Undistributed_Offsetting_Receipts_4__Mandatory","required":false,"type":"string"},{"name":"Total_Outlays_1","in":"query","description":"Allows to filter the collections of result by the value of field Total_Outlays_1","required":false,"type":"string"},{"name":"Social_Security_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Social_Security_Programmatic","required":false,"type":"string"},{"name":"Total__Mandatory","in":"query","description":"Allows to filter the collections of result by the value of field Total__Mandatory","required":false,"type":"string"},{"name":"Non_defense_2__Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field Non_defense_2__Discretionary","required":false,"type":"string"},{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_8_2"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 8"],"summary":"Adds a table_8_2","description":"Adds a table_8_2","operationId":"posttable_8_2List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_2"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_2"}}}}},"/8_2/{table_8_2id}":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a table_8_2","description":"Loads a table_8_2","operationId":"gettable_8_2","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_2id","in":"path","description":"Identifier of the table_8_2","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_2"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 8"],"summary":"Stores a table_8_2","description":"Stores a table_8_2","operationId":"puttable_8_2","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_2id","in":"path","description":"Identifier of the table_8_2","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_2"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_2"}}}},"delete":{"tags":["Federal Budget 8"],"summary":"Deletes a table_8_2","description":"Deletes a table_8_2","operationId":"deletetable_8_2","consumes":[],"produces":[],"parameters":[{"name":"table_8_2id","in":"path","description":"Identifier of the table_8_2","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/8_3/":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a list of table_8_3","description":"Loads a list of table_8_3","operationId":"gettable_8_3List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"Net_Interest__Mandatory_and_Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field Net_Interest__Mandatory_and_Net_Interest","required":false,"type":"string"},{"name":"Total__Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field Total__Discretionary","required":false,"type":"string"},{"name":"Means_Tested_Entitlements_3_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Means_Tested_Entitlements_3_Programmatic","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"Total_Outlays_1","in":"query","description":"Allows to filter the collections of result by the value of field Total_Outlays_1","required":false,"type":"string"},{"name":"Other_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Other_Programmatic","required":false,"type":"string"},{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"},{"name":"Deposit_Insurance_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Deposit_Insurance_Programmatic","required":false,"type":"string"},{"name":"Total__Mandatory_and_Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field Total__Mandatory_and_Net_Interest","required":false,"type":"string"},{"name":"Non_defense_2__Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field Non_defense_2__Discretionary","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Social_Security_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Social_Security_Programmatic","required":false,"type":"string"},{"name":"Total__Mandatory","in":"query","description":"Allows to filter the collections of result by the value of field Total__Mandatory","required":false,"type":"string"},{"name":"Undistributed_Offsetting_Receipts_4__Mandatory","in":"query","description":"Allows to filter the collections of result by the value of field Undistributed_Offsetting_Receipts_4__Mandatory","required":false,"type":"string"},{"name":"National_Defense_2__Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field National_Defense_2__Discretionary","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"Total_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Total_Programmatic","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_8_3"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 8"],"summary":"Adds a table_8_3","description":"Adds a table_8_3","operationId":"posttable_8_3List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_3"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_3"}}}}},"/8_3/{table_8_3id}":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a table_8_3","description":"Loads a table_8_3","operationId":"gettable_8_3","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_3id","in":"path","description":"Identifier of the table_8_3","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_3"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 8"],"summary":"Stores a table_8_3","description":"Stores a table_8_3","operationId":"puttable_8_3","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_3id","in":"path","description":"Identifier of the table_8_3","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_3"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_3"}}}},"delete":{"tags":["Federal Budget 8"],"summary":"Deletes a table_8_3","description":"Deletes a table_8_3","operationId":"deletetable_8_3","consumes":[],"produces":[],"parameters":[{"name":"table_8_3id","in":"path","description":"Identifier of the table_8_3","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/8_4/":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a list of table_8_4","description":"Loads a list of table_8_4","operationId":"gettable_8_4List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"Total_Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field Total_Discretionary","required":false,"type":"string"},{"name":"Fiscal_Year","in":"query","description":"Allows to filter the collections of result by the value of field Fiscal_Year","required":false,"type":"string"},{"name":"Other_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Other_Programmatic","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"National_Defense_2_Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field National_Defense_2_Discretionary","required":false,"type":"string"},{"name":"Total_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Total_Programmatic","required":false,"type":"string"},{"name":"Total_Mandatory","in":"query","description":"Allows to filter the collections of result by the value of field Total_Mandatory","required":false,"type":"string"},{"name":"Total_Mandatory_and_Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field Total_Mandatory_and_Net_Interest","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Means_Tested_Entitlements_3_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Means_Tested_Entitlements_3_Programmatic","required":false,"type":"string"},{"name":"Deposit_Insurance_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Deposit_Insurance_Programmatic","required":false,"type":"string"},{"name":"Non_defense_2_Discretionary","in":"query","description":"Allows to filter the collections of result by the value of field Non_defense_2_Discretionary","required":false,"type":"string"},{"name":"Undistributed_Offsetting_Receipts_4_Mandatory","in":"query","description":"Allows to filter the collections of result by the value of field Undistributed_Offsetting_Receipts_4_Mandatory","required":false,"type":"string"},{"name":"Social_Security_Programmatic","in":"query","description":"Allows to filter the collections of result by the value of field Social_Security_Programmatic","required":false,"type":"string"},{"name":"Net_Interest","in":"query","description":"Allows to filter the collections of result by the value of field Net_Interest","required":false,"type":"string"},{"name":"Total_Outlays_1","in":"query","description":"Allows to filter the collections of result by the value of field Total_Outlays_1","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_8_4"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 8"],"summary":"Adds a table_8_4","description":"Adds a table_8_4","operationId":"posttable_8_4List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_4"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_4"}}}}},"/8_4/{table_8_4id}":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a table_8_4","description":"Loads a table_8_4","operationId":"gettable_8_4","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_4id","in":"path","description":"Identifier of the table_8_4","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_4"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 8"],"summary":"Stores a table_8_4","description":"Stores a table_8_4","operationId":"puttable_8_4","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_4id","in":"path","description":"Identifier of the table_8_4","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_4"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_4"}}}},"delete":{"tags":["Federal Budget 8"],"summary":"Deletes a table_8_4","description":"Deletes a table_8_4","operationId":"deletetable_8_4","consumes":[],"produces":[],"parameters":[{"name":"table_8_4id","in":"path","description":"Identifier of the table_8_4","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/8_5/":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a list of table_8_5","description":"Loads a list of table_8_5","operationId":"gettable_8_5List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"TQ","in":"query","description":"Allows to filter the collections of result by the value of field TQ","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"Category_and_Program","in":"query","description":"Allows to filter the collections of result by the value of field Category_and_Program","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_8_5"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 8"],"summary":"Adds a table_8_5","description":"Adds a table_8_5","operationId":"posttable_8_5List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_5"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_5"}}}}},"/8_5/{table_8_5id}":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a table_8_5","description":"Loads a table_8_5","operationId":"gettable_8_5","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_5id","in":"path","description":"Identifier of the table_8_5","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_5"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 8"],"summary":"Stores a table_8_5","description":"Stores a table_8_5","operationId":"puttable_8_5","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_5id","in":"path","description":"Identifier of the table_8_5","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_5"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_5"}}}},"delete":{"tags":["Federal Budget 8"],"summary":"Deletes a table_8_5","description":"Deletes a table_8_5","operationId":"deletetable_8_5","consumes":[],"produces":[],"parameters":[{"name":"table_8_5id","in":"path","description":"Identifier of the table_8_5","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/8_6/":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a list of table_8_6","description":"Loads a list of table_8_6","operationId":"gettable_8_6List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"TQ","in":"query","description":"Allows to filter the collections of result by the value of field TQ","required":false,"type":"string"},{"name":"Category_and_Program","in":"query","description":"Allows to filter the collections of result by the value of field Category_and_Program","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_8_6"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 8"],"summary":"Adds a table_8_6","description":"Adds a table_8_6","operationId":"posttable_8_6List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_6"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_6"}}}}},"/8_6/{table_8_6id}":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a table_8_6","description":"Loads a table_8_6","operationId":"gettable_8_6","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_6id","in":"path","description":"Identifier of the table_8_6","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_6"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 8"],"summary":"Stores a table_8_6","description":"Stores a table_8_6","operationId":"puttable_8_6","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_6id","in":"path","description":"Identifier of the table_8_6","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_6"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_6"}}}},"delete":{"tags":["Federal Budget 8"],"summary":"Deletes a table_8_6","description":"Deletes a table_8_6","operationId":"deletetable_8_6","consumes":[],"produces":[],"parameters":[{"name":"table_8_6id","in":"path","description":"Identifier of the table_8_6","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/8_7/":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a list of table_8_7","description":"Loads a list of table_8_7","operationId":"gettable_8_7List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"TQ","in":"query","description":"Allows to filter the collections of result by the value of field TQ","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"Category_and_Program","in":"query","description":"Allows to filter the collections of result by the value of field Category_and_Program","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_8_7"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 8"],"summary":"Adds a table_8_7","description":"Adds a table_8_7","operationId":"posttable_8_7List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_7"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_7"}}}}},"/8_7/{table_8_7id}":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a table_8_7","description":"Loads a table_8_7","operationId":"gettable_8_7","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_7id","in":"path","description":"Identifier of the table_8_7","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_7"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 8"],"summary":"Stores a table_8_7","description":"Stores a table_8_7","operationId":"puttable_8_7","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_7id","in":"path","description":"Identifier of the table_8_7","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_7"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_7"}}}},"delete":{"tags":["Federal Budget 8"],"summary":"Deletes a table_8_7","description":"Deletes a table_8_7","operationId":"deletetable_8_7","consumes":[],"produces":[],"parameters":[{"name":"table_8_7id","in":"path","description":"Identifier of the table_8_7","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}},"/8_8/":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a list of table_8_8","description":"Loads a list of table_8_8","operationId":"gettable_8_8List","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"$page","in":"query","description":"Number of the page to retrieve. Integer value.","required":false,"type":"string"},{"name":"TQ","in":"query","description":"Allows to filter the collections of result by the value of field TQ","required":false,"type":"string"},{"name":"$sort","in":"query","description":"Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC","required":false,"type":"string"},{"name":"Category_and_Program","in":"query","description":"Allows to filter the collections of result by the value of field Category_and_Program","required":false,"type":"string"},{"name":"$size","in":"query","description":"Size of the page to retrieve. Integer value","required":false,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"type":"array","items":{"$ref":"#/definitions/table_8_8"}}},"400":{"description":"Error 400"}}},"post":{"tags":["Federal Budget 8"],"summary":"Adds a table_8_8","description":"Adds a table_8_8","operationId":"posttable_8_8List","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_8"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_8"}}}}},"/8_8/{table_8_8id}":{"get":{"tags":["Federal Budget 8"],"summary":"Loads a table_8_8","description":"Loads a table_8_8","operationId":"gettable_8_8","consumes":[],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_8id","in":"path","description":"Identifier of the table_8_8","required":true,"type":"string"}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_8"}},"400":{"description":"Error 400"}}},"put":{"tags":["Federal Budget 8"],"summary":"Stores a table_8_8","description":"Stores a table_8_8","operationId":"puttable_8_8","consumes":["application/json","application/x-yaml","application/xml","text/xml"],"produces":["application/json","application/x-yaml","application/xml","text/xml"],"parameters":[{"name":"table_8_8id","in":"path","description":"Identifier of the table_8_8","required":true,"type":"string"},{"in":"body","name":"body","required":false,"schema":{"$ref":"#/definitions/table_8_8"}}],"responses":{"200":{"description":"Success","schema":{"$ref":"#/definitions/table_8_8"}}}},"delete":{"tags":["Federal Budget 8"],"summary":"Deletes a table_8_8","description":"Deletes a table_8_8","operationId":"deletetable_8_8","consumes":[],"produces":[],"parameters":[{"name":"table_8_8id","in":"path","description":"Identifier of the table_8_8","required":true,"type":"string"}],"responses":{"200":{"description":"Success"}}}}},"securityDefinitions":{"HTTP_BASIC":{"type":"basic"}},"definitions":{"table_8_2":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Outlays_1":{"type":"string","example":"sample Total_Outlays_1"},"Total__Discretionary":{"type":"string","example":"sample Total__Discretionary"},"National_Defense_2__Discretionary":{"type":"string","example":"sample National_Defense_2__Discretionary"},"Non_defense_2__Discretionary":{"type":"string","example":"sample Non_defense_2__Discretionary"},"Total__Mandatory_and_Net_Interest":{"type":"string","example":"sample Total__Mandatory_and_Net_Interest"},"Total__Mandatory":{"type":"string","example":"sample Total__Mandatory"},"Total_Programmatic":{"type":"string","example":"sample Total_Programmatic"},"Social_Security_Programmatic":{"type":"string","example":"sample Social_Security_Programmatic"},"Deposit_Insurance_Programmatic":{"type":"string","example":"sample Deposit_Insurance_Programmatic"},"Means_Tested_Entitlements_3_Programmatic":{"type":"string","example":"sample Means_Tested_Entitlements_3_Programmatic"},"Other_Programmatic":{"type":"string","example":"sample Other_Programmatic"},"Undistributed_Offsetting_Receipts_4__Mandatory":{"type":"string","example":"sample Undistributed_Offsetting_Receipts_4__Mandatory"},"Net_Interest__Mandatory_and_Net_Interest":{"type":"string","example":"sample Net_Interest__Mandatory_and_Net_Interest"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Outlays_1\":\"sample Total_Outlays_1\",\"Total__Discretionary\":\"sample Total__Discretionary\",\"National_Defense_2__Discretionary\":\"sample National_Defense_2__Discretionary\",\"Non_defense_2__Discretionary\":\"sample Non_defense_2__Discretionary\",\"Total__Mandatory_and_Net_Interest\":\"sample Total__Mandatory_and_Net_Interest\",\"Total__Mandatory\":\"sample Total__Mandatory\",\"Total_Programmatic\":\"sample Total_Programmatic\",\"Social_Security_Programmatic\":\"sample Social_Security_Programmatic\",\"Deposit_Insurance_Programmatic\":\"sample Deposit_Insurance_Programmatic\",\"Means_Tested_Entitlements_3_Programmatic\":\"sample Means_Tested_Entitlements_3_Programmatic\",\"Other_Programmatic\":\"sample Other_Programmatic\",\"Undistributed_Offsetting_Receipts_4__Mandatory\":\"sample Undistributed_Offsetting_Receipts_4__Mandatory\",\"Net_Interest__Mandatory_and_Net_Interest\":\"sample Net_Interest__Mandatory_and_Net_Interest\"}"},"table_8_3":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Outlays_1":{"type":"string","example":"sample Total_Outlays_1"},"Total__Discretionary":{"type":"string","example":"sample Total__Discretionary"},"National_Defense_2__Discretionary":{"type":"string","example":"sample National_Defense_2__Discretionary"},"Non_defense_2__Discretionary":{"type":"string","example":"sample Non_defense_2__Discretionary"},"Total__Mandatory_and_Net_Interest":{"type":"string","example":"sample Total__Mandatory_and_Net_Interest"},"Total__Mandatory":{"type":"string","example":"sample Total__Mandatory"},"Total_Programmatic":{"type":"string","example":"sample Total_Programmatic"},"Social_Security_Programmatic":{"type":"string","example":"sample Social_Security_Programmatic"},"Deposit_Insurance_Programmatic":{"type":"string","example":"sample Deposit_Insurance_Programmatic"},"Means_Tested_Entitlements_3_Programmatic":{"type":"string","example":"sample Means_Tested_Entitlements_3_Programmatic"},"Other_Programmatic":{"type":"string","example":"sample Other_Programmatic"},"Undistributed_Offsetting_Receipts_4__Mandatory":{"type":"string","example":"sample Undistributed_Offsetting_Receipts_4__Mandatory"},"Net_Interest__Mandatory_and_Net_Interest":{"type":"string","example":"sample Net_Interest__Mandatory_and_Net_Interest"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Outlays_1\":\"sample Total_Outlays_1\",\"Total__Discretionary\":\"sample Total__Discretionary\",\"National_Defense_2__Discretionary\":\"sample National_Defense_2__Discretionary\",\"Non_defense_2__Discretionary\":\"sample Non_defense_2__Discretionary\",\"Total__Mandatory_and_Net_Interest\":\"sample Total__Mandatory_and_Net_Interest\",\"Total__Mandatory\":\"sample Total__Mandatory\",\"Total_Programmatic\":\"sample Total_Programmatic\",\"Social_Security_Programmatic\":\"sample Social_Security_Programmatic\",\"Deposit_Insurance_Programmatic\":\"sample Deposit_Insurance_Programmatic\",\"Means_Tested_Entitlements_3_Programmatic\":\"sample Means_Tested_Entitlements_3_Programmatic\",\"Other_Programmatic\":\"sample Other_Programmatic\",\"Undistributed_Offsetting_Receipts_4__Mandatory\":\"sample Undistributed_Offsetting_Receipts_4__Mandatory\",\"Net_Interest__Mandatory_and_Net_Interest\":\"sample Net_Interest__Mandatory_and_Net_Interest\"}"},"table_8_8":{"required":["Category_and_Program"],"properties":{"Category_and_Program":{"type":"string","example":"sample Category_and_Program"},"TQ":{"type":"string","example":"sample TQ"}},"example":"{\"Category_and_Program\":\"sample Category_and_Program\",\"TQ\":\"sample TQ\"}"},"table_8_1":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Outlays_1":{"type":"string","example":"sample Total_Outlays_1"},"Total__Discretionary":{"type":"string","example":"sample Total__Discretionary"},"National_Defense_2__Discretionary":{"type":"string","example":"sample National_Defense_2__Discretionary"},"Nondefense_2__Discretionary":{"type":"string","example":"sample Nondefense_2__Discretionary"},"Total__Mandatory_and_Net_Interest":{"type":"string","example":"sample Total__Mandatory_and_Net_Interest"},"Total__Mandatory":{"type":"string","example":"sample Total__Mandatory"},"Total_Programmatic":{"type":"string","example":"sample Total_Programmatic"},"Social_Security_Programmatic":{"type":"string","example":"sample Social_Security_Programmatic"},"Deposit_Insurance_Programmatic":{"type":"string","example":"sample Deposit_Insurance_Programmatic"},"Means_Tested_Entitlements_3_Programmatic":{"type":"string","example":"sample Means_Tested_Entitlements_3_Programmatic"},"Other_Programmatic":{"type":"string","example":"sample Other_Programmatic"},"Undistributed_Offsetting_Receipts_4__Mandatory":{"type":"string","example":"sample Undistributed_Offsetting_Receipts_4__Mandatory"},"Net_Interest__Mandatory_and_Net_Interest":{"type":"string","example":"sample Net_Interest__Mandatory_and_Net_Interest"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Outlays_1\":\"sample Total_Outlays_1\",\"Total__Discretionary\":\"sample Total__Discretionary\",\"National_Defense_2__Discretionary\":\"sample National_Defense_2__Discretionary\",\"Nondefense_2__Discretionary\":\"sample Nondefense_2__Discretionary\",\"Total__Mandatory_and_Net_Interest\":\"sample Total__Mandatory_and_Net_Interest\",\"Total__Mandatory\":\"sample Total__Mandatory\",\"Total_Programmatic\":\"sample Total_Programmatic\",\"Social_Security_Programmatic\":\"sample Social_Security_Programmatic\",\"Deposit_Insurance_Programmatic\":\"sample Deposit_Insurance_Programmatic\",\"Means_Tested_Entitlements_3_Programmatic\":\"sample Means_Tested_Entitlements_3_Programmatic\",\"Other_Programmatic\":\"sample Other_Programmatic\",\"Undistributed_Offsetting_Receipts_4__Mandatory\":\"sample Undistributed_Offsetting_Receipts_4__Mandatory\",\"Net_Interest__Mandatory_and_Net_Interest\":\"sample Net_Interest__Mandatory_and_Net_Interest\"}"},"table_8_6":{"required":["Category_and_Program"],"properties":{"Category_and_Program":{"type":"string","example":"sample Category_and_Program"},"TQ":{"type":"string","example":"sample TQ"}},"example":"{\"Category_and_Program\":\"sample Category_and_Program\",\"TQ\":\"sample TQ\"}"},"table_8_7":{"required":["Category_and_Program"],"properties":{"Category_and_Program":{"type":"string","example":"sample Category_and_Program"},"TQ":{"type":"string","example":"sample TQ"}},"example":"{\"Category_and_Program\":\"sample Category_and_Program\",\"TQ\":\"sample TQ\"}"},"table_8_4":{"required":["Fiscal_Year"],"properties":{"Fiscal_Year":{"type":"string","example":"sample Fiscal_Year"},"Total_Outlays_1":{"type":"string","example":"sample Total_Outlays_1"},"Total_Discretionary":{"type":"string","example":"sample Total_Discretionary"},"National_Defense_2_Discretionary":{"type":"string","example":"sample National_Defense_2_Discretionary"},"Non_defense_2_Discretionary":{"type":"string","example":"sample Non_defense_2_Discretionary"},"Total_Mandatory_and_Net_Interest":{"type":"string","example":"sample Total_Mandatory_and_Net_Interest"},"Total_Mandatory":{"type":"string","example":"sample Total_Mandatory"},"Total_Programmatic":{"type":"string","example":"sample Total_Programmatic"},"Social_Security_Programmatic":{"type":"string","example":"sample Social_Security_Programmatic"},"Deposit_Insurance_Programmatic":{"type":"string","example":"sample Deposit_Insurance_Programmatic"},"Means_Tested_Entitlements_3_Programmatic":{"type":"string","example":"sample Means_Tested_Entitlements_3_Programmatic"},"Other_Programmatic":{"type":"string","example":"sample Other_Programmatic"},"Undistributed_Offsetting_Receipts_4_Mandatory":{"type":"string","example":"sample Undistributed_Offsetting_Receipts_4_Mandatory"},"Net_Interest":{"type":"string","example":"sample Net_Interest"}},"example":"{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Outlays_1\":\"sample Total_Outlays_1\",\"Total_Discretionary\":\"sample Total_Discretionary\",\"National_Defense_2_Discretionary\":\"sample National_Defense_2_Discretionary\",\"Non_defense_2_Discretionary\":\"sample Non_defense_2_Discretionary\",\"Total_Mandatory_and_Net_Interest\":\"sample Total_Mandatory_and_Net_Interest\",\"Total_Mandatory\":\"sample Total_Mandatory\",\"Total_Programmatic\":\"sample Total_Programmatic\",\"Social_Security_Programmatic\":\"sample Social_Security_Programmatic\",\"Deposit_Insurance_Programmatic\":\"sample Deposit_Insurance_Programmatic\",\"Means_Tested_Entitlements_3_Programmatic\":\"sample Means_Tested_Entitlements_3_Programmatic\",\"Other_Programmatic\":\"sample Other_Programmatic\",\"Undistributed_Offsetting_Receipts_4_Mandatory\":\"sample Undistributed_Offsetting_Receipts_4_Mandatory\",\"Net_Interest\":\"sample Net_Interest\"}"},"table_8_5":{"required":["Category_and_Program"],"properties":{"Category_and_Program":{"type":"string","example":"sample Category_and_Program"},"TQ":{"type":"string","example":"sample TQ"}},"example":"{\"Category_and_Program\":\"sample Category_and_Program\",\"TQ\":\"sample TQ\"}"}}}
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.1.0",
+    "title": "Federal Budget - Section 8",
+    "contact": {
+      "name": "Kin Lane",
+      "email": "kinlane@gmail.com"
+    }
+  },
+  "host": "federalbudget8.apispark.net",
+  "basePath": "/v1",
+  "tags": [
+    {
+      "name": "Federal Budget"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/8_1/": {
+      "get": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Loads a list of table_8_1",
+        "description": "Loads a list of table_8_1",
+        "operationId": "gettable_8_1List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Social_Security_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Social_Security_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total__Mandatory",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total__Mandatory",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total__Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total__Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Outlays_1",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Outlays_1",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Net_Interest__Mandatory_and_Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Net_Interest__Mandatory_and_Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Undistributed_Offsetting_Receipts_4__Mandatory",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Undistributed_Offsetting_Receipts_4__Mandatory",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total__Mandatory_and_Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total__Mandatory_and_Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Deposit_Insurance_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Deposit_Insurance_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "National_Defense_2__Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field National_Defense_2__Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Means_Tested_Entitlements_3_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Means_Tested_Entitlements_3_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Nondefense_2__Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Nondefense_2__Discretionary",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_8_1"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Adds a table_8_1",
+        "description": "Adds a table_8_1",
+        "operationId": "posttable_8_1List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_8_1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_8_1"
+            }
+          }
+        }
+      }
+    },
+    "/8_2/": {
+      "get": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Loads a list of table_8_2",
+        "description": "Loads a list of table_8_2",
+        "operationId": "gettable_8_2List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Total__Mandatory_and_Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total__Mandatory_and_Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "National_Defense_2__Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field National_Defense_2__Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Net_Interest__Mandatory_and_Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Net_Interest__Mandatory_and_Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total__Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total__Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Means_Tested_Entitlements_3_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Means_Tested_Entitlements_3_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Deposit_Insurance_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Deposit_Insurance_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Undistributed_Offsetting_Receipts_4__Mandatory",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Undistributed_Offsetting_Receipts_4__Mandatory",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Outlays_1",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Outlays_1",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Social_Security_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Social_Security_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total__Mandatory",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total__Mandatory",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Non_defense_2__Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Non_defense_2__Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_8_2"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Adds a table_8_2",
+        "description": "Adds a table_8_2",
+        "operationId": "posttable_8_2List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_8_2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_8_2"
+            }
+          }
+        }
+      }
+    },
+    "/8_3/": {
+      "get": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Loads a list of table_8_3",
+        "description": "Loads a list of table_8_3",
+        "operationId": "gettable_8_3List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Net_Interest__Mandatory_and_Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Net_Interest__Mandatory_and_Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total__Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total__Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Means_Tested_Entitlements_3_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Means_Tested_Entitlements_3_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Outlays_1",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Outlays_1",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Deposit_Insurance_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Deposit_Insurance_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total__Mandatory_and_Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total__Mandatory_and_Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Non_defense_2__Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Non_defense_2__Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Social_Security_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Social_Security_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total__Mandatory",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total__Mandatory",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Undistributed_Offsetting_Receipts_4__Mandatory",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Undistributed_Offsetting_Receipts_4__Mandatory",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "National_Defense_2__Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field National_Defense_2__Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Programmatic",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_8_3"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Adds a table_8_3",
+        "description": "Adds a table_8_3",
+        "operationId": "posttable_8_3List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_8_3"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_8_3"
+            }
+          }
+        }
+      }
+    },
+    "/8_4/": {
+      "get": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Loads a list of table_8_4",
+        "description": "Loads a list of table_8_4",
+        "operationId": "gettable_8_4List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Total_Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "National_Defense_2_Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field National_Defense_2_Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Mandatory",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Mandatory",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Mandatory_and_Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Mandatory_and_Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Means_Tested_Entitlements_3_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Means_Tested_Entitlements_3_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Deposit_Insurance_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Deposit_Insurance_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Non_defense_2_Discretionary",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Non_defense_2_Discretionary",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Undistributed_Offsetting_Receipts_4_Mandatory",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Undistributed_Offsetting_Receipts_4_Mandatory",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Social_Security_Programmatic",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Social_Security_Programmatic",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Net_Interest",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Net_Interest",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Outlays_1",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Outlays_1",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_8_4"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Adds a table_8_4",
+        "description": "Adds a table_8_4",
+        "operationId": "posttable_8_4List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_8_4"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_8_4"
+            }
+          }
+        }
+      }
+    },
+    "/8_5/": {
+      "get": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Loads a list of table_8_5",
+        "description": "Loads a list of table_8_5",
+        "operationId": "gettable_8_5List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "TQ",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field TQ",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Category_and_Program",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Category_and_Program",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_8_5"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Adds a table_8_5",
+        "description": "Adds a table_8_5",
+        "operationId": "posttable_8_5List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_8_5"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_8_5"
+            }
+          }
+        }
+      }
+    },
+    "/8_6/": {
+      "get": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Loads a list of table_8_6",
+        "description": "Loads a list of table_8_6",
+        "operationId": "gettable_8_6List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "TQ",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field TQ",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Category_and_Program",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Category_and_Program",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_8_6"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Adds a table_8_6",
+        "description": "Adds a table_8_6",
+        "operationId": "posttable_8_6List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_8_6"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_8_6"
+            }
+          }
+        }
+      }
+    },
+    "/8_7/": {
+      "get": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Loads a list of table_8_7",
+        "description": "Loads a list of table_8_7",
+        "operationId": "gettable_8_7List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "TQ",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field TQ",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Category_and_Program",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Category_and_Program",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_8_7"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Adds a table_8_7",
+        "description": "Adds a table_8_7",
+        "operationId": "posttable_8_7List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_8_7"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_8_7"
+            }
+          }
+        }
+      }
+    },
+    "/8_8/": {
+      "get": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Loads a list of table_8_8",
+        "description": "Loads a list of table_8_8",
+        "operationId": "gettable_8_8List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "TQ",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field TQ",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Category_and_Program",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Category_and_Program",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_8_8"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 8"
+        ],
+        "summary": "Adds a table_8_8",
+        "description": "Adds a table_8_8",
+        "operationId": "posttable_8_8List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_8_8"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_8_8"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "HTTP_BASIC": {
+      "type": "basic"
+    }
+  },
+  "definitions": {
+    "table_8_2": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Outlays_1": {
+          "type": "string",
+          "example": "sample Total_Outlays_1"
+        },
+        "Total__Discretionary": {
+          "type": "string",
+          "example": "sample Total__Discretionary"
+        },
+        "National_Defense_2__Discretionary": {
+          "type": "string",
+          "example": "sample National_Defense_2__Discretionary"
+        },
+        "Non_defense_2__Discretionary": {
+          "type": "string",
+          "example": "sample Non_defense_2__Discretionary"
+        },
+        "Total__Mandatory_and_Net_Interest": {
+          "type": "string",
+          "example": "sample Total__Mandatory_and_Net_Interest"
+        },
+        "Total__Mandatory": {
+          "type": "string",
+          "example": "sample Total__Mandatory"
+        },
+        "Total_Programmatic": {
+          "type": "string",
+          "example": "sample Total_Programmatic"
+        },
+        "Social_Security_Programmatic": {
+          "type": "string",
+          "example": "sample Social_Security_Programmatic"
+        },
+        "Deposit_Insurance_Programmatic": {
+          "type": "string",
+          "example": "sample Deposit_Insurance_Programmatic"
+        },
+        "Means_Tested_Entitlements_3_Programmatic": {
+          "type": "string",
+          "example": "sample Means_Tested_Entitlements_3_Programmatic"
+        },
+        "Other_Programmatic": {
+          "type": "string",
+          "example": "sample Other_Programmatic"
+        },
+        "Undistributed_Offsetting_Receipts_4__Mandatory": {
+          "type": "string",
+          "example": "sample Undistributed_Offsetting_Receipts_4__Mandatory"
+        },
+        "Net_Interest__Mandatory_and_Net_Interest": {
+          "type": "string",
+          "example": "sample Net_Interest__Mandatory_and_Net_Interest"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Outlays_1\":\"sample Total_Outlays_1\",\"Total__Discretionary\":\"sample Total__Discretionary\",\"National_Defense_2__Discretionary\":\"sample National_Defense_2__Discretionary\",\"Non_defense_2__Discretionary\":\"sample Non_defense_2__Discretionary\",\"Total__Mandatory_and_Net_Interest\":\"sample Total__Mandatory_and_Net_Interest\",\"Total__Mandatory\":\"sample Total__Mandatory\",\"Total_Programmatic\":\"sample Total_Programmatic\",\"Social_Security_Programmatic\":\"sample Social_Security_Programmatic\",\"Deposit_Insurance_Programmatic\":\"sample Deposit_Insurance_Programmatic\",\"Means_Tested_Entitlements_3_Programmatic\":\"sample Means_Tested_Entitlements_3_Programmatic\",\"Other_Programmatic\":\"sample Other_Programmatic\",\"Undistributed_Offsetting_Receipts_4__Mandatory\":\"sample Undistributed_Offsetting_Receipts_4__Mandatory\",\"Net_Interest__Mandatory_and_Net_Interest\":\"sample Net_Interest__Mandatory_and_Net_Interest\"}"
+    },
+    "table_8_3": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Outlays_1": {
+          "type": "string",
+          "example": "sample Total_Outlays_1"
+        },
+        "Total__Discretionary": {
+          "type": "string",
+          "example": "sample Total__Discretionary"
+        },
+        "National_Defense_2__Discretionary": {
+          "type": "string",
+          "example": "sample National_Defense_2__Discretionary"
+        },
+        "Non_defense_2__Discretionary": {
+          "type": "string",
+          "example": "sample Non_defense_2__Discretionary"
+        },
+        "Total__Mandatory_and_Net_Interest": {
+          "type": "string",
+          "example": "sample Total__Mandatory_and_Net_Interest"
+        },
+        "Total__Mandatory": {
+          "type": "string",
+          "example": "sample Total__Mandatory"
+        },
+        "Total_Programmatic": {
+          "type": "string",
+          "example": "sample Total_Programmatic"
+        },
+        "Social_Security_Programmatic": {
+          "type": "string",
+          "example": "sample Social_Security_Programmatic"
+        },
+        "Deposit_Insurance_Programmatic": {
+          "type": "string",
+          "example": "sample Deposit_Insurance_Programmatic"
+        },
+        "Means_Tested_Entitlements_3_Programmatic": {
+          "type": "string",
+          "example": "sample Means_Tested_Entitlements_3_Programmatic"
+        },
+        "Other_Programmatic": {
+          "type": "string",
+          "example": "sample Other_Programmatic"
+        },
+        "Undistributed_Offsetting_Receipts_4__Mandatory": {
+          "type": "string",
+          "example": "sample Undistributed_Offsetting_Receipts_4__Mandatory"
+        },
+        "Net_Interest__Mandatory_and_Net_Interest": {
+          "type": "string",
+          "example": "sample Net_Interest__Mandatory_and_Net_Interest"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Outlays_1\":\"sample Total_Outlays_1\",\"Total__Discretionary\":\"sample Total__Discretionary\",\"National_Defense_2__Discretionary\":\"sample National_Defense_2__Discretionary\",\"Non_defense_2__Discretionary\":\"sample Non_defense_2__Discretionary\",\"Total__Mandatory_and_Net_Interest\":\"sample Total__Mandatory_and_Net_Interest\",\"Total__Mandatory\":\"sample Total__Mandatory\",\"Total_Programmatic\":\"sample Total_Programmatic\",\"Social_Security_Programmatic\":\"sample Social_Security_Programmatic\",\"Deposit_Insurance_Programmatic\":\"sample Deposit_Insurance_Programmatic\",\"Means_Tested_Entitlements_3_Programmatic\":\"sample Means_Tested_Entitlements_3_Programmatic\",\"Other_Programmatic\":\"sample Other_Programmatic\",\"Undistributed_Offsetting_Receipts_4__Mandatory\":\"sample Undistributed_Offsetting_Receipts_4__Mandatory\",\"Net_Interest__Mandatory_and_Net_Interest\":\"sample Net_Interest__Mandatory_and_Net_Interest\"}"
+    },
+    "table_8_8": {
+      "required": [
+        "Category_and_Program"
+      ],
+      "properties": {
+        "Category_and_Program": {
+          "type": "string",
+          "example": "sample Category_and_Program"
+        },
+        "TQ": {
+          "type": "string",
+          "example": "sample TQ"
+        }
+      },
+      "example": "{\"Category_and_Program\":\"sample Category_and_Program\",\"TQ\":\"sample TQ\"}"
+    },
+    "table_8_1": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Outlays_1": {
+          "type": "string",
+          "example": "sample Total_Outlays_1"
+        },
+        "Total__Discretionary": {
+          "type": "string",
+          "example": "sample Total__Discretionary"
+        },
+        "National_Defense_2__Discretionary": {
+          "type": "string",
+          "example": "sample National_Defense_2__Discretionary"
+        },
+        "Nondefense_2__Discretionary": {
+          "type": "string",
+          "example": "sample Nondefense_2__Discretionary"
+        },
+        "Total__Mandatory_and_Net_Interest": {
+          "type": "string",
+          "example": "sample Total__Mandatory_and_Net_Interest"
+        },
+        "Total__Mandatory": {
+          "type": "string",
+          "example": "sample Total__Mandatory"
+        },
+        "Total_Programmatic": {
+          "type": "string",
+          "example": "sample Total_Programmatic"
+        },
+        "Social_Security_Programmatic": {
+          "type": "string",
+          "example": "sample Social_Security_Programmatic"
+        },
+        "Deposit_Insurance_Programmatic": {
+          "type": "string",
+          "example": "sample Deposit_Insurance_Programmatic"
+        },
+        "Means_Tested_Entitlements_3_Programmatic": {
+          "type": "string",
+          "example": "sample Means_Tested_Entitlements_3_Programmatic"
+        },
+        "Other_Programmatic": {
+          "type": "string",
+          "example": "sample Other_Programmatic"
+        },
+        "Undistributed_Offsetting_Receipts_4__Mandatory": {
+          "type": "string",
+          "example": "sample Undistributed_Offsetting_Receipts_4__Mandatory"
+        },
+        "Net_Interest__Mandatory_and_Net_Interest": {
+          "type": "string",
+          "example": "sample Net_Interest__Mandatory_and_Net_Interest"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Outlays_1\":\"sample Total_Outlays_1\",\"Total__Discretionary\":\"sample Total__Discretionary\",\"National_Defense_2__Discretionary\":\"sample National_Defense_2__Discretionary\",\"Nondefense_2__Discretionary\":\"sample Nondefense_2__Discretionary\",\"Total__Mandatory_and_Net_Interest\":\"sample Total__Mandatory_and_Net_Interest\",\"Total__Mandatory\":\"sample Total__Mandatory\",\"Total_Programmatic\":\"sample Total_Programmatic\",\"Social_Security_Programmatic\":\"sample Social_Security_Programmatic\",\"Deposit_Insurance_Programmatic\":\"sample Deposit_Insurance_Programmatic\",\"Means_Tested_Entitlements_3_Programmatic\":\"sample Means_Tested_Entitlements_3_Programmatic\",\"Other_Programmatic\":\"sample Other_Programmatic\",\"Undistributed_Offsetting_Receipts_4__Mandatory\":\"sample Undistributed_Offsetting_Receipts_4__Mandatory\",\"Net_Interest__Mandatory_and_Net_Interest\":\"sample Net_Interest__Mandatory_and_Net_Interest\"}"
+    },
+    "table_8_6": {
+      "required": [
+        "Category_and_Program"
+      ],
+      "properties": {
+        "Category_and_Program": {
+          "type": "string",
+          "example": "sample Category_and_Program"
+        },
+        "TQ": {
+          "type": "string",
+          "example": "sample TQ"
+        }
+      },
+      "example": "{\"Category_and_Program\":\"sample Category_and_Program\",\"TQ\":\"sample TQ\"}"
+    },
+    "table_8_7": {
+      "required": [
+        "Category_and_Program"
+      ],
+      "properties": {
+        "Category_and_Program": {
+          "type": "string",
+          "example": "sample Category_and_Program"
+        },
+        "TQ": {
+          "type": "string",
+          "example": "sample TQ"
+        }
+      },
+      "example": "{\"Category_and_Program\":\"sample Category_and_Program\",\"TQ\":\"sample TQ\"}"
+    },
+    "table_8_4": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Outlays_1": {
+          "type": "string",
+          "example": "sample Total_Outlays_1"
+        },
+        "Total_Discretionary": {
+          "type": "string",
+          "example": "sample Total_Discretionary"
+        },
+        "National_Defense_2_Discretionary": {
+          "type": "string",
+          "example": "sample National_Defense_2_Discretionary"
+        },
+        "Non_defense_2_Discretionary": {
+          "type": "string",
+          "example": "sample Non_defense_2_Discretionary"
+        },
+        "Total_Mandatory_and_Net_Interest": {
+          "type": "string",
+          "example": "sample Total_Mandatory_and_Net_Interest"
+        },
+        "Total_Mandatory": {
+          "type": "string",
+          "example": "sample Total_Mandatory"
+        },
+        "Total_Programmatic": {
+          "type": "string",
+          "example": "sample Total_Programmatic"
+        },
+        "Social_Security_Programmatic": {
+          "type": "string",
+          "example": "sample Social_Security_Programmatic"
+        },
+        "Deposit_Insurance_Programmatic": {
+          "type": "string",
+          "example": "sample Deposit_Insurance_Programmatic"
+        },
+        "Means_Tested_Entitlements_3_Programmatic": {
+          "type": "string",
+          "example": "sample Means_Tested_Entitlements_3_Programmatic"
+        },
+        "Other_Programmatic": {
+          "type": "string",
+          "example": "sample Other_Programmatic"
+        },
+        "Undistributed_Offsetting_Receipts_4_Mandatory": {
+          "type": "string",
+          "example": "sample Undistributed_Offsetting_Receipts_4_Mandatory"
+        },
+        "Net_Interest": {
+          "type": "string",
+          "example": "sample Net_Interest"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Outlays_1\":\"sample Total_Outlays_1\",\"Total_Discretionary\":\"sample Total_Discretionary\",\"National_Defense_2_Discretionary\":\"sample National_Defense_2_Discretionary\",\"Non_defense_2_Discretionary\":\"sample Non_defense_2_Discretionary\",\"Total_Mandatory_and_Net_Interest\":\"sample Total_Mandatory_and_Net_Interest\",\"Total_Mandatory\":\"sample Total_Mandatory\",\"Total_Programmatic\":\"sample Total_Programmatic\",\"Social_Security_Programmatic\":\"sample Social_Security_Programmatic\",\"Deposit_Insurance_Programmatic\":\"sample Deposit_Insurance_Programmatic\",\"Means_Tested_Entitlements_3_Programmatic\":\"sample Means_Tested_Entitlements_3_Programmatic\",\"Other_Programmatic\":\"sample Other_Programmatic\",\"Undistributed_Offsetting_Receipts_4_Mandatory\":\"sample Undistributed_Offsetting_Receipts_4_Mandatory\",\"Net_Interest\":\"sample Net_Interest\"}"
+    },
+    "table_8_5": {
+      "required": [
+        "Category_and_Program"
+      ],
+      "properties": {
+        "Category_and_Program": {
+          "type": "string",
+          "example": "sample Category_and_Program"
+        },
+        "TQ": {
+          "type": "string",
+          "example": "sample TQ"
+        }
+      },
+      "example": "{\"Category_and_Program\":\"sample Category_and_Program\",\"TQ\":\"sample TQ\"}"
+    }
+  }
+}
