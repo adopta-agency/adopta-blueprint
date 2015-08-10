@@ -10,8 +10,8 @@
 
 # Project details
 project_title: US Federal Budget
-project_description: This is my work around making the US federal budget more machine readable, in hopes of building more meaningful tools on top of it.
-project_url: http://us.federal.budget.apievangelist.com/
+project_description: This is my work to make the US federal budget more machine readable, in hopes of building more meaningful tools on top of it. You can access the historical budget via spreadsheets, but I am looking to make the information easier to integrate with, as an Adopta project.
+project_url: http://kinlane.github.io/us-federal-budget/
 
 github_user: kinlane
 github_repo: us-federal-budget
