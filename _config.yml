@@ -22,8 +22,8 @@ github_repo: us-federal-budget
 data_show: yes
 data_nav: yes
 data_title: Data Files
-data_description: This is a list of JSON and CSV conversions of the Excel files made avalable as part of the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>, providing data on budget receipts, outlays, surpluses or deficits, Federal debt, and Federal employment over an extended time period, generally from 1940 or earlier to 2016 or 2020. 
-data_footer: This represents moving forward the data from the original source on step, making it more machine readable.
+data_description: This is a list of JSON and CSV conversions of the Excel files made avalable as part of the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>, providing data on budget receipts, outlays, surpluses or deficits, Federal debt, and Federal employment over an extended time period, generally from 1940 or earlier to 2016 or 2020.
+data_footer: The goal of publishing these CSV and JSON alternatives is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
 
 data:
   - title: "Table 1.1 - Summary of Receipts, Outlays, and Surpluses or Deficits 1789 through 2020"
@@ -205,8 +205,8 @@ data:
 api_show: yes
 api_nav: yes
 api_title: APIs
-api_description: Using APISpark, and Google Spreadsheets I deployed a set of APIs to support this project, and make the data more accessible.
-api_footer: This represents moving forward the data from the original source on step, making it more machine readable, and searchable, when building tooling on top of.
+api_description: This is a list of APIs generated from the Excel files made avalable as part of the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>, providing data on budget receipts, outlays, surpluses or deficits, Federal debt, and Federal employment over an extended time period, generally from 1940 or earlier to 2016 or 2020.
+api_footer: The goal of launching these APIs is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
 
 api:
   - title: Table 1

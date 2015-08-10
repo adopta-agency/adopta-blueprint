@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <title>
-    {% if page.title %}{{ page.title }} &middot; {% endif %}
-    {{ site.tagline }}
+    {{ site.project_title }}{% if page.title %} &middot; {{ page.title }}{% endif %}
   </title>
 
   {% if page.title == 'Documentation' %}
