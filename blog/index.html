@@ -11,13 +11,13 @@ title: BLog
 	<tr>
 	    <td width="15%" align="center">
 		    {% if post.image != null %}
-		    	<a href="{{ post.source }}" rel="bookmark" title="{{ post.title }}">
+		    	<a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">
 		    		<img src="{{ post.image }}" width="75" />
 		    	</a>
 		    {% endif %}
 	    </td>
 	    <td align="left">
-		    <a href="{{ post.source }}" rel="bookmark" title="{{ post.title }}" style="color:#000; font-size: 16px;"><strong>{{ post.title }}</strong></a><br />
+		    <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}" style="color:#000; font-size: 16px;"><strong>{{ post.title }}</strong></a><br />
 		    <i><span class="post-date">{{ post.date | date:"%m-%d-%Y" }}{% if post.domain != null %} on <a href="http://{{ post.domain }}"></a>{{ post.domain }}</a></span>{% endif %}</i><br />
 	    </td>
 	</tr>
