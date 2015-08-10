@@ -16,10 +16,14 @@ layout: page
         {{ data.title }}
       </td>
       <td width="50" align="center">
-        <a href="{{ data.csv_url }}">CSV</a>
+        <a href="{{ data.csv_url }}">
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-json.png" width="45" />
+        </a>
       </td>
       <td width="50" align="center">
-        <a href="{{ data.json_url }}">JSON</a>
+        <a href="{{ data.json_url }}">
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" width="45" />
+        </a>
       </td>
     </tr>
     {% endfor %}
@@ -39,10 +43,14 @@ layout: page
         {{ api.title }}
       </td>
       <td width="50" align="center">
-        <a href="{{ api.swagger_url }}">Swagger</a>
+        <a href="{{ api.swagger_url }}" title="Swagger API Definition">
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-round.png" width="45" />
+        </a>
       </td>
       <td width="50" align="center">
-        <a href="/docs/?swagger_url={{ data.swagger_url }}">Documentation</a>
+        <a href="/docs/?swagger_url={{ data.swagger_url }}" title="Interactive Documentation">
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documentation-interactive.png" width="45" />
+        </a>
       </td>
     </tr>
     {% endfor %}

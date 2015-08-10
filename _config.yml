@@ -1,3 +1,13 @@
+# ------------------------
+# Adopta Agency Blueprint
+# This is meant to be a blueprint for opening up data.
+# You control everything about this site, here in the _config.yml
+# All data is stored under /data
+# All API definitions are stored under /api
+# Tell your story via the Blog
+# Manage all conversations through Github issues
+# ------------------------
+
 # Project details
 project_title: US Federal Budget
 project_description: This is my work around making the US federal budget more machine readable, in hopes of building more meaningful tools on top of it.
@@ -9,7 +19,6 @@ github_repo: us-federal-budget
 # ---------
 # Data
 # ---------
-
 data_show: yes
 data_title: Data Files
 data_description: These are the data files I have generated as part of this US federal budget project, available in CSV or JSON.

@@ -13,10 +13,14 @@ title: {{ site.data_title }
       {{ data.title }}
     </td>
     <td width="50" align="center">
-      <a href="{{ data.csv_url }}">CSV</a>
+      <a href="{{ data.csv_url }}">
+        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-json.png" width="45" />
+      </a>
     </td>
     <td width="50" align="center">
-      <a href="{{ data.json_url }}">JSON</a>
+      <a href="{{ data.json_url }}">
+        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" width="45" />
+      </a>
     </td>
   </tr>
   {% endfor %}
