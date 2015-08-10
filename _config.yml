@@ -247,7 +247,7 @@ api:
 # ---------
 
 showcase_show: yes
-showcase_nav: yes
+showcase_nav: no
 showcase_title: Showcase
 showcase_description: These are some of the things being build on top of this open data and APIs.
 showcase_footer: This project is designed to be used, and extended, please share what you have built so it can be included.
@@ -271,7 +271,7 @@ showcase:
 # ---------
 
 faq_show: yes
-faq_nav: yes
+faq_nav: no
 faq_title: FAQ
 faq_description: These are some of the common questions that need answering or get asked as part of this work.
 faq_footer: Questions that get submitted via the projects Github issue managment are sometimes added here.
@@ -291,7 +291,7 @@ faq:
 # ---------
 
 team_show: yes
-team_nav: yes
+team_nav: no
 team_title: Team
 team_description: This is a solo project conducted by Kin Lane as part of the Adopta.Agency project.
 team_footer: If you would like to get involved with this work, please submit an issue via the Github repo.
@@ -309,7 +309,7 @@ team:
 # ---------
 
 tools_show: yes
-tools_nav: yes
+tools_nav: no
 tools_title: Tools
 tools_description: This is a list of tools that are used as part of this project.
 tools_footer: We share the tools we used to help others understand how to recreate the work.
