@@ -70,7 +70,7 @@ layout: page
         <img src="{{ showcase.image }}" width="100" align="center" />
       </td>
       <td>
-        {{ showcase.name }} - {{ showcase.description }}
+        <a href="{{ showcase.url }}"><strong>{{ showcase.title }}</strong></a> - {{ showcase.description }}...<a href="{{ showcase.url }}">view</a>.
       </td>
     </tr>
     {% endfor %}
@@ -89,8 +89,8 @@ layout: page
       <td align="center">
         <img src="{{ team.image }}" width="100" align="center" />
       </td>
-      <td>
-        {{ team.name }} - {{ team.description }}
+      <td valign="top">
+        <strong>{{ team.name }}</strong><br />{{ team.description }}
       </td>
     </tr>
     {% endfor %}
@@ -107,7 +107,7 @@ layout: page
     {% for tool in site.tools %}
     <tr>
       <td>
-        {{ tool.title }} - {{ tool.description }}
+        <a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.description }}...<a href="{{ showcase.url }}">view</a>.
       </td>
     </tr>
     {% endfor %}
@@ -124,7 +124,7 @@ layout: page
     {% for faq in site.faq %}
     <tr>
       <td>
-        {{ faq.question }} - {{ faq.answer }}
+        <strong>{{ faq.question }}</strong> - {{ faq.answer }}
       </td>
     </tr>
     {% endfor %}
