@@ -81,16 +81,11 @@ layout: page
 
   <h2><a href="team/">{{ site.team_title }}</a></h2>
   <p>{{ site.team_description }}</p>
-  <table width="100%" style="margin-left: 25px; margin-right: 25px; margin-bottom: 20px;">
+  <ul style="padding-left: 35px; list-style: circle;">
     {% for team in site.team %}
-    <tr>
-      <td align="left">
-        <img src="{{ team.image }}" width="75" align="left" style="padding: 5px;" />
-        <strong>{{ team.name }}</strong><br />{{ team.description }}
-      </td>
-    </tr>
+    <li><a href="{{ team.url }}"><strong>{{ team.name }}</strong></a> - {{ team.description }}</li>
     {% endfor %}
-  </table>
+  </ul>
   <p>{{ site.team_footer }}</p>
 
 {% endif %}
@@ -99,16 +94,11 @@ layout: page
 
   <h2><a href="tools/">{{ site.tools_title }}</a></h2>
   <p>{{ site.tools_description }}</p>
-  <table width="100%" style="margin-left: 25px; margin-right: 25px; margin-bottom: 20px;">
+  <ul style="padding-left: 35px; list-style: circle;">
     {% for tool in site.tools %}
-    <tr>
-      <td align="left">
-        <a href="{{ tool.url }}"><img src="{{ tool.image }}" width="45" align="left" style="padding: 5px;" /></a>
-        <a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.description }}...<a href="{{ showcase.url }}">view</a>.
-      </td>
-    </tr>
+    <li><a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.description }}...<a href="{{ showcase.url }}">view</a>.</li>
     {% endfor %}
-  </table>
+  </ul>
   <p>{{ site.tools_footer }}</p>
 
 {% endif %}
@@ -117,15 +107,11 @@ layout: page
 
   <h2><a href="faq/">{{ site.faq_title }}</a></h2>
   <p>{{ site.faq_description }}</p>
-  <table width="100%" style="margin-left: 25px; margin-right: 25px; margin-bottom: 20px;">
+  <ul style="padding-left: 35px; list-style: circle;">
     {% for faq in site.faq %}
-    <tr>
-      <td>
-        <strong>{{ faq.question }}</strong> - {{ faq.answer }}
-      </td>
-    </tr>
+    <li><strong>{{ faq.question }}</strong> - {{ faq.answer }}</li>
     {% endfor %}
-  </table>
+  </ul>
   <p>{{ site.faq_footer }}</p>
 
 {% endif %}

@@ -202,7 +202,7 @@ data:
 # APIs
 # ---------
 
-api_show: yes
+api_show: no
 api_nav: yes
 api_title: APIs
 api_description: This is a list of APIs generated from the Excel files made avalable as part of the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>, providing data on budget receipts, outlays, surpluses or deficits, Federal debt, and Federal employment over an extended time period, generally from 1940 or earlier to 2016 or 2020.
@@ -300,9 +300,6 @@ team:
   - name: Kin Lane
     description: The API Evangelist, working to make data, content, and other digital resources more accessible.
     url: http://kinlane.com
-    image: https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-lane-square.jpg
-    twitter: kinlane
-    github: kinlane
 
 # ---------
 # Tools
@@ -317,23 +314,18 @@ tools_footer: We share the tools we used to help others understand how to recrea
 tools:
   - title: Github
     description: A social network built around software development platform Git.
-    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.png
     url: http://github.com
   - title: Github Pages
     description: Websites for projects that are hosted directly from a GitHub repository.
-    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.png
     url: https://pages.github.com/
   - title: Google Spreadsheets
     description: Cloud-based spreadsheets as part of the overall Google Dirve platform.
-    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-google-drive-icon.png
     url: https://www.google.com/drive/
   - title: API Spark
     description: A platform for the creation, hosting, management, and consumption of web APIs.
-    image: https://s3.amazonaws.com/kinlane-productions/api-evangelist/restlet/apispark-icon.png
     url: http://restlet.com/products/apispark/
   - title: CSV Converter
     description: A CSV conversion tool that runs on Github, created from Mr. Data Converter.
-    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.png
     url: http://kinlane.github.io/csv-converter/
 
 # ---------
