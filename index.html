@@ -1,7 +1,127 @@
 ---
 layout: page
-title: Adopta Agency Blueprint
 ---
 
-<p><br /></p>
-<p align="center">Work in Progress!</p>
+<h1>{{ site.project_title }}</h1>
+<p>{{ site.project_description }}</p>
+
+{% if site.data_show == true %}
+
+  <h2><a href="data/">{{ site.data_title }}</a></h2>
+  <p>{{ site.data_description }}</p>
+  <table width="100%" style="margin-left: 25px; margin-right: 25px; margin-bottom: 20px;">
+    {% for data in site.data %}
+    <tr>
+      <td>
+        {{ data.title }}
+      </td>
+      <td width="50" align="center">
+        <a href="{{ data.csv_url }}">
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" width="45" />
+        </a>
+      </td>
+      <td width="50" align="center">
+        <a href="{{ data.json_url }}">
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-json.png" width="45" />
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p>{{ site.data_footer }}</p>
+
+{% endif %}
+
+{% if site.api_show == true %}
+
+  <h2><a href="api/">{{ site.api_title }}</a></h2>
+  <p>{{ site.api_description }}</p>
+  <table width="100%" style="margin-left: 25px; margin-right: 25px; margin-bottom: 20px;">
+    {% for api in site.api %}
+    <tr>
+      <td>
+        {{ api.title }}
+      </td>
+      <td width="50" align="center">
+        <a href="{{ api.swagger_url }}" title="Swagger API Definition">
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-round.png" width="45" />
+        </a>
+      </td>
+      <td width="50" align="center">
+        <a href="/{{ site.github_repo }}/documentation/?swagger_url={{ api.swagger_url }}" title="Interactive Documentation">
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documentation-interactive.png" width="45" />
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p>{{ site.api_footer }}</p>
+
+{% endif %}
+
+{% if site.showcase_show == true %}
+
+  <h2><a href="showcase/">{{ site.showcase_title }}</a></h2>
+  <p>{{ site.showcase_description }}</p>
+  <table width="100%" style="margin-left: 25px; margin-right: 25px; margin-bottom: 20px;">
+    {% for showcase in site.showcase %}
+    <tr>
+      <td align="left">
+        <a href="{{ showcase.url }}"><img src="{{ showcase.image }}" width="75" align="left" style="padding: 5px;" /></a>
+        <a href="{{ showcase.url }}"><strong>{{ showcase.title }}</strong></a> - {{ showcase.description }}...<a href="{{ showcase.url }}">view</a>.
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p>{{ site.showcase_footer }}</p>
+
+{% endif %}
+
+{% if site.team_show == true %}
+
+  <h2><a href="team/">{{ site.team_title }}</a></h2>
+  <p>{{ site.team_description }}</p>
+  <ul style="padding-left: 35px; list-style: circle;">
+    {% for team in site.team %}
+    <li><a href="{{ team.url }}"><strong>{{ team.name }}</strong></a> - {{ team.description }}</li>
+    {% endfor %}
+  </ul>
+  <p>{{ site.team_footer }}</p>
+
+{% endif %}
+
+{% if site.tools_show == true %}
+
+  <h2><a href="tools/">{{ site.tools_title }}</a></h2>
+  <p>{{ site.tools_description }}</p>
+  <ul style="padding-left: 35px; list-style: circle;">
+    {% for tool in site.tools %}
+    <li><a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.description }}...<a href="{{ showcase.url }}">view</a>.</li>
+    {% endfor %}
+  </ul>
+  <p>{{ site.tools_footer }}</p>
+
+{% endif %}
+
+{% if site.faq_show == true %}
+
+  <h2><a href="faq/">{{ site.faq_title }}</a></h2>
+  <p>{{ site.faq_description }}</p>
+  <ul style="padding-left: 35px; list-style: circle;">
+    {% for faq in site.faq %}
+    <li><strong>{{ faq.question }}</strong> - {{ faq.answer }}</li>
+    {% endfor %}
+  </ul>
+  <p>{{ site.faq_footer }}</p>
+
+{% endif %}
+
+<h2>{{ site.support_title }}</h2>
+<p>{{ site.support_description }}</p>
+<ul style="padding-left: 35px; list-style: circle;">
+  <li><a href="blog/">Blog</a></li>
+  <li><a href="roadmap/">Roadmap</a></li>
+  <li><a href="change-log/">Change Log</a></li>
+  <li><a href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues">Issues</a> (<a href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues/new">submit</a>)</li>
+  <li><a href="https://twitter.com/{{ site.support_twitter }}">Twitter</a></li>
+</ul>

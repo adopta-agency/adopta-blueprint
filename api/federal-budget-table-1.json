@@ -1,0 +1,479 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.1.0",
+    "title": "US Federal Budget - Section 1",
+    "contact": {
+      "name": "Kin Lane",
+      "email": "kinlane@gmail.com"
+    }
+  },
+  "host": "federalbudget1.apispark.net",
+  "basePath": "/v1",
+  "tags": [
+    {
+      "name": "Federal Budget"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/1_1/": {
+      "get": {
+        "tags": [
+          "Federal Budget 1"
+        ],
+        "summary": "Loads a list of table_1_1",
+        "description": "Loads a list of table_1_1",
+        "operationId": "gettable_1_1List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_1_1"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      }
+    },
+    "/1_2/": {
+      "get": {
+        "tags": [
+          "Federal Budget 1"
+        ],
+        "summary": "Loads a list of table_1_2",
+        "description": "Loads a list of table_1_2",
+        "operationId": "gettable_1_2List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_1_2"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      }
+    },
+    "/1_3/": {
+      "get": {
+        "tags": [
+          "Federal Budget 1"
+        ],
+        "summary": "Loads a list of table_1_3",
+        "description": "Loads a list of table_1_3",
+        "operationId": "gettable_1_3List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_1_3"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      }
+    },
+    "/1_4/": {
+      "get": {
+        "tags": [
+          "Federal Budget 1"
+        ],
+        "summary": "Loads a list of table_1_4",
+        "description": "Loads a list of table_1_4",
+        "operationId": "gettable_1_4List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_1_4"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "HTTP_BASIC": {
+      "type": "basic"
+    }
+  },
+  "definitions": {
+    "table_1_1": {
+      "required": [
+        "Year"
+      ],
+      "properties": {
+        "Year": {
+          "type": "string",
+          "example": "sample Year"
+        },
+        "Receipts_Total": {
+          "type": "string",
+          "example": "sample Receipts_Total"
+        },
+        "Outlays_Total": {
+          "type": "string",
+          "example": "sample Outlays_Total"
+        },
+        "Surplus_or_Deficit_Total": {
+          "type": "string",
+          "example": "sample Surplus_or_Deficit_Total"
+        },
+        "Receipts_On_Budget": {
+          "type": "string",
+          "example": "sample Receipts_On_Budget"
+        },
+        "Outlays_On_Budget": {
+          "type": "string",
+          "example": "sample Outlays_On_Budget"
+        },
+        "Surplus_or_Deficit_On_Budget": {
+          "type": "string",
+          "example": "sample Surplus_or_Deficit_On_Budget"
+        },
+        "Receipts_Off_Budget": {
+          "type": "string",
+          "example": "sample Receipts_Off_Budget"
+        },
+        "Outlays_Off_Budget": {
+          "type": "string",
+          "example": "sample Outlays_Off_Budget"
+        },
+        "Surplus_or_Deficit_Off_Budget": {
+          "type": "string",
+          "example": "sample Surplus_or_Deficit_Off_Budget"
+        }
+      },
+      "example": "{\"Year\":\"sample Year\",\"Receipts_Total\":\"sample Receipts_Total\",\"Outlays_Total\":\"sample Outlays_Total\",\"Surplus_or_Deficit_Total\":\"sample Surplus_or_Deficit_Total\",\"Receipts_On_Budget\":\"sample Receipts_On_Budget\",\"Outlays_On_Budget\":\"sample Outlays_On_Budget\",\"Surplus_or_Deficit_On_Budget\":\"sample Surplus_or_Deficit_On_Budget\",\"Receipts_Off_Budget\":\"sample Receipts_Off_Budget\",\"Outlays_Off_Budget\":\"sample Outlays_Off_Budget\",\"Surplus_or_Deficit_Off_Budget\":\"sample Surplus_or_Deficit_Off_Budget\"}"
+    },
+    "table_1_2": {
+      "required": [
+        "Year"
+      ],
+      "properties": {
+        "Year": {
+          "type": "string",
+          "example": "sample Year"
+        },
+        "GDP": {
+          "type": "string",
+          "example": "sample GDP"
+        },
+        "Receipts_Total": {
+          "type": "string",
+          "example": "sample Receipts_Total"
+        },
+        "Outlays_Total": {
+          "type": "string",
+          "example": "sample Outlays_Total"
+        },
+        "Surplus_or_Deficit_Total": {
+          "type": "string",
+          "example": "sample Surplus_or_Deficit_Total"
+        },
+        "Receipts_On_Budget": {
+          "type": "string",
+          "example": "sample Receipts_On_Budget"
+        },
+        "Outlays_On_Budget": {
+          "type": "string",
+          "example": "sample Outlays_On_Budget"
+        },
+        "Surplus_or_Deficit_On_Budget": {
+          "type": "string",
+          "example": "sample Surplus_or_Deficit_On_Budget"
+        },
+        "Receipts_Off_Budget": {
+          "type": "string",
+          "example": "sample Receipts_Off_Budget"
+        },
+        "Outlays_Off_Budget": {
+          "type": "string",
+          "example": "sample Outlays_Off_Budget"
+        },
+        "Surplus_or_Deficit_Off_Budget": {
+          "type": "string",
+          "example": "sample Surplus_or_Deficit_Off_Budget"
+        }
+      },
+      "example": "{\"Year\":\"sample Year\",\"GDP\":\"sample GDP\",\"Receipts_Total\":\"sample Receipts_Total\",\"Outlays_Total\":\"sample Outlays_Total\",\"Surplus_or_Deficit_Total\":\"sample Surplus_or_Deficit_Total\",\"Receipts_On_Budget\":\"sample Receipts_On_Budget\",\"Outlays_On_Budget\":\"sample Outlays_On_Budget\",\"Surplus_or_Deficit_On_Budget\":\"sample Surplus_or_Deficit_On_Budget\",\"Receipts_Off_Budget\":\"sample Receipts_Off_Budget\",\"Outlays_Off_Budget\":\"sample Outlays_Off_Budget\",\"Surplus_or_Deficit_Off_Budget\":\"sample Surplus_or_Deficit_Off_Budget\"}"
+    },
+    "table_1_3": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Receipts_In_Current_Dollars": {
+          "type": "string",
+          "example": "sample Receipts_In_Current_Dollars"
+        },
+        "Outlays_In_Current_Dollars": {
+          "type": "string",
+          "example": "sample Outlays_In_Current_Dollars"
+        },
+        "Surplus_or_Deficit_In_Current_Dollars": {
+          "type": "string",
+          "example": "sample Surplus_or_Deficit_In_Current_Dollars"
+        },
+        "Receipts_In_Constant_Dollars": {
+          "type": "string",
+          "example": "sample Receipts_In_Constant_Dollars"
+        },
+        "Outlays_In_Constant_Dollars": {
+          "type": "string",
+          "example": "sample Outlays_In_Constant_Dollars"
+        },
+        "Surplus_or_Deficit_In_Constant_Dollars": {
+          "type": "string",
+          "example": "sample Surplus_or_Deficit_In_Constant_Dollars"
+        },
+        "Receipts_As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Receipts_As_Percentages_of_GDP"
+        },
+        "Outlays_As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Outlays_As_Percentages_of_GDP"
+        },
+        "Surplus_or_Deficit_As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Surplus_or_Deficit_As_Percentages_of_GDP"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Receipts_In_Current_Dollars\":\"sample Receipts_In_Current_Dollars\",\"Outlays_In_Current_Dollars\":\"sample Outlays_In_Current_Dollars\",\"Surplus_or_Deficit_In_Current_Dollars\":\"sample Surplus_or_Deficit_In_Current_Dollars\",\"Receipts_In_Constant_Dollars\":\"sample Receipts_In_Constant_Dollars\",\"Outlays_In_Constant_Dollars\":\"sample Outlays_In_Constant_Dollars\",\"Surplus_or_Deficit_In_Constant_Dollars\":\"sample Surplus_or_Deficit_In_Constant_Dollars\",\"Receipts_As_Percentages_of_GDP\":\"sample Receipts_As_Percentages_of_GDP\",\"Outlays_As_Percentages_of_GDP\":\"sample Outlays_As_Percentages_of_GDP\",\"Surplus_or_Deficit_As_Percentages_of_GDP\":\"sample Surplus_or_Deficit_As_Percentages_of_GDP\"}"
+    },
+    "table_1_4": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_Receipts": {
+          "type": "string",
+          "example": "sample Total_Receipts"
+        },
+        "Federal_Funds_Receipts": {
+          "type": "string",
+          "example": "sample Federal_Funds_Receipts"
+        },
+        "Trust_Funds_Receipts": {
+          "type": "string",
+          "example": "sample Trust_Funds_Receipts"
+        },
+        "Interfund_Transactions_Receipts": {
+          "type": "string",
+          "example": "sample Interfund_Transactions_Receipts"
+        },
+        "Total_Outlays": {
+          "type": "string",
+          "example": "sample Total_Outlays"
+        },
+        "Federal_Funds_Outlays": {
+          "type": "string",
+          "example": "sample Federal_Funds_Outlays"
+        },
+        "Trust_Funds_Outlays": {
+          "type": "string",
+          "example": "sample Trust_Funds_Outlays"
+        },
+        "Interfund_Transactions_Outlays": {
+          "type": "string",
+          "example": "sample Interfund_Transactions_Outlays"
+        },
+        "Total_Surplus_or_Deficit": {
+          "type": "string",
+          "example": "sample Total_Surplus_or_Deficit"
+        },
+        "Federal_Funds_Surplus_or_Deficit": {
+          "type": "string",
+          "example": "sample Federal_Funds_Surplus_or_Deficit"
+        },
+        "Trust_Funds_Surplus_or_Deficit": {
+          "type": "string",
+          "example": "sample Trust_Funds_Surplus_or_Deficit"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_Receipts\":\"sample Total_Receipts\",\"Federal_Funds_Receipts\":\"sample Federal_Funds_Receipts\",\"Trust_Funds_Receipts\":\"sample Trust_Funds_Receipts\",\"Interfund_Transactions_Receipts\":\"sample Interfund_Transactions_Receipts\",\"Total_Outlays\":\"sample Total_Outlays\",\"Federal_Funds_Outlays\":\"sample Federal_Funds_Outlays\",\"Trust_Funds_Outlays\":\"sample Trust_Funds_Outlays\",\"Interfund_Transactions_Outlays\":\"sample Interfund_Transactions_Outlays\",\"Total_Surplus_or_Deficit\":\"sample Total_Surplus_or_Deficit\",\"Federal_Funds_Surplus_or_Deficit\":\"sample Federal_Funds_Surplus_or_Deficit\",\"Trust_Funds_Surplus_or_Deficit\":\"sample Trust_Funds_Surplus_or_Deficit\"}"
+    }
+  }
+}

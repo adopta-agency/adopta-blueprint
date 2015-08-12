@@ -1,22 +1,375 @@
-title:        Adopta Agency Blueprint
-url:          http://blueprint.adopta.agency
+# ------------------------
+# Adopta Agency Blueprint
+# This is meant to be a blueprint for opening up data.
+# You control everything about this site, here in the _config.yml
+# All data is stored under /data
+# All API definitions are stored under /api
+# Tell your story via the Blog
+# Manage all conversations through Github issues
+# ------------------------
+
+# Project details
+project_title: US Federal Budget
+project_description: This is my work to make the US federal budget more machine readable, in hopes of building more meaningful tools on top of it. You can access the historical budget via spreadsheets, but I am looking to make the information easier to integrate with, as an Adopta project.
+project_url: http://kinlane.github.io/us-federal-budget/
+
+github_user: kinlane
+github_repo: us-federal-budget
+
+# ---------
+# Data
+# ---------
+data_show: yes
+data_nav: yes
+data_title: Data Files
+data_description: This is a list of JSON and CSV conversions of the Excel files made avalable as part of the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>, providing data on budget receipts, outlays, surpluses or deficits, Federal debt, and Federal employment over an extended time period, generally from 1940 or earlier to 2016 or 2020.
+data_footer: The goal of publishing these CSV and JSON alternatives is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
+
+data:
+  - title: "Table 1.1 - Summary of Receipts, Outlays, and Surpluses or Deficits 1789 through 2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-1.json"
+  - title: "Table 1.2 - Summary of Receipts, Outlays, and Surpluses or Deficits as Percentages of GDP 1930–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-2.json"
+  - title: "Table 1.3  - Summary of Receipts, Outlays, and Surpluses or Deficits in Current Dollars, Constant Dollars, and as Percentages of GDP 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-3.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-3.json"
+  - title: "Table 1.4 - Receipts, Outlays, and Surpluses or Deficits by Fund Group 1934–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-4.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-4.json"
+  - title: "Table 2.1 - Receipts by Source 1934–202"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-2-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-2-1.json"
+  - title: "Table 2.2 - Percentage Composition of Receipts by Source 1934–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-2-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-2-2.json"
+  - title: "Table 2.3 - Receipts by Source as Percentages of GDP 1934–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-2-3.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-2-3.json"
+  - title: "Table 2.4 - Composition of Social Insurance and Retirement Receipts and of Excise Taxes 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-2-4.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-2-4.json"
+  - title: "Table 2.5 - Composition of Other Receipts 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-2-5.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-2-5.json"
+  - title: "Table 3.1 - Outlays by Superfunction and Function 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-3-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-3-1.json"
+  - title: "Table 3.2 - Outlays by Function and Subfunction 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-3-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-3-2.json"
+  - title: "Table 4.1 - Outlays by Agency 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-4-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-4-1.json"
+  - title: "Table 4.2 - Percentage Distribution of Outlays by Agency 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-4-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-4-2.json"
+  - title: "Table 5.1 - Budget Authority by Function and Subfunction 1976–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-1.json"
+  - title: "Table 5.2 - Budget Authority by Agency 1976–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-2.json"
+  - title: "Table 5.3 - Percentage Distribution of Budget Authority by Agency 1976–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-3.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-3.json"
+  - title: "Table 5.4 - Discretionary Budget Authority by Agency 1976–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-4.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-4.json"
+  - title: "Table 5.5 - Percentage Distribution of Discretionary Budget Authority by Agency 1976–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-5.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-5.json"
+  - title: "Table 5.6 - Budget Authority for Discretionary Programs 1976–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-6.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-5-6.json"
+  - title: "Table 6.1 - Composition of Outlays 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-6-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-6-1.json"
+  - title: "Table 7.1 - Federal Debt at the End of Year 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-7-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-7-1.json"
+  - title: "Table 7.2 - Debt Subject to Statutory Limit 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-7-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-7-2.json"
+  - title: "Table 7.3 - Statutory Limits on Federal Debt 1940 to Current"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-7-3.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-7-3.json"
+  - title: "Table 8.1 - Outlays by Budget Enforcement Act Category 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-1.json"
+  - title: "Table 8.2 - Outlays by Budget Enforcement Act Category in Constant Dollars 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-2.json"
+  - title: "Table 8.3 - Percentage Distribution of Outlays by Budget Enforcement Act Category 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-3.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-3.json"
+  - title: "Table 8.4 - Outlays by Budget Enforcement Act Category as Percentages of GDP 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-4.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-4.json"
+  - title: "Table 8.5 - Outlays for Mandatory and Related Programs 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-5.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-5.json"
+  - title: "Table 8.6 - Outlays for Mandatory and Related Programs in Constant Dollars 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-6.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-6.json"
+  - title: "Table 8.7 - Outlays for Discretionary Programs 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-7.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-7.json"
+  - title: "Table 8.8 - Outlays for Discretionary Programs in Constant Dollars 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-8.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-8-8.json"
+  - title: "Table 9.1 - Total Investment Outlays for Physical Capital Research and Development and Education and Training 1962–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-1.json"
+  - title: "Table 9.2 - Major Public Physical Capital Investment Outlays in Current and Constant Dollars 1940–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-2.json"
+  - title: "Table 9.3 - Major Public Physical Capital Investment Outlays in Percentage Terms 1940–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-3.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-3.json"
+  - title: "Table 9.4 - National Defense Outlays for Major Public Direct Physical Capital Investment 1940–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-4.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-4.json"
+  - title: "Table 9.5 - Non Defense Outlays for Major Public Direct Physical Capital Investment 1940–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-5.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-5.json"
+  - title: "Table 9.6 - Composition of Outlays for Grants for Major Public Physical Capital Investment 1941–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-6.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-6.json"
+  - title: "Table 9.7 - Summary of Outlays for the Conduct of Research and Development 1949–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-7.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-7.json"
+  - title: "Table 9.8 - Composition of Outlays for the Conduct of Research and Development 1949–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-8.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-8.json"
+  - title: "Table 9.9 - Composition of Outlays for the Conduct of Education and Training 1962–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-9.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-9-9.json"
+  - title: "Table 10.1 - Gross Domestic Product and Deflators Used in the Historical Tables 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-10-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-10-1.json"
+  - title: "Table 11.1 - Summary Comparison of Outlays for Payments for Individuals 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-11-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-11-1.json"
+  - title: "Table 11.2 - Functional Composition of Outlays for Payments for Individuals 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-11-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-11-2.json"
+  - title: "Table 11.3 - Outlays for Payments for Individuals by Category and Major Program 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-11-3.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-11-3.json"
+  - title: "Table 12.1 - Summary Comparison of Total Outlays for Grants to State and Local Governments 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-12-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-12-1.json"
+  - title: "Table 12.2 - Total Outlays for Grants to State and Local Governments by Function and Fund Group 1940–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-12-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-12-2.json"
+  - title: "Table 12.3 - Total Outlays for Grants to State and Local Governments by Function Agency and Program 1940–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-12-3.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-12-3.json"
+  - title: "Table 13.1 - Cash Income - Outgo - and Balances of the Social Security and Medicare Trust Funds 1936–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-13-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-13-1.json"
+  - title: "Table 14.1 - Total Government Receipts in Absolute Amounts and as Percentages of GDP 1948–2014"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-1.json"
+  - title: "Table 14.2 - Total Government Expenditures 1948–2014"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-2.json"
+  - title: "Table 14.3 - Total Government Expenditures as Percentages of GDP 1948–2014"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-3.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-3.json"
+  - title: "Table 14.4 - Total Government Expenditures by Major Category of Expenditure 1948–2014"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-4.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-4.json"
+  - title: "Table 14.5 - Total Government Expenditures by Major Category of Expenditure as Percentages of GDP 1948–2014"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-5.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-5.json"
+  - title: "Table 14.6 - Total Government Surpluses or Deficits in Absolute Amounts and as Percentages of GDP 1948–2014"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-6.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-14-6.json"
+  - title: "Table 15.1 - Total Outlays for Health Programs 1962–2020"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-15-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-15-2.json"
+  - title: "Table 16.1 - Total Executive Branch Civilian Full_Time Equivalent Employees 1981–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-16-1.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-16-1.json"
+  - title: "Table 16.2 - Total Executive Branch Civilian Full Time Equivalent Employees as Percentage 1981–2016"
+    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-16-2.csv"
+    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-16-2.json"
+
+# ---------
+# APIs
+# ---------
+
+api_show: no
+api_nav: yes
+api_title: APIs
+api_description: This is a list of APIs generated from the Excel files made avalable as part of the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>, providing data on budget receipts, outlays, surpluses or deficits, Federal debt, and Federal employment over an extended time period, generally from 1940 or earlier to 2016 or 2020.
+api_footer: The goal of launching these APIs is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
+
+api:
+  - title: Table 1
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-1.json
+  - title: Table 2
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-2.json
+  - title: Table 3
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-3.json
+  - title: Table 4
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-4.json
+  - title: Table 5
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-5.json
+  - title: Table 6
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-6.json
+  - title: Table 7
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-7.json
+  - title: Table 8
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-8.json
+  - title: Table 9
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-9.json
+  - title: Table 10
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-10.json
+  - title: Table 11
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-11.json
+  - title: Table 12
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-12.json
+  - title: Table 13
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-13.json
+  - title: Table 14
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-14.json
+  - title: Table 15
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-15.json
+  - title: Table 16
+    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-16.json
+
+# ---------
+# Showcase
+# ---------
+
+showcase_show: yes
+showcase_nav: no
+showcase_title: Showcase
+showcase_description: These are some of the things being build on top of this open data and APIs.
+showcase_footer: This project is designed to be used, and extended, please share what you have built so it can be included.
+
+showcase:
+  - title: Showcase Item One
+    description: This is the description for the first thing that was build on top of the data or APIs included as part of this project.
+    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+    url: http://apievangelist.com
+  - title: Showcase Item Two
+    description: This is the description for the first thing that was build on top of the data or APIs included as part of this project.
+    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+    url: http://apievangelist.com
+  - title: Showcase Item Four
+    description: This is the description for the first thing that was build on top of the data or APIs included as part of this project.
+    image: https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png
+    url: http://apievangelist.com
+
+# ---------
+# FAQ
+# ---------
+
+faq_show: yes
+faq_nav: no
+faq_title: FAQ
+faq_description: These are some of the common questions that need answering or get asked as part of this work.
+faq_footer: Questions that get submitted via the projects Github issue managment are sometimes added here.
+
+faq:
+  - question: Why are you doing this?
+    answer: I want to make the data around the US federal budget more accessible and usable, encouraging people to build it into more websites, applications, visualizations, and anywhere it can be used.
+  - question: Where did this data come from?
+    answer: It is from the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>.
+  - question: What are you planning on doing with this data?
+    answer: You can visit the <a href="https://kinlane.github.io/us-federal-budget/roadmap/">roadmap for more information.
+  - question: How do I talk to someone behind this project?
+    answer: This site runs on Github Pages, and relies on Github issue management for support. <a href="https://github.com/kinlane/us-federal-budget/issues/new">Go ahead and submit an issue</a> via the project repository.
+
+# ---------
+# Team
+# ---------
+
+team_show: yes
+team_nav: no
+team_title: Team
+team_description: This is a solo project conducted by Kin Lane as part of the Adopta.Agency project.
+team_footer: If you would like to get involved with this work, please submit an issue via the Github repo.
+
+team:
+  - name: Kin Lane
+    description: The API Evangelist, working to make data, content, and other digital resources more accessible.
+    url: http://kinlane.com
+
+# ---------
+# Tools
+# ---------
+
+tools_show: yes
+tools_nav: no
+tools_title: Tools
+tools_description: This is a list of tools that are used as part of this project.
+tools_footer: We share the tools we used to help others understand how to recreate the work.
+
+tools:
+  - title: Github
+    description: A social network built around software development platform Git.
+    url: http://github.com
+  - title: Github Pages
+    description: Websites for projects that are hosted directly from a GitHub repository.
+    url: https://pages.github.com/
+  - title: Google Spreadsheets
+    description: Cloud-based spreadsheets as part of the overall Google Dirve platform.
+    url: https://www.google.com/drive/
+  - title: API Spark
+    description: A platform for the creation, hosting, management, and consumption of web APIs.
+    url: http://restlet.com/products/apispark/
+  - title: CSV Converter
+    description: A CSV conversion tool that runs on Github, created from Mr. Data Converter.
+    url: http://kinlane.github.io/csv-converter/
+
+# ---------
+# Blog
+# ---------
+
+permalink: /:categories/:year/:month/:day/:title
+paginate: 25
+paginate_path: "/blog/page:num"
+blog_nav: yes
+
+# ---------
+# Support
+# ---------
+
+# URL to the issues page for this
+support_title: Support
+support_description: If you need any help, have questions, or would like to get involved, please use the following links.
+support_twitter: kinlane
+
+# ---------
+# Roadmap
+# ---------
+
+roadmap_nav: yes
+
+# ---------
+# Change Log
+# ---------
+
+changelog_nav: yes
+
+# ---------
+# General Settings
+# ---------
+
+#versioning your peojct is good
 version:      1.1.1
-author:
-  name:       'Kin Lane'
-  email:      'info@apievangelist.com'
+
+#some configurations for the site
 markdown:     rdiscount
 permalink:    pretty
 pygments:     true
 
-permalink: /:categories/:year/:month/:day/:title
+
+#what files should be excluded
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-
-paginate: 25
-paginate_path: "/blog/page:num"
-
-production_url : http://blueprint.adopta.agency
-
-BASE_PATH : http://blueprint.adopta.agency
-
-categories_path : /categories.html
-tags_path : /tags.html

@@ -1,0 +1,573 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.1.0",
+    "title": "Federal Budget - Section 12",
+    "contact": {
+      "name": "Kin Lane",
+      "email": "kinlane@gmail.com"
+    }
+  },
+  "host": "federalbudget12.apispark.net",
+  "basePath": "/v1",
+  "tags": [
+    {
+      "name": "Federal Budget"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/12_1/": {
+      "get": {
+        "tags": [
+          "Federal Budget 12"
+        ],
+        "summary": "Loads a list of table_12_1",
+        "description": "Loads a list of table_12_1",
+        "operationId": "gettable_12_1List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Remainder_As_Percentages_of_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Remainder_As_Percentages_of_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_In_Billions_of_Constant_FY_2009_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_In_Billions_of_Constant_FY_2009_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Remainder_In_Millions_of_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Remainder_In_Millions_of_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Capital_Investment_In_Billions_of_Constant_FY_2009_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Capital_Investment_In_Billions_of_Constant_FY_2009_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Capital_Investment_As_Percentages_of_Federal_Outlays",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Capital_Investment_As_Percentages_of_Federal_Outlays",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Payments_for_Individuals_In_Millions_of_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Payments_for_Individuals_In_Millions_of_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_In_Millions_of_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_In_Millions_of_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Capital_Investment_In_Millions_of_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Capital_Investment_In_Millions_of_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Payments_for_Individuals_In_Billions_of_Constant_FY_2009_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Payments_for_Individuals_In_Billions_of_Constant_FY_2009_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Payments_for_Individuals_As_Percentages_of_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Payments_for_Individuals_As_Percentages_of_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Remainder_In_Billions_of_Constant_FY_2009_Dollars",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Remainder_In_Billions_of_Constant_FY_2009_Dollars",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_As_Percentages_of_Federal_Outlays",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_As_Percentages_of_Federal_Outlays",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_As_Percentages_of_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_As_Percentages_of_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Remainder_As_Percentages_of_Federal_Outlays",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Remainder_As_Percentages_of_Federal_Outlays",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Capital_Investment_As_Percentages_of_GDP",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Capital_Investment_As_Percentages_of_GDP",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Payments_for_Individuals_As_Percentages_of_Federal_Outlays",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Payments_for_Individuals_As_Percentages_of_Federal_Outlays",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_12_1"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 12"
+        ],
+        "summary": "Adds a table_12_1",
+        "description": "Adds a table_12_1",
+        "operationId": "posttable_12_1List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_12_1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_12_1"
+            }
+          }
+        }
+      }
+    },
+    "/12_2/": {
+      "get": {
+        "tags": [
+          "Federal Budget 12"
+        ],
+        "summary": "Loads a list of table_12_2",
+        "description": "Loads a list of table_12_2",
+        "operationId": "gettable_12_2List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Function_and_Fund_Group",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Function_and_Fund_Group",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "TQ",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field TQ",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_12_2"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 12"
+        ],
+        "summary": "Adds a table_12_2",
+        "description": "Adds a table_12_2",
+        "operationId": "posttable_12_2List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_12_2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_12_2"
+            }
+          }
+        }
+      }
+    },
+    "/12_3/": {
+      "get": {
+        "tags": [
+          "Federal Budget 12"
+        ],
+        "summary": "Loads a list of table_12_3",
+        "description": "Loads a list of table_12_3",
+        "operationId": "gettable_12_3List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Type",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Type",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Area",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Area",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "TQ",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field TQ",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_12_3"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 12"
+        ],
+        "summary": "Adds a table_12_3",
+        "description": "Adds a table_12_3",
+        "operationId": "posttable_12_3List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_12_3"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_12_3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "HTTP_BASIC": {
+      "type": "basic"
+    }
+  },
+  "definitions": {
+    "table_12_1": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Total_In_Millions_of_Dollars": {
+          "type": "string",
+          "example": "sample Total_In_Millions_of_Dollars"
+        },
+        "Payments_for_Individuals_In_Millions_of_Dollars": {
+          "type": "string",
+          "example": "sample Payments_for_Individuals_In_Millions_of_Dollars"
+        },
+        "Capital_Investment_In_Millions_of_Dollars": {
+          "type": "string",
+          "example": "sample Capital_Investment_In_Millions_of_Dollars"
+        },
+        "Remainder_In_Millions_of_Dollars": {
+          "type": "string",
+          "example": "sample Remainder_In_Millions_of_Dollars"
+        },
+        "Total_In_Billions_of_Constant_FY_2009_Dollars": {
+          "type": "string",
+          "example": "sample Total_In_Billions_of_Constant_FY_2009_Dollars"
+        },
+        "Payments_for_Individuals_In_Billions_of_Constant_FY_2009_Dollars": {
+          "type": "string",
+          "example": "sample Payments_for_Individuals_In_Billions_of_Constant_FY_2009_Dollars"
+        },
+        "Capital_Investment_In_Billions_of_Constant_FY_2009_Dollars": {
+          "type": "string",
+          "example": "sample Capital_Investment_In_Billions_of_Constant_FY_2009_Dollars"
+        },
+        "Remainder_In_Billions_of_Constant_FY_2009_Dollars": {
+          "type": "string",
+          "example": "sample Remainder_In_Billions_of_Constant_FY_2009_Dollars"
+        },
+        "Total_As_Percentages_of_Federal_Outlays": {
+          "type": "string",
+          "example": "sample Total_As_Percentages_of_Federal_Outlays"
+        },
+        "Payments_for_Individuals_As_Percentages_of_Federal_Outlays": {
+          "type": "string",
+          "example": "sample Payments_for_Individuals_As_Percentages_of_Federal_Outlays"
+        },
+        "Capital_Investment_As_Percentages_of_Federal_Outlays": {
+          "type": "string",
+          "example": "sample Capital_Investment_As_Percentages_of_Federal_Outlays"
+        },
+        "Remainder_As_Percentages_of_Federal_Outlays": {
+          "type": "string",
+          "example": "sample Remainder_As_Percentages_of_Federal_Outlays"
+        },
+        "Total_As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Total_As_Percentages_of_GDP"
+        },
+        "Payments_for_Individuals_As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Payments_for_Individuals_As_Percentages_of_GDP"
+        },
+        "Capital_Investment_As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Capital_Investment_As_Percentages_of_GDP"
+        },
+        "Remainder_As_Percentages_of_GDP": {
+          "type": "string",
+          "example": "sample Remainder_As_Percentages_of_GDP"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Total_In_Millions_of_Dollars\":\"sample Total_In_Millions_of_Dollars\",\"Payments_for_Individuals_In_Millions_of_Dollars\":\"sample Payments_for_Individuals_In_Millions_of_Dollars\",\"Capital_Investment_In_Millions_of_Dollars\":\"sample Capital_Investment_In_Millions_of_Dollars\",\"Remainder_In_Millions_of_Dollars\":\"sample Remainder_In_Millions_of_Dollars\",\"Total_In_Billions_of_Constant_FY_2009_Dollars\":\"sample Total_In_Billions_of_Constant_FY_2009_Dollars\",\"Payments_for_Individuals_In_Billions_of_Constant_FY_2009_Dollars\":\"sample Payments_for_Individuals_In_Billions_of_Constant_FY_2009_Dollars\",\"Capital_Investment_In_Billions_of_Constant_FY_2009_Dollars\":\"sample Capital_Investment_In_Billions_of_Constant_FY_2009_Dollars\",\"Remainder_In_Billions_of_Constant_FY_2009_Dollars\":\"sample Remainder_In_Billions_of_Constant_FY_2009_Dollars\",\"Total_As_Percentages_of_Federal_Outlays\":\"sample Total_As_Percentages_of_Federal_Outlays\",\"Payments_for_Individuals_As_Percentages_of_Federal_Outlays\":\"sample Payments_for_Individuals_As_Percentages_of_Federal_Outlays\",\"Capital_Investment_As_Percentages_of_Federal_Outlays\":\"sample Capital_Investment_As_Percentages_of_Federal_Outlays\",\"Remainder_As_Percentages_of_Federal_Outlays\":\"sample Remainder_As_Percentages_of_Federal_Outlays\",\"Total_As_Percentages_of_GDP\":\"sample Total_As_Percentages_of_GDP\",\"Payments_for_Individuals_As_Percentages_of_GDP\":\"sample Payments_for_Individuals_As_Percentages_of_GDP\",\"Capital_Investment_As_Percentages_of_GDP\":\"sample Capital_Investment_As_Percentages_of_GDP\",\"Remainder_As_Percentages_of_GDP\":\"sample Remainder_As_Percentages_of_GDP\"}"
+    },
+    "table_12_2": {
+      "required": [
+        "Function_and_Fund_Group"
+      ],
+      "properties": {
+        "Function_and_Fund_Group": {
+          "type": "string",
+          "example": "sample Function_and_Fund_Group"
+        },
+        "TQ": {
+          "type": "string",
+          "example": "sample TQ"
+        }
+      },
+      "example": "{\"Function_and_Fund_Group\":\"sample Function_and_Fund_Group\",\"TQ\":\"sample TQ\"}"
+    },
+    "table_12_3": {
+      "required": [
+        "Type"
+      ],
+      "properties": {
+        "Type": {
+          "type": "string",
+          "example": "sample Type"
+        },
+        "Area": {
+          "type": "string",
+          "example": "sample Area"
+        },
+        "TQ": {
+          "type": "string",
+          "example": "sample TQ"
+        }
+      },
+      "example": "{\"Type\":\"sample Type\",\"Area\":\"sample Area\",\"TQ\":\"sample TQ\"}"
+    }
+  }
+}

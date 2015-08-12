@@ -1,0 +1,1004 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.1.0",
+    "title": "Federal Budget - Section 2",
+    "contact": {
+      "name": "Kin Lane",
+      "email": "kinlane@gmail.com"
+    }
+  },
+  "host": "federalbudget2.apispark.net",
+  "basePath": "/v1",
+  "tags": [
+    {
+      "name": "Federal Budget"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/2_1/": {
+      "get": {
+        "tags": [
+          "Federal Budget 2"
+        ],
+        "summary": "Loads a list of table_2_1",
+        "description": "Loads a list of table_2_1",
+        "operationId": "gettable_2_1List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Total_Total_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Total_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Corporate_Income_Taxes_1",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Corporate_Income_Taxes_1",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Off_Budget_Total_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Off_Budget_Total_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other_3_Total_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other_3_Total_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Individual_Income_Taxes",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Individual_Income_Taxes",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "On_Budget_Social_Insurance_and_Retirement_Receipts_2",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field On_Budget_Social_Insurance_and_Retirement_Receipts_2",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "On_Budget_Total_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field On_Budget_Total_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Social_Insurance_and_Retirement_Receipts_2",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Social_Insurance_and_Retirement_Receipts_2",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Excise_Taxes_2_Total_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Excise_Taxes_2_Total_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Off_Budget_Social_Insurance_and_Retirement_Receipts_2",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Off_Budget_Social_Insurance_and_Retirement_Receipts_2",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_2_1"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 2"
+        ],
+        "summary": "Adds a table_2_1",
+        "description": "Adds a table_2_1",
+        "operationId": "posttable_2_1List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_2_1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_2_1"
+            }
+          }
+        }
+      }
+    },
+    "/2_2/": {
+      "get": {
+        "tags": [
+          "Federal Budget 2"
+        ],
+        "summary": "Loads a list of table_2_2",
+        "description": "Loads a list of table_2_2",
+        "operationId": "gettable_2_2List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Excise_Taxes",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Excise_Taxes",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Individual_Income_Taxes",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Individual_Income_Taxes",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Corporation_Income_Taxes",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Corporation_Income_Taxes",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "On_Budget_Social_Insurance_and_Retirement_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field On_Budget_Social_Insurance_and_Retirement_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Off_Budget_Social_Insurance_and_Retirement_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Off_Budget_Social_Insurance_and_Retirement_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Social_Insurance_and_Retirement_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Social_Insurance_and_Retirement_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_2_2"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 2"
+        ],
+        "summary": "Adds a table_2_2",
+        "description": "Adds a table_2_2",
+        "operationId": "posttable_2_2List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_2_2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_2_2"
+            }
+          }
+        }
+      }
+    },
+    "/2_3/": {
+      "get": {
+        "tags": [
+          "Federal Budget 2"
+        ],
+        "summary": "Loads a list of table_2_3",
+        "description": "Loads a list of table_2_3",
+        "operationId": "gettable_2_3List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Total_Total_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Total_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Individual_Income_Taxes",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Individual_Income_Taxes",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Social_Insurance_and_Retirement_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Social_Insurance_and_Retirement_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Other",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Other",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Off_Budget_Social_Insurance_and_Retirement_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Off_Budget_Social_Insurance_and_Retirement_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "On_Budget_Social_Insurance_and_Retirement_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field On_Budget_Social_Insurance_and_Retirement_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "On_Budget_Total_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field On_Budget_Total_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Off_Budget_Total_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Off_Budget_Total_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Excise_Taxes",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Excise_Taxes",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Corporation_Income_Taxes",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Corporation_Income_Taxes",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_2_3"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 2"
+        ],
+        "summary": "Adds a table_2_3",
+        "description": "Adds a table_2_3",
+        "operationId": "posttable_2_3List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_2_3"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_2_3"
+            }
+          }
+        }
+      }
+    },
+    "/2_4/": {
+      "get": {
+        "tags": [
+          "Federal Budget 2"
+        ],
+        "summary": "Loads a list of table_2_4",
+        "description": "Loads a list of table_2_4",
+        "operationId": "gettable_2_4List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "TYPE",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field TYPE",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "TQ",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field TQ",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Area",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Area",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_2_4"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 2"
+        ],
+        "summary": "Adds a table_2_4",
+        "description": "Adds a table_2_4",
+        "operationId": "posttable_2_4List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_2_4"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_2_4"
+            }
+          }
+        }
+      }
+    },
+    "/2_5/": {
+      "get": {
+        "tags": [
+          "Federal Budget 2"
+        ],
+        "summary": "Loads a list of table_2_5",
+        "description": "Loads a list of table_2_5",
+        "operationId": "gettable_2_5List",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Estate_and_Gift_Taxes",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Estate_and_Gift_Taxes",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "All_Other_Miscellaneous_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field All_Other_Miscellaneous_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Fiscal_Year",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Fiscal_Year",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Customs_Duties_and_Fees",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Customs_Duties_and_Fees",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Customs_Duties_and_Fees__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Customs_Duties_and_Fees__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Federal_Reserve_Deposits_1_Miscellaneous_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Federal_Reserve_Deposits_1_Miscellaneous_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Total_Miscellaneous_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Total_Miscellaneous_Receipts",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Legislative_Proposals_2",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field Legislative_Proposals_2",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "All_Other__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field All_Other__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/table_2_5"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Federal Budget 2"
+        ],
+        "summary": "Adds a table_2_5",
+        "description": "Adds a table_2_5",
+        "operationId": "posttable_2_5List",
+        "consumes": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/table_2_5"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/table_2_5"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "HTTP_BASIC": {
+      "type": "basic"
+    }
+  },
+  "definitions": {
+    "table_2_3": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Individual_Income_Taxes": {
+          "type": "string",
+          "example": "sample Individual_Income_Taxes"
+        },
+        "Corporation_Income_Taxes": {
+          "type": "string",
+          "example": "sample Corporation_Income_Taxes"
+        },
+        "Total_Social_Insurance_and_Retirement_Receipts": {
+          "type": "string",
+          "example": "sample Total_Social_Insurance_and_Retirement_Receipts"
+        },
+        "On_Budget_Social_Insurance_and_Retirement_Receipts": {
+          "type": "string",
+          "example": "sample On_Budget_Social_Insurance_and_Retirement_Receipts"
+        },
+        "Off_Budget_Social_Insurance_and_Retirement_Receipts": {
+          "type": "string",
+          "example": "sample Off_Budget_Social_Insurance_and_Retirement_Receipts"
+        },
+        "Excise_Taxes": {
+          "type": "string",
+          "example": "sample Excise_Taxes"
+        },
+        "Other": {
+          "type": "string",
+          "example": "sample Other"
+        },
+        "Total_Total_Receipts": {
+          "type": "string",
+          "example": "sample Total_Total_Receipts"
+        },
+        "On_Budget_Total_Receipts": {
+          "type": "string",
+          "example": "sample On_Budget_Total_Receipts"
+        },
+        "Off_Budget_Total_Receipts": {
+          "type": "string",
+          "example": "sample Off_Budget_Total_Receipts"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Individual_Income_Taxes\":\"sample Individual_Income_Taxes\",\"Corporation_Income_Taxes\":\"sample Corporation_Income_Taxes\",\"Total_Social_Insurance_and_Retirement_Receipts\":\"sample Total_Social_Insurance_and_Retirement_Receipts\",\"On_Budget_Social_Insurance_and_Retirement_Receipts\":\"sample On_Budget_Social_Insurance_and_Retirement_Receipts\",\"Off_Budget_Social_Insurance_and_Retirement_Receipts\":\"sample Off_Budget_Social_Insurance_and_Retirement_Receipts\",\"Excise_Taxes\":\"sample Excise_Taxes\",\"Other\":\"sample Other\",\"Total_Total_Receipts\":\"sample Total_Total_Receipts\",\"On_Budget_Total_Receipts\":\"sample On_Budget_Total_Receipts\",\"Off_Budget_Total_Receipts\":\"sample Off_Budget_Total_Receipts\"}"
+    },
+    "table_2_2": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Individual_Income_Taxes": {
+          "type": "string",
+          "example": "sample Individual_Income_Taxes"
+        },
+        "Corporation_Income_Taxes": {
+          "type": "string",
+          "example": "sample Corporation_Income_Taxes"
+        },
+        "Total_Social_Insurance_and_Retirement_Receipts": {
+          "type": "string",
+          "example": "sample Total_Social_Insurance_and_Retirement_Receipts"
+        },
+        "On_Budget_Social_Insurance_and_Retirement_Receipts": {
+          "type": "string",
+          "example": "sample On_Budget_Social_Insurance_and_Retirement_Receipts"
+        },
+        "Off_Budget_Social_Insurance_and_Retirement_Receipts": {
+          "type": "string",
+          "example": "sample Off_Budget_Social_Insurance_and_Retirement_Receipts"
+        },
+        "Excise_Taxes": {
+          "type": "string",
+          "example": "sample Excise_Taxes"
+        },
+        "Other": {
+          "type": "string",
+          "example": "sample Other"
+        },
+        "Total_Receipts": {
+          "type": "string",
+          "example": "sample Total_Receipts"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Individual_Income_Taxes\":\"sample Individual_Income_Taxes\",\"Corporation_Income_Taxes\":\"sample Corporation_Income_Taxes\",\"Total_Social_Insurance_and_Retirement_Receipts\":\"sample Total_Social_Insurance_and_Retirement_Receipts\",\"On_Budget_Social_Insurance_and_Retirement_Receipts\":\"sample On_Budget_Social_Insurance_and_Retirement_Receipts\",\"Off_Budget_Social_Insurance_and_Retirement_Receipts\":\"sample Off_Budget_Social_Insurance_and_Retirement_Receipts\",\"Excise_Taxes\":\"sample Excise_Taxes\",\"Other\":\"sample Other\",\"Total_Receipts\":\"sample Total_Receipts\"}"
+    },
+    "table_2_5": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Estate_and_Gift_Taxes": {
+          "type": "string",
+          "example": "sample Estate_and_Gift_Taxes"
+        },
+        "Customs_Duties_and_Fees": {
+          "type": "string",
+          "example": "sample Customs_Duties_and_Fees"
+        },
+        "Total_Miscellaneous_Receipts": {
+          "type": "string",
+          "example": "sample Total_Miscellaneous_Receipts"
+        },
+        "Federal_Reserve_Deposits_1_Miscellaneous_Receipts": {
+          "type": "string",
+          "example": "sample Federal_Reserve_Deposits_1_Miscellaneous_Receipts"
+        },
+        "All_Other_Miscellaneous_Receipts": {
+          "type": "string",
+          "example": "sample All_Other_Miscellaneous_Receipts"
+        },
+        "Legislative_Proposals_2": {
+          "type": "string",
+          "example": "sample Legislative_Proposals_2"
+        },
+        "Customs_Duties_and_Fees__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts": {
+          "type": "string",
+          "example": "sample Customs_Duties_and_Fees__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts"
+        },
+        "All_Other__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts": {
+          "type": "string",
+          "example": "sample All_Other__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Estate_and_Gift_Taxes\":\"sample Estate_and_Gift_Taxes\",\"Customs_Duties_and_Fees\":\"sample Customs_Duties_and_Fees\",\"Total_Miscellaneous_Receipts\":\"sample Total_Miscellaneous_Receipts\",\"Federal_Reserve_Deposits_1_Miscellaneous_Receipts\":\"sample Federal_Reserve_Deposits_1_Miscellaneous_Receipts\",\"All_Other_Miscellaneous_Receipts\":\"sample All_Other_Miscellaneous_Receipts\",\"Legislative_Proposals_2\":\"sample Legislative_Proposals_2\",\"Customs_Duties_and_Fees__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts\":\"sample Customs_Duties_and_Fees__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts\",\"All_Other__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts\":\"sample All_Other__Memorandum_Trust_Fund_Amounts_Included_in_Other_Receipts\"}"
+    },
+    "table_2_4": {
+      "required": [
+        "TYPE"
+      ],
+      "properties": {
+        "TYPE": {
+          "type": "string",
+          "example": "sample TYPE"
+        },
+        "Area": {
+          "type": "string",
+          "example": "sample Area"
+        },
+        "TQ": {
+          "type": "string",
+          "example": "sample TQ"
+        }
+      },
+      "example": "{\"TYPE\":\"sample TYPE\",\"Area\":\"sample Area\",\"TQ\":\"sample TQ\"}"
+    },
+    "table_2_1": {
+      "required": [
+        "Fiscal_Year"
+      ],
+      "properties": {
+        "Fiscal_Year": {
+          "type": "string",
+          "example": "sample Fiscal_Year"
+        },
+        "Individual_Income_Taxes": {
+          "type": "string",
+          "example": "sample Individual_Income_Taxes"
+        },
+        "Corporate_Income_Taxes_1": {
+          "type": "string",
+          "example": "sample Corporate_Income_Taxes_1"
+        },
+        "Total_Social_Insurance_and_Retirement_Receipts_2": {
+          "type": "string",
+          "example": "sample Total_Social_Insurance_and_Retirement_Receipts_2"
+        },
+        "On_Budget_Social_Insurance_and_Retirement_Receipts_2": {
+          "type": "string",
+          "example": "sample On_Budget_Social_Insurance_and_Retirement_Receipts_2"
+        },
+        "Off_Budget_Social_Insurance_and_Retirement_Receipts_2": {
+          "type": "string",
+          "example": "sample Off_Budget_Social_Insurance_and_Retirement_Receipts_2"
+        },
+        "Excise_Taxes_2_Total_Receipts": {
+          "type": "string",
+          "example": "sample Excise_Taxes_2_Total_Receipts"
+        },
+        "Other_3_Total_Receipts": {
+          "type": "string",
+          "example": "sample Other_3_Total_Receipts"
+        },
+        "Total_Total_Receipts": {
+          "type": "string",
+          "example": "sample Total_Total_Receipts"
+        },
+        "On_Budget_Total_Receipts": {
+          "type": "string",
+          "example": "sample On_Budget_Total_Receipts"
+        },
+        "Off_Budget_Total_Receipts": {
+          "type": "string",
+          "example": "sample Off_Budget_Total_Receipts"
+        }
+      },
+      "example": "{\"Fiscal_Year\":\"sample Fiscal_Year\",\"Individual_Income_Taxes\":\"sample Individual_Income_Taxes\",\"Corporate_Income_Taxes_1\":\"sample Corporate_Income_Taxes_1\",\"Total_Social_Insurance_and_Retirement_Receipts_2\":\"sample Total_Social_Insurance_and_Retirement_Receipts_2\",\"On_Budget_Social_Insurance_and_Retirement_Receipts_2\":\"sample On_Budget_Social_Insurance_and_Retirement_Receipts_2\",\"Off_Budget_Social_Insurance_and_Retirement_Receipts_2\":\"sample Off_Budget_Social_Insurance_and_Retirement_Receipts_2\",\"Excise_Taxes_2_Total_Receipts\":\"sample Excise_Taxes_2_Total_Receipts\",\"Other_3_Total_Receipts\":\"sample Other_3_Total_Receipts\",\"Total_Total_Receipts\":\"sample Total_Total_Receipts\",\"On_Budget_Total_Receipts\":\"sample On_Budget_Total_Receipts\",\"Off_Budget_Total_Receipts\":\"sample Off_Budget_Total_Receipts\"}"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+---
+layout: page
+title: {{ site.showcase_title }}
+---
+
+<h1>{{ site.showcase_title }}</h1>
+<p>{{ site.showcase_description }}</p>
+<hr />
+<table width="100%">
+  {% for showcase in site.showcase %}
+  <tr>
+    <td align="center">
+      <img src="{{ showcase.image }}" width="150" align="center" />
+    </td>
+    <td>
+      {{ showcase.name }} - {{ showcase.description }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<hr />
+<p>{{ site.showcase_footer }}</p>

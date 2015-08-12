@@ -1,0 +1,19 @@
+---
+layout: page
+title: {{ site.tools_title }}
+---
+
+<h1>{{ site.tools_title }}</h1>
+<p>{{ site.tools_description }}</p>
+<hr />
+<table width="100%">
+  {% for tool in site.tools %}
+  <tr>
+    <td>
+      <a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.description }}...<a href="{{ showcase.url }}">view</a>.
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<hr />
+<p>{{ site.tools_footer }}</p>

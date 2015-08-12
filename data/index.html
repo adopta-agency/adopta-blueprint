@@ -1,0 +1,27 @@
+---
+layout: page
+title: {{ site.data_title }}
+---
+
+<h1>{{ site.data_title }}</h1>
+<p>{{ site.data_description }}</p>
+<table width="100%">
+  {% for data in site.data %}
+  <tr>
+    <td>
+      {{ data.title }}
+    </td>
+    <td width="50" align="center">
+      <a href="{{ data.csv_url }}">
+        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" width="45" />
+      </a>
+    </td>
+    <td width="50" align="center">
+      <a href="{{ data.json_url }}">
+        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-json.png" width="45" />
+      </a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<p>{{ site.data_footer }}</p>

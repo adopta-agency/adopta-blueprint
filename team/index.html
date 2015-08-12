@@ -1,0 +1,22 @@
+---
+layout: page
+title: {{ site.team_title }}
+---
+
+<h1>{{ site.team_title }}</h1>
+<p>{{ site.team_description }}</p>
+<hr />
+<table width="100%">
+  {% for team in site.team %}
+  <tr>
+    <td align="center">
+      <img src="{{ team.image }}" width="100" align="center" />
+    </td>
+    <td valign="top">
+      <strong>{{ team.name }}</strong><br />{{ team.description }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<hr />
+<p>{{ site.team_footer }}</p>
