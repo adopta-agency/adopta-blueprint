@@ -39,7 +39,7 @@ layout: none
       "accessLevel": "public",
       "license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dataQuality": true
-    }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+    }{% if forloop.last %}{% else %},{% endif %}
   {% endfor %}
   ]
 }
