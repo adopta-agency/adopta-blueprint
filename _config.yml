@@ -119,20 +119,23 @@ tools_footer: We share the tools we used to help others understand how to recrea
 
 tools:
   - title: Github
-    description: A social network built around software development platform Git.
+    description: Social Project Platform
     url: http://github.com
   - title: Github Pages
-    description: Websites for projects that are hosted directly from a GitHub repository.
+    description: Free Project Hosting
     url: https://pages.github.com/
   - title: Google Spreadsheets
-    description: Cloud-based spreadsheets as part of the overall Google Dirve platform.
+    description: Web-based Spreadsheets
     url: https://www.google.com/drive/
   - title: API Spark
-    description: A platform for the creation, hosting, management, and consumption of web APIs.
+    description: API Deployment From Spreadsheets.
     url: http://restlet.com/products/apispark/
   - title: CSV Converter
-    description: A CSV conversion tool that runs on Github, created from Mr. Data Converter.
+    description: CSV to JSON Converter
     url: http://kinlane.github.io/csv-converter/
+  - title: JSON Editor Online
+    description: JSON Editor
+    url: http://www.jsoneditoronline.org/
 
 # ---------
 # Blog

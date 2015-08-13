@@ -84,7 +84,7 @@ layout: page
   <p>{{ site.tools_description }}</p>
   <ul style="padding-left: 35px; list-style: circle;">
     {% for tool in site.tools %}
-    <li><a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.description }}...<a href="{{ showcase.url }}">view</a>.</li>
+    <li><a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> ({{ tool.description }}).</li>
     {% endfor %}
   </ul>
   <p>{{ site.tools_footer }}</p>
@@ -97,7 +97,7 @@ layout: page
   <p>{{ site.faq_description }}</p>
   <ul style="padding-left: 35px; list-style: circle;">
     {% for faq in site.faq %}
-    <li><strong>{{ faq.question }}</strong> - {{ faq.answer }}</li>
+    <li><span style="font-weight: bold;">{{ faq.question }}</span> - {{ faq.answer }}</li>
     {% endfor %}
   </ul>
   <p>{{ site.faq_footer }}</p>
