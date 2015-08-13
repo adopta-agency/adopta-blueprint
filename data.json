@@ -33,11 +33,14 @@ layout: none
           "title": "{{ data.title }}"
         }
       ],
+      "keyword": [
+        {% for tags in site.project_tags limit:10 %}"Kin Lane"{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+      ],
       "issued": "{{ page.date | date: "%Y-%m-%d" }}",
       "accessLevel": "public",
       "license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dataQuality": true
-    }
-    {% endfor %}
+    }{% if forloop.last %}{% else %},{% endif %}
+  {% endfor %}
   ]
 }

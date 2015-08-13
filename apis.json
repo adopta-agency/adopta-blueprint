@@ -92,7 +92,7 @@ layout: none
           "X-twitter": "{{ site.support_twitter }}"
         }
       ]
-    }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+    }{% if forloop.last %}{% else %},{% endif %}
     {% endfor %}
   ],
   "include": [],
