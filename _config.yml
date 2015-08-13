@@ -38,7 +38,7 @@ data:
 # APIs
 # ---------
 
-api_show: no
+api_show: yes
 api_nav: yes
 api_title: APIs
 api_description: This is a sample API generated from the dataset above. It is described using Swagger which allows the generation of interactive documentation, while also describing the meta data and surface area of an API.
