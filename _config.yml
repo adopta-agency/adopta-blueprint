@@ -45,7 +45,7 @@ api_description: This is a sample API generated from the dataset above. It is de
 api_footer: The goal of launching these APIs is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
 
 api:
-  - title: Sample One
+  - title: Farmers Markets
     swagger_url: https://kinlane.github.io/adopta-blueprint/api/farmers_markets.json
 
 # ---------
