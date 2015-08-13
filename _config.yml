@@ -31,8 +31,8 @@ data_footer: The goal of publishing these CSV and JSON alternatives is to make t
 # You can add one or many data sets here, with a title, and link to CSV and JSON file
 data:
   - title: "Farmers Markets"
-    csv_url: "https://kinlane.github.io/adopta-blueprint/data/famers_markets.csv"
-    json_url: "https://kinlane.github.io/adopta-blueprint/data/famers_markets.json"
+    csv_url: "https://adopta-agency.github.io/adopta-blueprint/data/famers_markets.csv"
+    json_url: "https://adopta-agency.github.io/adopta-blueprint/data/famers_markets.json"
 
 # ---------
 # APIs
@@ -88,7 +88,7 @@ faq:
   - question: Where did this data come from?
     answer: It could come from data.gov, one of the data.json files of government agencies, or any other location you find the data you need.
   - question: What are you planning on doing with this data?
-    answer: You can visit the <a href="https://kinlane.github.io/adopta-blueprint/roadmap/">roadmap for more information.
+    answer: You can visit the <a href="https://adopta-agency.github.io/adopta-blueprint/roadmap/">roadmap for more information.
   - question: How do I talk to someone behind this project?
     answer: This site runs on Github Pages, and relies on Github issue management for support. <a href="https://github.com/kinlane/adopta-blueprint/issues/new">Go ahead and submit an issue</a> via the project repository.
 
@@ -132,7 +132,7 @@ tools:
     url: http://restlet.com/products/apispark/
   - title: CSV Converter
     description: CSV to JSON Converter
-    url: http://kinlane.github.io/csv-converter/
+    url: http://adopta-agency.github.io/csv-converter/
   - title: JSON Editor Online
     description: JSON Editor
     url: http://www.jsoneditoronline.org/
