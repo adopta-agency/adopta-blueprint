@@ -73,7 +73,7 @@ layout: none
     },
     {% for api in site.api limit:100 %}
     {
-      "name": "Master",
+      "name": "{{ api.title }}",
       "humanURL": "{{ site.project_url }}",
       "baseURL": "{{ site.project_url }}",
       "tags": [
@@ -84,11 +84,11 @@ layout: none
       "properties": [
         {
           "type": "Swagger",
-          "url": "{{ site.project_url }}/blog/"
+          "url": "{{ api.swagger_url }}"
         },
         {
           "type": "X-documentation",
-          "url": "{{ site.project_url }}/blog.xml"
+          "url": "{{ site.project_url }}/documentation/?swagger_url={{ api.swagger_url }}"
         }
       ],
       "contact": [
@@ -99,6 +99,7 @@ layout: none
         }
       ]
     }
+    {% endfor %}
   ],
   "include": [],
   "maintainers": [
