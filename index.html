@@ -9,25 +9,19 @@ layout: page
 
   <h2><a href="data/">{{ site.data_title }}</a></h2>
   <p>{{ site.data_description }}</p>
-  <table width="100%" style="margin-left: 25px; margin-right: 25px; margin-bottom: 20px;">
+  <ul style="border: 1px solid #000;">
     {% for data in site.data %}
-    <tr>
-      <td style="font-size: 22px; font-weight: bold; padding-bottom: 25px;" valign="top">
+    <li>
         {{ data.title }}
-      </td>
-      <td width="50" align="center">
         <a href="{{ data.csv_url }}">
-          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" width="45" />
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" width="45" align="right" />
         </a>
-      </td>
-      <td width="50" align="center" style="border: 1px solid #000;">
         <a href="{{ data.json_url }}">
-          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-json.png" width="45" />
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-json.png" width="45" align="right" />
         </a>
-      </td>
-    </tr>
+    </li>
     {% endfor %}
-  </table>
+  </ul>
   <p>{{ site.data_footer }}</p>
 
 {% endif %}
