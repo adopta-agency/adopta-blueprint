@@ -10,7 +10,7 @@
 
 # Give your peject a title, description, some tags, and URL to Github home page
 project_title: Adopta Blueprint
-project_description: This is the master blueprint for the Adopta.Agency. The goal is to move forward the conversation around any government data, making it more accessible as CSV and JSON files, and deploying simple APIs when possible.
+project_description: This is the master blueprint for the <a href="http://adopta.agency">Adopta.Agency</a>. The goal is to move forward the conversation around any government data, making it more accessible as CSV and JSON files, and deploying simple APIs when possible.
 project_url: http://adopta-agency.github.io/adopta-blueprint/
 project_tags:
   - tag: blueprint
