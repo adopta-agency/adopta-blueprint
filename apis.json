@@ -1,3 +1,6 @@
+---
+layout: none
+---
 {
   "name": "{{ site.project_title }}",
   "description": "{{ site.project_title }}",
@@ -57,6 +60,34 @@
         {
           "type": "X-issues",
           "url": "https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues"
+        }
+      ],
+      "contact": [
+        {
+          "FN": "{{ site.support_title }}",
+          "email": "{{ site.support_email }}",
+          "X-twitter": "{{ site.support_twitter }}"
+        }
+      ]
+    },
+    {% for api in site.api limit:100 %}
+    {
+      "name": "Master",
+      "humanURL": "{{ site.project_url }}",
+      "baseURL": "{{ site.project_url }}",
+      "tags": [
+        {% for tags in site.project_tags limit:10 %}
+        "Kin Lane",
+        {% endfor %}
+      ],
+      "properties": [
+        {
+          "type": "Swagger",
+          "url": "{{ site.project_url }}/blog/"
+        },
+        {
+          "type": "X-documentation",
+          "url": "{{ site.project_url }}/blog.xml"
         }
       ],
       "contact": [
