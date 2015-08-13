@@ -75,7 +75,7 @@
         <script type="text/javascript">
         function listSponsors()
             {
-            $.getJSON('https://s3.amazonaws.com/kinlane-productions/json/sponsors.json', function(data) {
+            $.getJSON('{{ site.github_repo }}/data/sponsors.json', function(data) {
                 $.each(data['sponsors'], function(key, val) {
                 var template = $('#parterListingTemplate').html();
                 var html = Mustache.to_html(template, val);
