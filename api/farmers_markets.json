@@ -1,0 +1,146 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.1.0",
+    "title": "Famers Markets",
+    "contact": {
+      "name": "Kin Lane",
+      "email": "kinlane@gmail.com"
+    }
+  },
+  "host": "farmersmarkets.apispark.net",
+  "basePath": "/v1",
+  "tags": [
+    {
+      "name": "farmers_markets",
+      "description": "Imported from farmers_markets"
+    },
+    {
+      "name": "Default",
+      "description": "Default section"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/farmer_markets/": {
+      "get": {
+        "tags": [
+          "Farmers Markets"
+        ],
+        "summary": "Loads a list of farmers markets",
+        "description": "Loads a list of farmers markets",
+        "operationId": "getFarmerMarkets",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "application/x-yaml",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "LocAddCity",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field LocAddCity",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "LocAddState",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field LocAddState",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "LocAddZip",
+            "in": "query",
+            "description": "Allows to filter the collections of result by the value of field LocAddZip",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$page",
+            "in": "query",
+            "description": "Number of the page to retrieve. Integer value.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$sort",
+            "in": "query",
+            "description": "Order in which to retrieve the results. Multiple sort criteria can be passed. Example: sort=age ASC,height DESC",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "$size",
+            "in": "query",
+            "description": "Size of the page to retrieve. Integer value",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Sheet_1"
+              }
+            }
+          },
+          "400": {
+            "description": "Error 400"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "HTTP_BASIC": {
+      "type": "basic"
+    }
+  },
+  "definitions": {
+    "Sheet_1": {
+      "required": [
+        "LocAddState"
+      ],
+      "properties": {
+        "LocAddState": {
+          "type": "string",
+          "example": "sample LocAddState"
+        },
+        "MktName": {
+          "type": "string",
+          "example": "sample MktName"
+        },
+        "LocAddSt": {
+          "type": "string",
+          "example": "sample LocAddSt"
+        },
+        "LocAddCity": {
+          "type": "string",
+          "example": "sample LocAddCity"
+        },
+        "LocAddZip": {
+          "type": "string",
+          "example": "sample LocAddZip"
+        },
+        "x1": {
+          "type": "string",
+          "example": "sample x1"
+        },
+        "y1": {
+          "type": "string",
+          "example": "sample y1"
+        }
+      }
+    }
+  }
+}

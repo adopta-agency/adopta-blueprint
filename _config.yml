@@ -42,9 +42,7 @@ api_footer: The goal of launching these APIs is to make this data easier to cons
 
 api:
   - title: Sample One
-    swagger_url: https://kinlane.github.io/adopta-blueprint/api/sample-one.json
-  - title: Sample Two
-    swagger_url: https://kinlane.github.io/adopta-blueprint/api/sample-two.json
+    swagger_url: https://kinlane.github.io/adopta-blueprint/api/farmers_markets.json
 
 # ---------
 # Showcase
