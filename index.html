@@ -11,7 +11,7 @@ layout: page
   <p>{{ site.data_description }}</p>
   <ul style="border: 1px solid #000;">
     {% for data in site.data %}
-    <li style="height: 50px; vertical-align: text-middle;">
+    <li style="height: 50px; vertical-align: text-middle; line-height: 50px;">
         <span style="font-size: 22px; border: 1px solid #000;"><strong>{{ data.title }}</strong></span>
         <a href="{{ data.csv_url }}">
           <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" width="40" align="right" />
