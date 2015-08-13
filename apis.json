@@ -1,6 +1,7 @@
 ---
 layout: none
 ---
+
 {
   "name": "{{ site.project_title }}",
   "description": "{{ site.project_title }}",
