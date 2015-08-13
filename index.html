@@ -13,7 +13,7 @@ layout: page
     {% for data in site.data %}
     <tr>
       <td>
-        {{ data.title }}
+        <strong>{{ data.title }}</strong>
       </td>
       <td width="50" align="center">
         <a href="{{ data.csv_url }}">
@@ -40,7 +40,7 @@ layout: page
     {% for api in site.api %}
     <tr>
       <td>
-        {{ api.title }}
+        <strong>{{ api.title }}</strong>
       </td>
       <td width="50" align="center">
         <a href="{{ api.swagger_url }}" title="Swagger API Definition">

@@ -4,20 +4,23 @@
 # You control everything about this site, here in the _config.yml
 # All data is stored under /data
 # All API definitions are stored under /api
-# Tell your story via the Blog
-# Manage all conversations through Github issues
+# Tell your story via the /blog
+# Manage all conversations through this project's Github issues
 # ------------------------
 
-# Project details
+# Give your peject a title, description, some tags, and URL to Github home page
 project_title: Adopta Blueprint
 project_description: This is the master blueprint for the Adopta.Agency. The goal is to move forward the conversation around any government data, making it more accessible as CSV and JSON files, and deploying simple APIs when possible.
 project_url: http://adopta-agency.github.io/adopta-blueprint/
+project_tags:
+  - tag: blueprint
+  - tag: open data
 
 github_user: adopta-agency
 github_repo: adopta-blueprint
 
 # ---------
-# Data
+# This is the section where you describe the data involved in your project.
 # ---------
 data_show: yes
 data_nav: yes
@@ -25,6 +28,7 @@ data_title: Data Files
 data_description: This is just a sample set of dataset to show what is possible. Your mission if you choose to accept it, is find your dataset at data.gov, or amongst the inventory of each federal agencies data.json files. Once you have found your datasatets, you can clean up, publish, and share here.
 data_footer: The goal of publishing these CSV and JSON alternatives is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
 
+# You can add one or many data sets here, with a title, and link to CSV and JSON file
 data:
   - title: "Farmers Markets"
     csv_url: "https://kinlane.github.io/adopta-blueprint/data/famers_markets.csv"
@@ -146,18 +150,21 @@ blog_nav: yes
 # URL to the issues page for this
 support_title: Support
 support_description: If you need any help, have questions, or would like to get involved, please use the following links.
+support_email: info@apievangelist.com
 support_twitter: kinlane
 
 # ---------
 # Roadmap
 # ---------
 
+roadmap_show: yes
 roadmap_nav: yes
 
 # ---------
 # Change Log
 # ---------
 
+changelog_show: yes
 changelog_nav: yes
 
 # ---------
