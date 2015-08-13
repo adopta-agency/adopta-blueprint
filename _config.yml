@@ -22,16 +22,13 @@ github_repo: adopta-blueprint
 data_show: yes
 data_nav: yes
 data_title: Data Files
-data_description: This is just a sample set of datasets to show what is possible. Your mission if you choose to accept it, is find your dataset at data.gov, or amongst the inventory of each federal agencies data.json files. Once you have found your datasatets, you can clean up, publish, and share here.
+data_description: This is just a sample set of dataset to show what is possible. Your mission if you choose to accept it, is find your dataset at data.gov, or amongst the inventory of each federal agencies data.json files. Once you have found your datasatets, you can clean up, publish, and share here.
 data_footer: The goal of publishing these CSV and JSON alternatives is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
 
 data:
-  - title: "Sample Data File One"
-    csv_url: "https://kinlane.github.io/adopta-blueprint/data/sample-one.csv"
-    json_url: "https://kinlane.github.io/adopta-blueprint/data/sample-one.json"
-  - title: "Sample Data File Two"
-    csv_url: "https://kinlane.github.io/adopta-blueprint/data/sample-two.csv"
-    json_url: "https://kinlane.github.io/adopta-blueprint/data/sample-two.json"
+  - title: "Farmers Markets"
+    csv_url: "https://kinlane.github.io/adopta-blueprint/data/famers_markets.csv"
+    json_url: "https://kinlane.github.io/adopta-blueprint/data/famers_markets.json"
 
 # ---------
 # APIs
@@ -40,7 +37,7 @@ data:
 api_show: no
 api_nav: yes
 api_title: APIs
-api_description: This is a sample list of APIs generated from the datasets above, described using Swagger which allows the generation of interactive documentation, while also describing the meta data and surface area of an API.
+api_description: This is a sample API generated from the dataset above. It is described using Swagger which allows the generation of interactive documentation, while also describing the meta data and surface area of an API.
 api_footer: The goal of launching these APIs is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
 
 api:
