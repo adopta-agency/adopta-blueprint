@@ -10,7 +10,7 @@
 
 # Project details
 project_title: Adopta Blueprint
-project_description: This is the master blueprint for the Adopta.Agency.
+project_description: This is the master blueprint for the Adopta.Agency. The goal is to move forward the conversation around any government data, making it more accessible as CSV and JSON files, and deploying simple APIs when possible.
 project_url: http://adopta-agency.github.io/adopta-blueprint/
 
 github_user: adopta-agency
@@ -22,16 +22,16 @@ github_repo: adopta-blueprint
 data_show: yes
 data_nav: yes
 data_title: Data Files
-data_description: This is a list of JSON and CSV conversions of the Excel files made avalable as part of the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>, providing data on budget receipts, outlays, surpluses or deficits, Federal debt, and Federal employment over an extended time period, generally from 1940 or earlier to 2016 or 2020.
+data_description: This is just a sample set of datasets to show what is possible. Your mission if you choose to accept it, is find your dataset at data.gov, or amongst the inventory of each federal agencies data.json files. Once you have found your datasatets, you can clean up, publish, and share here.
 data_footer: The goal of publishing these CSV and JSON alternatives is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
 
 data:
-  - title: "Table 1.1 - Summary of Receipts, Outlays, and Surpluses or Deficits 1789 through 2020"
-    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-1.csv"
-    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-1.json"
-  - title: "Table 1.2 - Summary of Receipts, Outlays, and Surpluses or Deficits as Percentages of GDP 1930–2020"
-    csv_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-2.csv"
-    json_url: "https://kinlane.github.io/us-federal-budget/data/federal-budget-table-1-2.json"
+  - title: "Sample Data File One"
+    csv_url: "https://kinlane.github.io/adopta-blueprint/data/sample-one.csv"
+    json_url: "https://kinlane.github.io/adopta-blueprint/data/sample-one.json"
+  - title: "Sample Data File Two"
+    csv_url: "https://kinlane.github.io/adopta-blueprint/data/sample-two.csv"
+    json_url: "https://kinlane.github.io/adopta-blueprint/data/sample-two.json"
 
 # ---------
 # APIs
@@ -40,14 +40,14 @@ data:
 api_show: no
 api_nav: yes
 api_title: APIs
-api_description: This is a list of APIs generated from the Excel files made avalable as part of the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>, providing data on budget receipts, outlays, surpluses or deficits, Federal debt, and Federal employment over an extended time period, generally from 1940 or earlier to 2016 or 2020.
+api_description: This is a sample list of APIs generated from the datasets above, described using Swagger which allows the generation of interactive documentation, while also describing the meta data and surface area of an API.
 api_footer: The goal of launching these APIs is to make this data easier to consumer, and integrate into websites, applications, visualizations, and other integrations.
 
 api:
-  - title: Table 1
-    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-1.json
-  - title: Table 2
-    swagger_url: https://kinlane.github.io/us-federal-budget/api/federal-budget-table-2.json
+  - title: Sample One
+    swagger_url: https://kinlane.github.io/adopta-blueprint/api/sample-one.json
+  - title: Sample Two
+    swagger_url: https://kinlane.github.io/adopta-blueprint/api/sample-two.json
 
 # ---------
 # Showcase
@@ -85,13 +85,13 @@ faq_footer: Questions that get submitted via the projects Github issue managment
 
 faq:
   - question: Why are you doing this?
-    answer: I want to make the data around the US federal budget more accessible and usable, encouraging people to build it into more websites, applications, visualizations, and anywhere it can be used.
+    answer: I want to make data more accessible and usable, encouraging people to build it into more websites, applications, visualizations, and anywhere it can be used.
   - question: Where did this data come from?
-    answer: It is from the <a href="https://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget Historical Tables</a>.
+    answer: It could come from data.gov, one of the data.json files of government agencies, or any other location you find the data you need.
   - question: What are you planning on doing with this data?
-    answer: You can visit the <a href="https://kinlane.github.io/us-federal-budget/roadmap/">roadmap for more information.
+    answer: You can visit the <a href="https://kinlane.github.io/adopta-blueprint/roadmap/">roadmap for more information.
   - question: How do I talk to someone behind this project?
-    answer: This site runs on Github Pages, and relies on Github issue management for support. <a href="https://github.com/kinlane/us-federal-budget/issues/new">Go ahead and submit an issue</a> via the project repository.
+    answer: This site runs on Github Pages, and relies on Github issue management for support. <a href="https://github.com/kinlane/adopta-blueprint/issues/new">Go ahead and submit an issue</a> via the project repository.
 
 # ---------
 # Team
