@@ -9,7 +9,7 @@ layout: page
 
   <h2><a href="data/">{{ site.data_title }}</a></h2>
   <p>{{ site.data_description }}</p>
-  <ul>
+  <ul style="padding-left: 35px; list-style: circle;">
     {% for data in site.data %}
     <li style="height: 50px; vertical-align: text-middle; line-height: 50px;">
         <span style="font-size: 22px;"><strong>{{ data.title }}</strong></span>
@@ -30,7 +30,7 @@ layout: page
 
   <h2><a href="api/">{{ site.api_title }}</a></h2>
   <p>{{ site.api_description }}</p>
-  <ul>
+  <ul style="padding-left: 35px; list-style: circle;">
     {% for api in site.api %}
     <li style="height: 50px; vertical-align: text-middle; line-height: 50px;">
         <span style="font-size: 22px;"><strong>{{ api.title }}</strong></span>
