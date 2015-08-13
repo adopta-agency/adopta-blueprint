@@ -12,7 +12,7 @@ layout: page
   <ul style="padding-left: 35px; list-style: circle;">
     {% for data in site.data %}
     <li style="height: 50px; vertical-align: text-middle; line-height: 50px;">
-        <span style="font-size: 22px;"><strong>{{ data.title }}</strong></span>
+        <span style="font-size: 22px; font-weight: bold;"><strong>{{ data.title }}</strong></span>
         <a href="{{ data.csv_url }}">
           <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" width="50" align="right" />
         </a>
@@ -33,7 +33,7 @@ layout: page
   <ul style="padding-left: 35px; list-style: circle;">
     {% for api in site.api %}
     <li style="height: 50px; vertical-align: text-middle; line-height: 50px;">
-        <span style="font-size: 22px;"><strong>{{ api.title }}</strong></span>
+        <span style="font-size: 22px; font-weight: bold;"><strong>{{ api.title }}</strong></span>
         <a href="{{ api.swagger_url }}" title="Swagger API Definition">
           <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-round.png" width="50" align="right" />
         </a>

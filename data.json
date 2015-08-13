@@ -1,0 +1,45 @@
+---
+layout: none
+---
+{
+  "@type": "dcat:Catalog",
+  "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+  "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+  "@context": "https://project-open-data.cio.gov/v1.1/schema/data.jsonld",
+  "dataset": [
+    {% for data in site.data limit:100 %}
+    {
+      "references": [
+        "{{ site.project_url }}"
+      ],
+      "contactPoint": {
+        "hasEmail": "mailto:{{ site.support_email }}",
+        "@type": "vcard:Contact",
+        "fn": "{{ site.support_title }}"
+      },
+      "title": "{{ data.title }}",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "{{ data.csv_url }}",
+          "mediaType": "text/csv",
+          "title": "{{ data.title }}"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "{{ data.json_url }}",
+          "mediaType": "application/json",
+          "title": "{{ data.title }}"
+        }
+      ],
+      "keyword": [
+        {% for tags in site.project_tags limit:10 %}"Kin Lane"{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+      ],
+      "issued": "{{ page.date | date: "%Y-%m-%d" }}",
+      "accessLevel": "public",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dataQuality": true
+    }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+  {% endfor %}
+  ]
+}

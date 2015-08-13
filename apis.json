@@ -1,7 +1,6 @@
 ---
 layout: none
 ---
-
 {
   "name": "{{ site.project_title }}",
   "description": "{{ site.project_title }}",
@@ -92,7 +91,7 @@ layout: none
           "X-twitter": "{{ site.support_twitter }}"
         }
       ]
-    }
+    }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
     {% endfor %}
   ],
   "include": [],
