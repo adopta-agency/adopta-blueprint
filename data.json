@@ -34,7 +34,9 @@ layout: none
         }
       ],
       "keyword": [
-        {% for tags in site.project_tags limit:10 %}"Kin Lane"{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+        {% for tags in site.project_tags limit:10 %}
+        "Kin Lane"{% if forloop.last %}{% else %},{% endif %}
+        {% endfor %}
       ],
       "issued": "{{ page.date | date: "%Y-%m-%d" }}",
       "accessLevel": "public",
