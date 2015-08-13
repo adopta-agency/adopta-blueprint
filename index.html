@@ -9,15 +9,15 @@ layout: page
 
   <h2><a href="data/">{{ site.data_title }}</a></h2>
   <p>{{ site.data_description }}</p>
-  <ul style="border: 1px solid #000;">
+  <ul>
     {% for data in site.data %}
     <li style="height: 50px; vertical-align: text-middle; line-height: 50px;">
-        <span style="font-size: 22px; border: 1px solid #000;"><strong>{{ data.title }}</strong></span>
+        <span style="font-size: 22px;"><strong>{{ data.title }}</strong></span>
         <a href="{{ data.csv_url }}">
-          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" width="40" align="right" />
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" width="50" align="right" />
         </a>
         <a href="{{ data.json_url }}">
-          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-json.png" width="40" align="right" />
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-json.png" width="50" align="right" />
         </a>
     </li>
     {% endfor %}
@@ -30,25 +30,20 @@ layout: page
 
   <h2><a href="api/">{{ site.api_title }}</a></h2>
   <p>{{ site.api_description }}</p>
-  <table width="100%" style="margin-left: 25px; margin-right: 25px; margin-bottom: 20px;" border="1">
+  <ul>
     {% for api in site.api %}
-    <tr>
-      <td style="font-size: 22px; font-weight: bold; padding-bottom: 25px;" valign="top">
+    <li style="height: 50px; vertical-align: text-middle; line-height: 50px;">
+        <span style="font-size: 22px;"><strong>{{ api.title }}</strong></span>
         {{ api.title }}
-      </td>
-      <td width="50" align="center">
         <a href="{{ api.swagger_url }}" title="Swagger API Definition">
-          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-round.png" width="45" />
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-round.png" width="45" align="right" />
         </a>
-      </td>
-      <td width="50" align="center">
         <a href="/{{ site.github_repo }}/documentation/?swagger_url={{ api.swagger_url }}" title="Interactive Documentation">
-          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documentation-interactive.png" width="45" />
+          <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documentation-interactive.png" width="45" align="right" />
         </a>
-      </td>
-    </tr>
+    </ul>
     {% endfor %}
-  </table>
+  </ul>
   <p>{{ site.api_footer }}</p>
 
 {% endif %}
