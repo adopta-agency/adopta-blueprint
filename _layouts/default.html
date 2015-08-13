@@ -7,7 +7,7 @@
 
     <header class="masthead">
       <div class="masthead-inner" align="center">
-		<h2><a href="{{ site.project_url }}">{" {{ site.project_title }} "}</a></h2>
+		<h2><a href="{{ site.project_url }}">{{ site.project_title }}</a></h2>
         <div class="colophon">
           <ul class="colophon-links">
             <li>
@@ -75,7 +75,7 @@
         <script type="text/javascript">
         function listSponsors()
             {
-            $.getJSON('{{ site. project_url }}/data/sponsors.json', function(data) {
+            $.getJSON('https://s3.amazonaws.com/kinlane-productions/json/sponsors.json', function(data) {
                 $.each(data['sponsors'], function(key, val) {
                 var template = $('#parterListingTemplate').html();
                 var html = Mustache.to_html(template, val);
