@@ -132,7 +132,7 @@ tools:
     url: http://restlet.com/products/apispark/
   - title: CSV Converter
     description: CSV to JSON Converter
-    url: http://adopta-agency.github.io/csv-converter/
+    url: http://kinlane.github.io/csv-converter/converter.html
   - title: JSON Editor Online
     description: JSON Editor
     url: http://www.jsoneditoronline.org/
