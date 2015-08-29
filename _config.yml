@@ -10,7 +10,7 @@
 
 # Give your peject a title, description, some tags, and URL to Github home page
 project_title: Adopta Blueprint
-project_description: This is the master blueprint for the <a href="http://adopta.agency">Adopta.Agency</a>. The goal of this work is to move forward the conversation around any public datas, making it more accessible as CSV and JSON files, and deploying simple APIs when possible.
+project_description: This is the master blueprint for the <a href="http://adopta.agency">Adopta.Agency</a>. The goal of this work is to move forward the conversation around any public datas, making it more accessible as CSV and JSON files and deploying simple APIs when possible.
 project_url: http://adopta-agency.github.io/adopta-blueprint/
 project_tags:
   - tag: blueprint
@@ -88,7 +88,7 @@ faq:
   - question: Where did this data come from?
     answer: It could come from data.gov, one of the data.json files of government agencies, or any other location you find the data you need.
   - question: What are you planning on doing with this data?
-    answer: You can visit the <a href="http://adopta-agency.github.io/adopta-blueprint/roadmap/">roadmap for more information.
+    answer: You can visit the <a href="http://adopta-agency.github.io/adopta-blueprint/roadmap/">roadmap</a> for more information.
   - question: How do I talk to someone behind this project?
     answer: This site runs on Github Pages, and relies on Github issue management for support. <a href="https://github.com/kinlane/adopta-blueprint/issues/new">Go ahead and submit an issue</a> via the project repository.
 
