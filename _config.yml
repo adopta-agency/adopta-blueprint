@@ -31,6 +31,7 @@ data_footer: The goal of publishing these CSV and JSON alternatives is to make t
 # You can add one or many data sets here, with a title, and link to CSV and JSON file
 data:
   - title: "Farmers Markets"
+    source_url: https://catalog.data.gov/dataset/farmers-markets-geographic-data
     csv_url: "http://adopta-agency.github.io/adopta-blueprint/data/farmers_markets.csv"
     json_url: "http://adopta-agency.github.io/adopta-blueprint/data/farmers_markets.json"
 
