@@ -107,6 +107,9 @@ team:
   - name: Kin Lane
     description: The API Evangelist, working to make data, content, and other digital resources more accessible.
     url: http://kinlane.com
+  - name: Audrey Watters
+    description: writer @hackeducation (http://hackeducation.com ), ed-tech's Cassandra, author of The Monsters of Education Technology. Elsewhere: http://aud.life
+    url: http://audreywatters.com/    
 
 # ---------
 # Tools
@@ -139,7 +142,7 @@ tools:
     url: http://www.jsoneditoronline.org/
   - title: D3.js
     description: Visualizations from CSV and JSON files.
-    url: http://d3js.org/  
+    url: http://d3js.org/
 
 # ---------
 # Blog
