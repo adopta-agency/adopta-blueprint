@@ -108,8 +108,8 @@ team:
     description: The API Evangelist, working to make data, content, and other digital resources more accessible.
     url: http://kinlane.com
   - name: Audrey Watters
-    description: writer @hackeducation (http://hackeducation.com ), ed-tech's Cassandra, author of The Monsters of Education Technology. Elsewhere: http://aud.life
-    url: http://audreywatters.com/    
+    description: writer @hackeducation, ed-tech's Cassandra, author of The Monsters of Education Technology.
+    url: http://audreywatters.com/
 
 # ---------
 # Tools
