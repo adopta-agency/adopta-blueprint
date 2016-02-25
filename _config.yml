@@ -148,9 +148,9 @@ tools:
 # Blog
 # ---------
 
-permalink: /:categories/:year/:month/:day/:title
-paginate: 25
-paginate_path: "/blog/page:num"
+permalink: /:categories/:year/:month/:day/:title/
+paginate: 50
+paginate_path: "/blog/page:num/"
 blog_nav: yes
 
 # ---------
@@ -185,9 +185,7 @@ changelog_nav: yes
 version:      1.1.1
 
 #some configurations for the site
-markdown:     rdiscount
-permalink:    pretty
-pygments:     true
+markdown:     kramdown
 
 
 #what files should be excluded
