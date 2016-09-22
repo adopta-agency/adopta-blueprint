@@ -181,12 +181,12 @@ changelog_nav: yes
 # General Settings
 # ---------
 
-#versioning your peojct is good
 version:      1.1.1
-
-#some configurations for the site
+author:
+  name:       'Kin Lane'
+  email:      'info@apievangelist.com'
 markdown:     kramdown
 
+permalink: /:categories/:year/:month/:day/:title/
 
-#what files should be excluded
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
