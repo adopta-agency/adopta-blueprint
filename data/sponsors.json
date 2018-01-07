@@ -1,9 +1,17 @@
 {
     "sponsors": [
+      {
+           "title": "Streamdata.io",
+           "tagline": "API Streaming",
+           "url": "http://apis.how/streamdata",
+           "logo": "https://s3.amazonaws.com/kinlane-productions/streamdata/streamdata-horizontal-3.png",
+           "width": "100%",
+           "paddingbottom": "1"
+       },
        {
             "title": "3Scale",
             "tagline": "API Infrastructure",
-            "url": "http://bit.ly/13esk6Q",
+            "url": "http://apis.how/ake3nxbapm",
             "logo": "https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/3scale-logo-tr.png",
             "width": "100%",
              "paddingbottom": "1"
