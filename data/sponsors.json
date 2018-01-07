@@ -6,7 +6,7 @@
            "url": "http://apis.how/streamdata",
            "logo": "https://s3.amazonaws.com/kinlane-productions/streamdata/streamdata-horizontal-3.png",
            "width": "100%",
-           "paddingbottom": "1"
+           "paddingbottom": "5"
        },
        {
             "title": "3Scale",
